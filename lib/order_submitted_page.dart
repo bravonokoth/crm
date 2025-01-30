@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:clientflow/cart_page.dart';
-import 'package:clientflow/home_page.dart';
-import 'package:clientflow/order_details_page.dart';
+import 'package:ClientFlow/cart_page.dart';
+import 'package:ClientFlow/home_page.dart';
+import 'package:ClientFlow/order_details_page.dart';
 
 class OrderSubmittedPage extends StatefulWidget {
   final int salesOrderId;
 
-  const OrderSubmittedPage({Key? key, required this.salesOrderId})
-      : super(key: key);
+  const OrderSubmittedPage({super.key, required this.salesOrderId});
 
   @override
   _OrderSubmittedPageState createState() => _OrderSubmittedPageState();

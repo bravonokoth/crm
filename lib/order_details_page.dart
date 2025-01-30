@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import 'package:clientflow/cart_page.dart';
-import 'package:clientflow/sales_order_page.dart';
-import 'package:clientflow/utility_function.dart';
-import 'package:clientflow/event_logger.dart';
+import 'package:ClientFlow/cart_page.dart';
+import 'package:ClientFlow/sales_order_page.dart';
+import 'package:ClientFlow/utility_function.dart';
+import 'package:ClientFlow/event_logger.dart';
 import 'dart:developer' as developer;
 import 'package:http/http.dart' as http;
 import 'dart:convert';

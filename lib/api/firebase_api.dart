@@ -1,11 +1,12 @@
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
-import 'package:clientflow/main.dart';
-import 'package:clientflow/notification_page.dart';
+import 'package:ClientFlow/main.dart';
+import 'package:ClientFlow/notification_page.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 import 'dart:developer' as developer;
+
 import 'package:permission_handler/permission_handler.dart'; // For requesting permissions
 
 class FirebaseApi {
@@ -112,32 +113,37 @@ class FirebaseApi {
       );
     });
   }
-
-  Future<void> initLocalNotifications() async {
-    const iOS = IOSInitializationSettings();
+Future<void> initLocalNotifications() async {
+  try {
+    const iOS = null;
     const android = AndroidInitializationSettings('@drawable/clientflow');
     const settings = InitializationSettings(android: android, iOS: iOS);
 
-    await _localNotifications.initialize(
-      settings,
-      onSelectNotification: (payload) {
-        developer.log("Local notification selected: $payload");
-        if (payload != null) {
-          final data = jsonDecode(payload);
-          handleMessage(RemoteMessage(
-            notification: RemoteNotification(
-              title: data['title'],
-              body: data['body'],
-            ),
-            data: data,
-          ));
-        }
-      },
-    );
+   await _localNotifications.initialize(
+  settings,
+  onDidReceiveNotificationResponse: (NotificationResponse response) {
+    developer.log("Local notification selected: ${response.payload}");
+
+    if (response.payload != null) {
+      final data = jsonDecode(response.payload!);
+      handleMessage(RemoteMessage(
+        notification: RemoteNotification(
+          title: data['title'],
+          body: data['body'],
+        ),
+        data: data,
+      ));
+    }
+  },
+);
+
 
     final platform = _localNotifications.resolvePlatformSpecificImplementation<AndroidFlutterLocalNotificationsPlugin>();
     await platform?.createNotificationChannel(_androidChannel);
+  } catch (e) {
+    developer.log("Error initializing notifications: $e");
   }
+}
 
   Future<void> sendPushNotification(String salesmanId, String title, String body) async {
     // Get FCM token

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
-import 'package:clientflow/customer_Insights.dart';
-import 'package:clientflow/home_page.dart';
-import 'package:clientflow/order_details_page.dart';
+import 'package:ClientFlow/customer_insights.dart';
+import 'package:ClientFlow/home_page.dart';
+import 'package:ClientFlow/order_details_page.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';

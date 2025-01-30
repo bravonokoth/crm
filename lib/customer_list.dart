@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:clientflow/customer_insights.dart';
+import 'package:ClientFlow/customer_insights.dart';
 import 'customer.dart';
 import 'dart:developer' as developer;
 import 'dart:convert';

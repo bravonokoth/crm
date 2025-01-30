@@ -180,28 +180,3 @@ The project is structured as follows:
 
 Feel free to fork the repository, make changes, and submit pull requests. Contributions are welcome!
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-## Author
-
-**Pirate-Emperor**
-
-[![Twitter](https://skillicons.dev/icons?i=twitter)](https://twitter.com/PirateKingRahul)
-[![Discord](https://skillicons.dev/icons?i=discord)](https://discord.com/users/1200728704981143634)
-[![LinkedIn](https://skillicons.dev/icons?i=linkedin)](https://www.linkedin.com/in/piratekingrahul)
-
-[![Reddit](https://img.shields.io/badge/Reddit-FF5700?style=for-the-badge&logo=reddit&logoColor=white)](https://www.reddit.com/u/PirateKingRahul)
-[![Medium](https://img.shields.io/badge/Medium-42404E?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@piratekingrahul)
-
-- GitHub: [Pirate-Emperor](https://github.com/Pirate-Emperor)
-- Reddit: [PirateKingRahul](https://www.reddit.com/u/PirateKingRahul/)
-- Twitter: [PirateKingRahul](https://twitter.com/PirateKingRahul)
-- Discord: [PirateKingRahul](https://discord.com/users/1200728704981143634)
-- LinkedIn: [PirateKingRahul](https://www.linkedin.com/in/piratekingrahul)
-- Skype: [Join Skype](https://join.skype.com/invite/yfjOJG3wv9Ki)
-- Medium: [PirateKingRahul](https://medium.com/@piratekingrahul)
-
----
-

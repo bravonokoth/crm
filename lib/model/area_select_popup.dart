@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:clientflow/event_logger.dart';
-import 'package:clientflow/utility_function.dart';
+import 'package:ClientFlow/event_logger.dart';
+import 'package:ClientFlow/utility_function.dart';
 import 'dart:developer' as developer;
 import 'package:http/http.dart' as http;
 import 'dart:convert';

@@ -1,13 +1,13 @@
 import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
-import 'package:clientflow/Components/navigation_bar.dart';
-import 'package:clientflow/edit_item_page.dart';
-import 'package:clientflow/event_logger.dart';
-import 'package:clientflow/item_screen.dart';
-import 'package:clientflow/model/cart_model.dart';
-import 'package:clientflow/order_confirmation_page.dart';
+import 'package:ClientFlow/components/navigation_bar.dart';
+import 'package:ClientFlow/edit_item_page.dart';
+import 'package:ClientFlow/event_logger.dart';
+import 'package:ClientFlow/item_screen.dart';
+import 'package:ClientFlow/model/cart_model.dart';
+import 'package:ClientFlow/order_confirmation_page.dart';
 import 'package:flutter/material.dart';
-import 'package:clientflow/utility_function.dart';
+import 'package:ClientFlow/utility_function.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:sqflite/sqflite.dart';
@@ -378,7 +378,7 @@ class _CartPage extends State<CartPage> {
             'https://haluansama.com/crm-sales/${product['photo2'] ?? 'null'}',
             'https://haluansama.com/crm-sales/${product['photo3'] ?? 'null'}',
           ];
-          Blob description = stringToBlob(product['description']);
+         String description = product['description'] ?? '';
           String priceByUom = product['price_by_uom'] ?? '';
 
           // Navigate to ItemScreen and pass the necessary parameters

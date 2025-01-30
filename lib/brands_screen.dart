@@ -1,6 +1,7 @@
+import 'package:ClientFlow/data/brand_data.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:clientflow/data/brand_data.dart';
+
 
 class BrandScreen extends StatefulWidget {
   const BrandScreen({super.key});

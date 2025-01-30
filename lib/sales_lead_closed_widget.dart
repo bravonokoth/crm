@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:clientflow/customer_Insights.dart';
-import 'package:clientflow/home_page.dart';
+import 'package:ClientFlow/customer_insights.dart';
+import 'package:ClientFlow/home_page.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:intl/intl.dart';
 

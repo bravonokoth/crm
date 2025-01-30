@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:clientflow/data/brand_data.dart';
-import 'package:clientflow/data/category_data.dart';
-import 'package:clientflow/data/sub_category_data.dart';
+import 'package:ClientFlow/data/brand_data.dart';
+import 'package:ClientFlow/data/category_data.dart';
+import 'package:ClientFlow/data/sub_category_data.dart';
 
 class FilterCategoriesScreen extends StatefulWidget {
   final List<int> initialSelectedSubCategoryIds;
   final List<int> initialSelectedBrandIds;
 
   const FilterCategoriesScreen({
-    Key? key,
+    super.key,
     required this.initialSelectedSubCategoryIds,
     required this.initialSelectedBrandIds,
-  }) : super(key: key);
+  });
 
   @override
   _FilterCategoriesScreenState createState() => _FilterCategoriesScreenState();
@@ -91,7 +91,7 @@ class _FilterCategoriesScreenState extends State<FilterCategoriesScreen> {
             ),
             children: [
               // Wrapping ListView.builder with Container to control height
-              Container(
+              SizedBox(
                 height: 300, // Set a fixed height to prevent infinite space
                 child: ListView.builder(
                   itemCount: _brands.length,
@@ -138,7 +138,7 @@ class _FilterCategoriesScreenState extends State<FilterCategoriesScreen> {
                 ),
                 children: [
                   // Wrapping ListView.builder with Container to control height
-                  Container(
+                  SizedBox(
                     height: 200, // Set a fixed height for subcategories
                     child: ListView.builder(
                       shrinkWrap: true,

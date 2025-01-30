@@ -1,10 +1,10 @@
+import 'package:ClientFlow/item_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:clientflow/item_screen.dart';
-import 'package:clientflow/order_details_page.dart';
+import 'package:ClientFlow/order_details_page.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
-import 'package:mysql1/mysql1.dart';
+
 
 class ProductCard extends StatelessWidget {
   final Map<String, dynamic> product;
@@ -29,12 +29,12 @@ class ProductCard extends StatelessWidget {
         if (jsonData['status'] == 'success') {
           // Convert the description from String to Blob
           String descriptionString = jsonData['description'];
-          Blob descriptionBlob =
-              Blob.fromString(descriptionString); // Convert String to Blob
+          String description = descriptionString;
+             
 
           return {
             'description':
-                descriptionBlob, // Now returning Blob instead of String
+                description, // Now returning Blob instead of String
             'uom': jsonData['uom'],
             'price_by_uom': jsonData['price_by_uom'],
           };

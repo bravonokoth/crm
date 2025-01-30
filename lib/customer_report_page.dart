@@ -355,7 +355,7 @@ class _CustomerReportState extends State<CustomerReport> {
                   ),
                 ),
                 style: ButtonStyle(
-                  backgroundColor: MaterialStateProperty.resolveWith<Color>(
+                  backgroundColor: WidgetStateProperty.resolveWith<Color>(
                     (Set<WidgetState> states) {
                       if (isCustomRangeSelected) {
                         return const Color(0xFF047CBD);
@@ -364,7 +364,7 @@ class _CustomerReportState extends State<CustomerReport> {
                     },
                   ),
                   foregroundColor: WidgetStateProperty.resolveWith<Color>(
-                    (Set<MaterialState> states) {
+                    (Set<WidgetState> states) {
                       if (isCustomRangeSelected) {
                         return Colors.white;
                       }
@@ -432,7 +432,7 @@ class _CustomerReportState extends State<CustomerReport> {
             borderRadius: BorderRadius.circular(50),
           ),
         ),
-        padding: MaterialStateProperty.all<EdgeInsetsGeometry>(
+        padding: WidgetStateProperty.all<EdgeInsetsGeometry>(
           const EdgeInsets.symmetric(horizontal: 8),
         ),
       ),

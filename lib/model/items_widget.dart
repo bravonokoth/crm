@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:mysql1/mysql1.dart';
-import 'package:clientflow/item_screen.dart';
-import 'package:clientflow/utility_function.dart';
+import 'package:ClientFlow/item_screen.dart';
+import 'package:ClientFlow/utility_function.dart';
 import 'dart:convert';
 import 'dart:developer' as developer;
 import 'package:shimmer/shimmer.dart';
@@ -91,17 +91,22 @@ class _ItemsWidgetState extends State<ItemsWidget> {
       };
 
       // Add optional filter parameters only if they are not null and not empty
-      if (widget.sortOrder.isNotEmpty)
+      if (widget.sortOrder.isNotEmpty) {
         queryParams['sortOrder'] = widget.sortOrder;
+      }
       if (widget.isFeatured) queryParams['isFeatured'] = 'true';
-      if (widget.brandId != null)
+      if (widget.brandId != null) {
         queryParams['brandId'] = widget.brandId.toString();
-      if (widget.subCategoryId != null)
+      }
+      if (widget.subCategoryId != null) {
         queryParams['subCategoryId'] = widget.subCategoryId.toString();
-      if (widget.subCategoryIds != null && widget.subCategoryIds!.isNotEmpty)
+      }
+      if (widget.subCategoryIds != null && widget.subCategoryIds!.isNotEmpty) {
         queryParams['subCategoryIds'] = widget.subCategoryIds!.join(',');
-      if (widget.brandIds != null && widget.brandIds!.isNotEmpty)
+      }
+      if (widget.brandIds != null && widget.brandIds!.isNotEmpty) {
         queryParams['brandIds'] = widget.brandIds!.join(',');
+      }
 
       final uri = Uri.https('haluansama.com',
           '/crm-sales/api/product/get_products.php', queryParams);
@@ -234,7 +239,7 @@ class _ItemsWidgetState extends State<ItemsWidget> {
                     productId: productId,
                     itemAssetNames: [photoUrl1, photoUrl2, photoUrl3],
                     productName: productName,
-                    itemDescription: itemDescription,
+                    itemDescription: itemDescription.toString(),
                     priceByUom: product['price_by_uom'].toString(),
                   ),
                 ),
@@ -272,7 +277,7 @@ class _ItemsWidgetState extends State<ItemsWidget> {
                             productId: productId,
                             itemAssetNames: [photoUrl1, photoUrl2, photoUrl3],
                             productName: productName,
-                            itemDescription: itemDescription,
+                            itemDescription: itemDescription.toString(),
                             priceByUom: product['price_by_uom'].toString(),
                           ),
                         ),

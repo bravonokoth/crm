@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:dropdown_button2/dropdown_button2.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
-import 'package:clientflow/create_task_page.dart';
-import 'package:clientflow/customer_insights.dart';
-import 'package:clientflow/home_page.dart';
+import 'package:ClientFlow/create_task_page.dart';
+import 'package:ClientFlow/customer_insights.dart';
+import 'package:ClientFlow/home_page.dart';
 import 'dart:developer' as developer;
 import 'package:url_launcher/url_launcher.dart';
 

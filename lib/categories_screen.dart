@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:clientflow/data/category_data.dart';
-import 'package:clientflow/data/sub_category_data.dart';
+import 'package:ClientFlow/data/category_data.dart';
+import 'package:ClientFlow/data/sub_category_data.dart';
 
 class CategoryScreen extends StatefulWidget {
   const CategoryScreen({super.key});

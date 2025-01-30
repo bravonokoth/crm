@@ -3,10 +3,10 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:email_validator/email_validator.dart';
 import 'package:flutter/services.dart';
-import 'package:clientflow/customer_details_page.dart';
+import 'package:ClientFlow/customer_details_page.dart';
 import 'dart:developer' as developer;
 import 'package:http/http.dart' as http;
-import 'package:clientflow/home_page.dart';
+import 'package:ClientFlow/home_page.dart';
 
 class CreateLeadPage extends StatefulWidget {
   final Function(LeadItem) onCreateLead;

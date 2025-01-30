@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:fl_chart/fl_chart.dart';
 import 'package:intl/intl.dart';
 import 'dart:math' as math;
 import 'package:shared_preferences/shared_preferences.dart';
@@ -205,38 +204,36 @@ class _SalesReportState extends State<SalesReport> {
           Expanded(
             child: _salesDataMap[_selectedInterval] != null
                 ? _salesDataMap[_selectedInterval]!.isNotEmpty
-                    ? Padding(
-                        padding: const EdgeInsets.symmetric(
-                            vertical: 4.0, horizontal: 4.0),
-                        child: Align(
-                          alignment: Alignment.center,
-                          child: ConstrainedBox(
-                            constraints: BoxConstraints(
-                              maxWidth:
-                                  MediaQuery.of(context).size.width * 0.95,
-                            ),
-                            child: Container(
-                              padding: const EdgeInsets.symmetric(
-                                  vertical: 24, horizontal: 18),
-                              height: MediaQuery.of(context).size.height * 0.52,
-                              decoration: BoxDecoration(
-                                color: Colors.white,
-                                borderRadius: BorderRadius.circular(5),
-                                boxShadow: [
-                                  BoxShadow(
-                                    color: Colors.grey.withOpacity(0.5),
-                                    spreadRadius: 2,
-                                    blurRadius: 4,
-                                    offset: const Offset(0, 2),
-                                  ),
-                                ],
-                              ),
-                              child: LineChart(
-                                sampleData(_salesDataMap[_selectedInterval]!),
-                              ),
-                            ),
-                          ),
-                        ),
+                    ? ListView.builder(
+                        itemCount: _salesDataMap[_selectedInterval]!.length,
+                        itemBuilder: (context, index) {
+                          SalesData data = _salesDataMap[_selectedInterval]![index];
+                          String dateText = '';
+                          switch (_selectedInterval) {
+                            case '3D':
+                            case '5D':
+                              dateText = DateFormat('dd-MM-yyyy').format(data.date);
+                              break;
+                            case '1M':
+                            case '1Y':
+                              dateText = DateFormat('MMM yyyy').format(data.date);
+                              break;
+                            case '5Y':
+                              dateText = data.date.year.toString();
+                              break;
+                          }
+
+                          final int salesInt = data.totalSales.toInt();
+                          final String formattedSales = 'RM${salesInt.toString().replaceAllMapped(
+                            RegExp(r'(\d)(?=(\d{3})+(?!\d))'),
+                            (Match m) => '${m[1]},'
+                          )}';
+
+                          return ListTile(
+                            title: Text(dateText),
+                            trailing: Text(formattedSales),
+                          );
+                        },
                       )
                     : const Center(
                         child: Text('No data available'),
@@ -246,134 +243,6 @@ class _SalesReportState extends State<SalesReport> {
                   ),
           ),
         ],
-      ),
-    );
-  }
-
-  LineChartData sampleData(List<SalesData> salesData) {
-    List<FlSpot> spots = salesData
-        .asMap()
-        .entries
-        .map((entry) => FlSpot(entry.key.toDouble(), entry.value.totalSales))
-        .toList();
-
-    double maxYValue = salesData.map((e) => e.totalSales).reduce(math.max);
-    double topPadding = maxYValue <= 100 ? 40 : (maxYValue * 0.2);
-    double maxY = maxYValue + topPadding;
-
-    return LineChartData(
-      gridData: FlGridData(
-        show: true,
-        drawHorizontalLine: true,
-        horizontalInterval: maxY / 6,
-        getDrawingHorizontalLine: (value) => FlLine(
-          color: const Color(0xffe7e8ec),
-          strokeWidth: 1,
-        ),
-        drawVerticalLine: false,
-      ),
-      titlesData: FlTitlesData(
-        leftTitles: SideTitles(
-          showTitles: true,
-          getTitles: (value) {
-            if (value >= 1000) {
-              return '${(value / 1000).toStringAsFixed(1)}K';
-            } else {
-              return value.toInt().toString();
-            }
-          },
-          interval: maxY / 6,
-          reservedSize: 40,
-          margin: 8,
-        ),
-        bottomTitles: SideTitles(
-          showTitles: true,
-          getTitles: (value) {
-            if (salesData.isEmpty) return '';
-
-            int index = value.toInt();
-            if (_selectedInterval == '3D' || _selectedInterval == '5D') {
-              if (index >= 0 && index < salesData.length) {
-                return DateFormat('EEE').format(salesData[index].date);
-              }
-            } else if (_selectedInterval == '1M') {
-              if (index >= 0 && index < salesData.length) {
-                return DateFormat('MMM yy').format(salesData[index].date);
-              }
-            } else if (_selectedInterval == '1Y') {
-              int interval = (salesData.length / 4).round();
-              if (index % interval == 0 || index == salesData.length - 1) {
-                return DateFormat('MMM yy').format(salesData[index].date);
-              }
-            } else if (_selectedInterval == '5Y') {
-              if (index >= 0 && index < salesData.length) {
-                return salesData[index].date.year.toString();
-              }
-            }
-            return '';
-          },
-          reservedSize: 22,
-          margin: 8,
-        ),
-      ),
-      borderData: FlBorderData(
-        show: true,
-        border: const Border(
-          bottom: BorderSide(color: Colors.grey, width: 1),
-          left: BorderSide(color: Colors.grey, width: 1),
-          right: BorderSide.none,
-          top: BorderSide.none,
-        ),
-      ),
-      minX: 0,
-      maxX: salesData.length.toDouble() - 1,
-      minY: 0,
-      maxY: maxY,
-      lineBarsData: [
-        LineChartBarData(
-          spots: spots,
-          isCurved: false,
-          colors: [Colors.blue],
-          barWidth: 3,
-          isStrokeCapRound: true,
-          dotData: FlDotData(show: true),
-          belowBarData: BarAreaData(
-            show: true,
-            colors: [Colors.blue.withOpacity(0.3)],
-            cutOffY: 0,
-            applyCutOffY: true,
-          ),
-          aboveBarData: BarAreaData(show: false),
-        ),
-      ],
-      lineTouchData: LineTouchData(
-        touchTooltipData: LineTouchTooltipData(
-          tooltipBgColor: Colors.blueAccent,
-          fitInsideHorizontally: true,
-          fitInsideVertically: true,
-          getTooltipItems: (touchedSpots) => touchedSpots.map((spot) {
-            DateTime date = salesData[spot.spotIndex].date;
-            String formattedDate;
-            if (_selectedInterval == '3D' || _selectedInterval == '5D') {
-              formattedDate = DateFormat('dd-MM-yyyy').format(date);
-            } else if (_selectedInterval == '1M' || _selectedInterval == '1Y') {
-              formattedDate = DateFormat('MMM yyyy').format(date);
-            } else if (_selectedInterval == '5Y') {
-              formattedDate = date.year.toString();
-            } else {
-              formattedDate = DateFormat('yyyy-MM-dd').format(date);
-            }
-
-            String formattedSales =
-                'RM${spot.y.toInt().toString().replaceAllMapped(RegExp(r'(\d)(?=(\d{3})+(?!\d))'), (Match m) => '${m[1]},')}';
-
-            return LineTooltipItem(
-              'Date: $formattedDate\nSales: $formattedSales',
-              const TextStyle(color: Colors.white),
-            );
-          }).toList(),
-        ),
-        handleBuiltInTouches: true,
       ),
     );
   }

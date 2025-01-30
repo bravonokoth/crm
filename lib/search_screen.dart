@@ -1,6 +1,7 @@
+import 'package:ClientFlow/item_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:mysql1/mysql1.dart';
-import 'package:clientflow/item_screen.dart';
+
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 import 'dart:developer' as developer;
@@ -61,7 +62,7 @@ class _SearchScreenState extends State<SearchScreen> {
           final product = jsonData['data'];
 
           // Convert the description String to a Blob object
-          Blob descriptionBlob = stringToBlob(product['description']);
+         String description = product['description'] ?? '';
 
           // Navigate to ItemScreen with product details
           Navigator.push(
@@ -75,7 +76,7 @@ class _SearchScreenState extends State<SearchScreen> {
                   'https://haluansama.com/crm-sales/${product['photo2']}',
                   'https://haluansama.com/crm-sales/${product['photo3']}',
                 ],
-                itemDescription: descriptionBlob,  // Pass Blob instead of String
+                itemDescription: description,  // Pass Blob instead of String
                 priceByUom: product['price_by_uom'],
               ),
             ),

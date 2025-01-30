@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:clientflow/db_sqlite.dart';
-import 'package:clientflow/utility_function.dart';
+import 'package:ClientFlow/db_sqlite.dart';
+import 'package:ClientFlow/utility_function.dart';
 
 class CartModel extends ChangeNotifier {
   int _cartItemCount = 0;

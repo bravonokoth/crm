@@ -1,14 +1,14 @@
+import 'package:ClientFlow/components/navigation_bar.dart';
 import 'package:flutter/material.dart';
-import 'package:clientflow/chatbot_page.dart';
-import 'package:clientflow/data_analytics_page.dart';
+import 'package:ClientFlow/data_analytics_page.dart';
 import 'package:workmanager/workmanager.dart';
 import 'about_us_page.dart';
 import 'account_setting_page.dart';
 import 'contact_us_page.dart';
-import 'package:clientflow/recent_order_page.dart';
+import 'package:ClientFlow/recent_order_page.dart';
 import 'terms_and_conditions_page.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'Components/navigation_bar.dart';
+
 
 class ProfilePage extends StatefulWidget {
   const ProfilePage({super.key});

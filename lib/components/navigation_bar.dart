@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:provider/provider.dart';
-import 'package:clientflow/model/cart_model.dart';
+import 'package:ClientFlow/model/cart_model.dart';
 
 class CustomNavigationBar extends StatefulWidget {
   const CustomNavigationBar({super.key});

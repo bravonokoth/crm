@@ -3,12 +3,12 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
-import 'package:clientflow/Components/navigation_bar.dart';
-import 'package:clientflow/cart_item.dart';
-import 'package:clientflow/customer_list.dart';
-import 'package:clientflow/db_sqlite.dart';
-import 'package:clientflow/order_details_page.dart';
-import 'package:clientflow/utility_function.dart';
+import 'package:ClientFlow/components/navigation_bar.dart';
+import 'package:ClientFlow/cart_item.dart';
+import 'package:ClientFlow/customer_list.dart';
+import 'package:ClientFlow/db_sqlite.dart';
+import 'package:ClientFlow/order_details_page.dart';
+import 'package:ClientFlow/utility_function.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:date_picker_plus/date_picker_plus.dart';
@@ -17,7 +17,7 @@ import 'dart:developer' as developer;
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 import 'package:path_provider/path_provider.dart';
-import 'package:clientflow/model/cart_model.dart';
+import 'package:ClientFlow/model/cart_model.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});

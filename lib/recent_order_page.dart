@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mysql1/mysql1.dart';
-import 'package:clientflow/item_screen.dart';
+import 'package:ClientFlow/item_screen.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'dart:developer' as developer;
 import 'package:shimmer/shimmer.dart';
@@ -463,8 +463,8 @@ class _RecentOrderState extends State<RecentOrder> {
           // Convert the String description into Blob
           String descriptionString =
               product['description']; // Assuming it's a String from the API
-          Blob descriptionBlob =
-              Blob.fromString(descriptionString); // Convert to Blob
+          String description = descriptionString;
+              
 
           String priceByUom = product['price_by_uom'];
 
@@ -476,7 +476,7 @@ class _RecentOrderState extends State<RecentOrder> {
                 productId: productId,
                 productName: productName,
                 itemAssetNames: itemAssetNames,
-                itemDescription: descriptionBlob, // Pass as Blob
+                itemDescription: description, // Pass as Blob
                 priceByUom: priceByUom,
               ),
             ),

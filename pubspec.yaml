@@ -4,47 +4,50 @@ publish_to: 'none'
 version: 0.1.0
 
 environment:
-  sdk: '>=3.3.0 <4.0.0'
+  sdk: '>=3.0.0 <4.0.0'
 
 dependencies:
   flutter:
     sdk: flutter
   http: ^1.2.2
   provider: ^6.0.0
-  fl_chart: ^0.36.3
+ 
   sqflite: ^2.0.0+3
   path_provider: ^2.0.0
   mysql1: ^0.20.0
-  intl: ^0.17.0
+  intl: ^0.20.2
   shared_preferences: any
   google_nav_bar: any
   crypto: any
-  flutter_widget_from_html: ^0.14.11
+  flutter_widget_from_html: ^0.15.3
   google_fonts: ^6.2.0
-  timezone: 0.8.0
+  timezone: ^0.10.0
   dropdown_button2: ^2.3.9
-  email_validator: ^2.1.17
+  email_validator: ^3.0.0
   path: any
   transparent_image: ^2.0.1
   url_launcher: ^6.0.3
-  flutter_launcher_icons: ^0.13.1
+  flutter_launcher_icons: ^0.14.3
   shimmer: ^3.0.0
   html: ^0.15.0
   flutter_dotenv: ^5.1.0
   firebase_core: ^3.4.0
   firebase_messaging: ^15.1.0
-  flutter_local_notifications: ^9.8.0+1
+  flutter_local_notifications: ^18.0.1
   workmanager: ^0.5.1
   flutter_svg: ^2.0.10+1
-  permission_handler: ^10.2.0
+  permission_handler: ^11.3.1
   connectivity_plus: ^6.0.5
   connectivity_plus_platform_interface: ^2.0.1
   
+
+
+  date_picker_plus: any
+  cached_network_image: any
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^3.0.0
-  date_picker_plus: ^4.1.0
+  flutter_lints: ^5.0.0
 
 flutter:
   uses-material-design: true

@@ -2,13 +2,13 @@
 
 import 'package:flutter/material.dart';
 import 'package:mysql1/mysql1.dart';
-import 'package:clientflow/Components/navigation_bar.dart';
-import 'package:clientflow/filter_categories_screen.dart';
-import 'package:clientflow/model/area_select_popup.dart';
-import 'package:clientflow/search_screen.dart';
+import 'package:ClientFlow/components/navigation_bar.dart';
+import 'package:ClientFlow/filter_categories_screen.dart';
+import 'package:ClientFlow/model/area_select_popup.dart';
+import 'package:ClientFlow/search_screen.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:clientflow/model/sort_popup.dart';
+import 'package:ClientFlow/model/sort_popup.dart';
 import 'model/items_widget.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';

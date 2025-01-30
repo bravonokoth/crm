@@ -1,8 +1,8 @@
 import "package:flutter/material.dart";
 import 'package:flutter_widget_from_html/flutter_widget_from_html.dart';
 import 'package:mysql1/mysql1.dart';
-import 'package:clientflow/db_sqlite.dart';
-import 'package:clientflow/item_variations_screen.dart';
+import 'package:ClientFlow/db_sqlite.dart';
+import 'package:ClientFlow/item_variations_screen.dart';
 import "package:google_fonts/google_fonts.dart";
 import 'dart:convert';
 import 'package:cached_network_image/cached_network_image.dart';
@@ -13,7 +13,7 @@ class ItemScreen extends StatefulWidget {
   final int productId;
   final String productName;
   final List<String> itemAssetNames;
-  final Blob itemDescription;
+  final String itemDescription;
   final String priceByUom;
 
   const ItemScreen({
