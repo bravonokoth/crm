@@ -1,4 +1,4 @@
-# The proguard configuration file for the following section is /home/bravon/Desktop/clientflow/build/app/intermediates/default_proguard_files/global/proguard-android-optimize.txt-8.1.0
+# The proguard configuration file for the following section is /home/bravon/Desktop/crm/build/app/intermediates/default_proguard_files/global/proguard-android-optimize.txt-8.1.0
 # This is a configuration file for ProGuard.
 # http://proguard.sourceforge.net/index.html#manual/usage.html
 #
@@ -117,7 +117,7 @@
 # These classes are duplicated between android.jar and core-lambda-stubs.jar.
 -dontnote java.lang.invoke.**
 
-# End of content from /home/bravon/Desktop/clientflow/build/app/intermediates/default_proguard_files/global/proguard-android-optimize.txt-8.1.0
+# End of content from /home/bravon/Desktop/crm/build/app/intermediates/default_proguard_files/global/proguard-android-optimize.txt-8.1.0
 # The proguard configuration file for the following section is /home/bravon/development/flutter/packages/flutter_tools/gradle/flutter_proguard_rules.pro
 # Build the ephemeral app in a module project.
 # Prevents: Warning: library class <plugin-package> depends on program class io.flutter.plugin.**
@@ -135,7 +135,7 @@
 -keep,allowshrinking,allowobfuscation class <1>
 
 # End of content from /home/bravon/development/flutter/packages/flutter_tools/gradle/flutter_proguard_rules.pro
-# The proguard configuration file for the following section is /home/bravon/Desktop/clientflow/build/app/intermediates/default_proguard_files/global/proguard-android.txt-8.1.0
+# The proguard configuration file for the following section is /home/bravon/Desktop/crm/build/app/intermediates/default_proguard_files/global/proguard-android.txt-8.1.0
 # This is a configuration file for ProGuard.
 # http://proguard.sourceforge.net/index.html#manual/usage.html
 #
@@ -253,9 +253,8 @@
 # These classes are duplicated between android.jar and core-lambda-stubs.jar.
 -dontnote java.lang.invoke.**
 
-# End of content from /home/bravon/Desktop/clientflow/build/app/intermediates/default_proguard_files/global/proguard-android.txt-8.1.0
-# The proguard configuration file for the following section is /home/bravon/Desktop/clientflow/build/app/intermediates/aapt_proguard_file/release/aapt_rules.txt
--keep class android.app.Application { <init>(); }
+# End of content from /home/bravon/Desktop/crm/build/app/intermediates/default_proguard_files/global/proguard-android.txt-8.1.0
+# The proguard configuration file for the following section is /home/bravon/Desktop/crm/build/app/intermediates/aapt_proguard_file/release/aapt_rules.txt
 -keep class androidx.core.app.CoreComponentFactory { <init>(); }
 -keep class androidx.profileinstaller.ProfileInstallReceiver { <init>(); }
 -keep class androidx.room.MultiInstanceInvalidationService { <init>(); }
@@ -271,7 +270,7 @@
 -keep class androidx.work.impl.diagnostics.DiagnosticsReceiver { <init>(); }
 -keep class androidx.work.impl.foreground.SystemForegroundService { <init>(); }
 -keep class androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver { <init>(); }
--keep class com.example.sales_navigator.MainActivity { <init>(); }
+-keep class com.example.crm.MainActivity { <init>(); }
 -keep class com.google.android.datatransport.runtime.backends.TransportBackendDiscovery { <init>(); }
 -keep class com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver { <init>(); }
 -keep class com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService { <init>(); }
@@ -341,7 +340,7 @@
 -keep class androidx.recyclerview.widget.RecyclerView { <init>(android.content.Context, android.util.AttributeSet); }
 
 
-# End of content from /home/bravon/Desktop/clientflow/build/app/intermediates/aapt_proguard_file/release/aapt_rules.txt
+# End of content from /home/bravon/Desktop/crm/build/app/intermediates/aapt_proguard_file/release/aapt_rules.txt
 # The proguard configuration file for the following section is /home/bravon/.gradle/caches/transforms-3/4df8a7dc696586f932dae5a609bfa542/transformed/jetified-play-services-measurement-api-22.1.2/proguard.txt
 # Can be removed once we pull in a dependency on firebase-common that includes
 # https://github.com/firebase/firebase-android-sdk/pull/1472/commits/856f1ca1151cdd88679bbc778892f23dfa34fc06#diff-a2ed34b5a38b4c6c686b09e54865eb48

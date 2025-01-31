@@ -1,4 +1,4 @@
-package com.example.sales_navigator
+package com.example.crm
 
 import io.flutter.embedding.android.FlutterActivity
 

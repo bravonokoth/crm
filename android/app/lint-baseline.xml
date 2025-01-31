@@ -1,0 +1,5 @@
+<lint>
+    <issue id="MissingClass">
+        <ignore path="AndroidManifest.xml" />
+    </issue>
+</lint>

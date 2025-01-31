@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.dexterous.flutterlocalnotifications.IsolatePreferencesTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-01-31T13:36:41" hostname="bravon" time="10.098">
+  <properties/>
+  <testcase name="saveAndGet_ShouldReturnCorrectValues" classname="com.dexterous.flutterlocalnotifications.IsolatePreferencesTest" time="10.098"/>
+  <system-out><![CDATA[WARNING: No manifest file found at ./AndroidManifest.xml.
+Falling back to the Android OS resources only.
+To remove this warning, annotate your test class with @Config(manifest=Config.NONE).
+]]></system-out>
+  <system-err><![CDATA[No such manifest file: ./AndroidManifest.xml
+]]></system-err>
+</testsuite>

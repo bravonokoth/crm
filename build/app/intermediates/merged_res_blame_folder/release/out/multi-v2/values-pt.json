@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.sales_navigator.app-mergeReleaseResources-58:/values-pt/values-pt.xml",
+            "outputFile": "com.example.crm.app-mergeReleaseResources-58:/values-pt/values-pt.xml",
             "map": [
                 {
                     "source": "/home/bravon/.gradle/caches/transforms-3/7692241fa05c90634cc6fa3fa50f4202/transformed/core-1.13.1/res/values-pt/values-pt.xml",

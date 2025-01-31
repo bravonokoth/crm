@@ -27,7 +27,16 @@ final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin = FlutterL
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await dotenv.load(fileName: '.env'); // Load .env file only once
-  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
+  
+  // Initialize Firebase
+  try {
+    await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
+    developer.log('Firebase Initialized Successfully');  // Custom log for successful initialization
+  } catch (e) {
+    developer.log('Firebase Initialization Failed: $e');  // Log the error if initialization fails
+    return;  // Return if initialization fails to prevent further app launch
+  }
+
   await FirebaseApi().initNotifications();
 
   if (!Platform.isIOS) {

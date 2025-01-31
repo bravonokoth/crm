@@ -4,7 +4,7 @@
     "type": "COMPATIBLE_SCREEN_MANIFEST",
     "kind": "Directory"
   },
-  "applicationId": "com.example.sales_navigator",
+  "applicationId": "com.example.crm",
   "variantName": "debug",
   "elements": []
 }

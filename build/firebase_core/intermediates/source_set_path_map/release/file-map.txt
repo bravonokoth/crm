@@ -22,8 +22,8 @@ io.flutter.plugins.firebase.core.firebase_core-jetified-startup-runtime-1.1.1-20
 io.flutter.plugins.firebase.core.firebase_core-core-runtime-2.2.0-21 /home/bravon/.gradle/caches/transforms-3/fc4579e1a7c1d61eafaea0752944bb38/transformed/core-runtime-2.2.0/res
 io.flutter.plugins.firebase.core.firebase_core-main-22 /home/bravon/.pub-cache/hosted/pub.dev/firebase_core-3.10.1/android/src/main/res
 io.flutter.plugins.firebase.core.firebase_core-release-23 /home/bravon/.pub-cache/hosted/pub.dev/firebase_core-3.10.1/android/src/release/res
-io.flutter.plugins.firebase.core.firebase_core-pngs-24 /home/bravon/Desktop/clientflow/build/firebase_core/generated/res/pngs/release
-io.flutter.plugins.firebase.core.firebase_core-resValues-25 /home/bravon/Desktop/clientflow/build/firebase_core/generated/res/resValues/release
-io.flutter.plugins.firebase.core.firebase_core-mergeReleaseResources-26 /home/bravon/Desktop/clientflow/build/firebase_core/intermediates/incremental/release/mergeReleaseResources/merged.dir
-io.flutter.plugins.firebase.core.firebase_core-mergeReleaseResources-27 /home/bravon/Desktop/clientflow/build/firebase_core/intermediates/incremental/release/mergeReleaseResources/stripped.dir
-io.flutter.plugins.firebase.core.firebase_core-merged_res-28 /home/bravon/Desktop/clientflow/build/firebase_core/intermediates/merged_res/release
+io.flutter.plugins.firebase.core.firebase_core-pngs-24 /home/bravon/Desktop/crm/build/firebase_core/generated/res/pngs/release
+io.flutter.plugins.firebase.core.firebase_core-resValues-25 /home/bravon/Desktop/crm/build/firebase_core/generated/res/resValues/release
+io.flutter.plugins.firebase.core.firebase_core-mergeReleaseResources-26 /home/bravon/Desktop/crm/build/firebase_core/intermediates/incremental/release/mergeReleaseResources/merged.dir
+io.flutter.plugins.firebase.core.firebase_core-mergeReleaseResources-27 /home/bravon/Desktop/crm/build/firebase_core/intermediates/incremental/release/mergeReleaseResources/stripped.dir
+io.flutter.plugins.firebase.core.firebase_core-merged_res-28 /home/bravon/Desktop/crm/build/firebase_core/intermediates/merged_res/release

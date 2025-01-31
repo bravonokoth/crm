@@ -1,4 +1,4 @@
-com.example.sales_navigator
+com.example.crm
 anim abc_fade_in
 anim abc_fade_out
 anim abc_grow_fade_in_from_bottom
@@ -1126,6 +1126,7 @@ layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
 mipmap ic_launcher
+mipmap ic_launcher_round
 mipmap sales_navigator
 raw firebase_common_keep
 string abc_action_bar_home_description

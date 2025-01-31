@@ -441,16 +441,16 @@
     <string name="fallback_menu_item_open_in_browser">Open in browser</string>
     <string name="fallback_menu_item_share_link">Share link</string>
     <string name="fcm_fallback_notification_channel_label">Miscellaneous</string>
-    <string name="gcm_defaultSenderId" translatable="false">871144482240</string>
-    <string name="google_api_key" translatable="false">AIzaSyCScCknaXQpG_apftYmhGtODr_a11YgtoY</string>
-    <string name="google_app_id" translatable="false">1:871144482240:android:2dbbf577e0d40f0676d425</string>
-    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCScCknaXQpG_apftYmhGtODr_a11YgtoY</string>
-    <string name="google_storage_bucket" translatable="false">sales-navigator-cdeb4.appspot.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">666920268407</string>
+    <string name="google_api_key" translatable="false">AIzaSyD58_6RY1ohGfwa0Ub1IYaNag48KgML4fg</string>
+    <string name="google_app_id" translatable="false">1:666920268407:android:6bb1cc6883ecc90d0ecc72</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyD58_6RY1ohGfwa0Ub1IYaNag48KgML4fg</string>
+    <string name="google_storage_bucket" translatable="false">energycrm-2ac24.firebasestorage.app</string>
     <string name="not_set">Not set</string>
     <string name="preference_copied">
         \"<ns1:g example="Version 1.1" id="summary">%1$s</ns1:g>\" copied to clipboard.
     </string>
-    <string name="project_id" translatable="false">sales-navigator-cdeb4</string>
+    <string name="project_id" translatable="false">energycrm-2ac24</string>
     <string name="search_menu_title">Search</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="summary_collapsed_preference_list"><ns1:g id="current_items">%1$s</ns1:g>, <ns1:g id="added_items">%2$s</ns1:g></string>

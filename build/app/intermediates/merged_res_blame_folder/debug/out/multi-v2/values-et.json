@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.sales_navigator.app-mergeDebugResources-58:/values-et/values-et.xml",
+            "outputFile": "com.example.crm.app-mergeDebugResources-58:/values-et/values-et.xml",
             "map": [
                 {
                     "source": "/home/bravon/.gradle/caches/transforms-3/4b5f83f34584db2d6b90c8f8bfb26fed/transformed/jetified-play-services-basement-18.4.0/res/values-et/values.xml",

@@ -154,7 +154,7 @@ Future<void> initLocalNotifications() async {
       Uri.parse('https://fcm.googleapis.com/fcm/send'),
       headers: <String, String>{
         'Content-Type': 'application/json',
-        'Authorization': 'key=AIzaSyCScCknaXQpG_apftYmhGtODr_a11YgtoY', // Firebase server key
+        'Authorization': 'key=', // Firebase server key
       },
       body: jsonEncode(
         <String, dynamic>{

@@ -24,8 +24,8 @@ if (flutterVersionName == null) {
 }
 
 android {
-    namespace "com.example.sales_navigator"
-    compileSdk 34 // Updated to compileSdk 34
+    namespace "com.example.crm"
+    compileSdk 35 // Updated to compileSdk 34
     ndkVersion flutter.ndkVersion
 
     compileOptions {
@@ -42,7 +42,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.example.sales_navigator"
+        applicationId "com.example.crm"
         minSdkVersion 21
         targetSdkVersion 35 // Updated to match compileSdk for best practices
         versionCode flutterVersionCode.toInteger()
@@ -59,7 +59,15 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+lint {
+        baseline file("lint-baseline.xml")
+    }
+
 }
+
+
+
 
 flutter {
     source '../..'

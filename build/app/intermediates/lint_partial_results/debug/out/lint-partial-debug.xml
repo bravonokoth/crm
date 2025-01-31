@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.1.0" type="partial_results">
+    <map id="UnsafeIntentLaunch">
+            <map id="unprotected">
+                <entry
+                    name="com.example.crm.MainActivity"
+                    boolean="true"/>
+            </map>
+    </map>
+    <map id="NotificationPermission">
+        <entry
+            name="className"
+            string="dev/fluttercommunity/workmanager/DebugHelper"/>
+        <location id="class"
+            file="$HOME/Desktop/crm/build/workmanager/.transforms/ef1cc502981b536885378d7e3f0958e9/transformed/out/jars/classes.jar"/>
+    </map>
+    <map id="UnusedResources">
+        <location id="R.mipmap.ic_launcher"
+            file="${:app*debug*sourceProvider*0*resDir*0}/mipmap-hdpi/ic_launcher.png"/>
+        <location id="R.drawable.sales_navigator"
+            file="${:app*debug*sourceProvider*0*resDir*0}/drawable/sales_navigator.png"/>
+        <entry
+            name="model"
+            string="attr[android_colorBackground(R)],drawable[launch_background(U),sales_navigator(D)],mipmap[ic_launcher_round(U),sales_navigator(D),ic_launcher(D)],style[LaunchTheme(U),NormalTheme(U)];6^1,7^0;;;"/>
+        <location id="R.mipmap.sales_navigator"
+            file="${:app*debug*sourceProvider*0*resDir*0}/mipmap-hdpi/sales_navigator.png"/>
+    </map>
+
+</incidents>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.1.0" type="conditional_incidents">
+
+    <incident
+        id="ObsoleteSdkInt"
+        severity="warning"
+        message="Unnecessary; SDK_INT is always >= 21">
+        <fix-replace
+            description="Delete @RequiresApi"
+            replacement="">
+            <range
+                file="${:connectivity_plus*debug*sourceProvider*0*javaDir*0}/dev/fluttercommunity/plus/connectivity/Connectivity.java"
+                startOffset="1562"
+                endOffset="1610"/>
+        </fix-replace>
+        <location
+            file="${:connectivity_plus*debug*sourceProvider*0*javaDir*0}/dev/fluttercommunity/plus/connectivity/Connectivity.java"
+            line="42"
+            column="3"
+            startOffset="1562"
+            endLine="42"
+            endColumn="51"
+            endOffset="1610"/>
+        <map>
+            <condition minGE="fffffffffff00000"/>
+        </map>
+    </incident>
+
+    <incident
+        id="ObsoleteSdkInt"
+        severity="warning"
+        message="Unnecessary; SDK_INT is always >= 21">
+        <fix-replace
+            description="Delete @RequiresApi"
+            replacement="">
+            <range
+                file="${:connectivity_plus*debug*sourceProvider*0*javaDir*0}/dev/fluttercommunity/plus/connectivity/Connectivity.java"
+                startOffset="1828"
+                endOffset="1876"/>
+        </fix-replace>
+        <location
+            file="${:connectivity_plus*debug*sourceProvider*0*javaDir*0}/dev/fluttercommunity/plus/connectivity/Connectivity.java"
+            line="49"
+            column="3"
+            startOffset="1828"
+            endLine="49"
+            endColumn="51"
+            endOffset="1876"/>
+        <map>
+            <condition minGE="fffffffffff00000"/>
+        </map>
+    </incident>
+
+</incidents>

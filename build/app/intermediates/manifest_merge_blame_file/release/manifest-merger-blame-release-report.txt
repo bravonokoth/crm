@@ -1,6 +1,6 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-3    package="com.example.sales_navigator"
+3    package="com.example.crm"
 4    android:versionCode="1"
 5    android:versionName="0.1.0" >
 6
@@ -15,702 +15,709 @@
 15         In particular, this is used by the Flutter engine in io.flutter.plugin.text.ProcessTextPlugin.
 16    -->
 17    <queries>
-17-->/home/bravon/Desktop/clientflow/android/app/src/main/AndroidManifest.xml:41:5-46:15
+17-->/home/bravon/Desktop/crm/android/app/src/main/AndroidManifest.xml:43:5-48:15
 18        <intent>
-18-->/home/bravon/Desktop/clientflow/android/app/src/main/AndroidManifest.xml:42:9-45:18
+18-->/home/bravon/Desktop/crm/android/app/src/main/AndroidManifest.xml:44:9-47:18
 19            <action android:name="android.intent.action.PROCESS_TEXT" />
-19-->/home/bravon/Desktop/clientflow/android/app/src/main/AndroidManifest.xml:43:13-72
-19-->/home/bravon/Desktop/clientflow/android/app/src/main/AndroidManifest.xml:43:21-70
+19-->/home/bravon/Desktop/crm/android/app/src/main/AndroidManifest.xml:45:13-72
+19-->/home/bravon/Desktop/crm/android/app/src/main/AndroidManifest.xml:45:21-70
 20
 21            <data android:mimeType="text/plain" />
-21-->/home/bravon/Desktop/clientflow/android/app/src/main/AndroidManifest.xml:44:13-50
-21-->/home/bravon/Desktop/clientflow/android/app/src/main/AndroidManifest.xml:44:19-48
+21-->/home/bravon/Desktop/crm/android/app/src/main/AndroidManifest.xml:46:13-50
+21-->/home/bravon/Desktop/crm/android/app/src/main/AndroidManifest.xml:46:19-48
 22        </intent>
 23    </queries>
 24
 25    <uses-permission android:name="android.permission.INTERNET" />
-25-->/home/bravon/Desktop/clientflow/android/app/src/main/AndroidManifest.xml:47:5-66
-25-->/home/bravon/Desktop/clientflow/android/app/src/main/AndroidManifest.xml:47:22-64
+25-->/home/bravon/Desktop/crm/android/app/src/main/AndroidManifest.xml:49:5-66
+25-->/home/bravon/Desktop/crm/android/app/src/main/AndroidManifest.xml:49:22-64
 26    <uses-permission android:name="android.permission.WAKE_LOCK" />
-26-->/home/bravon/Desktop/clientflow/android/app/src/main/AndroidManifest.xml:48:5-68
-26-->/home/bravon/Desktop/clientflow/android/app/src/main/AndroidManifest.xml:48:22-65
+26-->/home/bravon/Desktop/crm/android/app/src/main/AndroidManifest.xml:50:5-68
+26-->/home/bravon/Desktop/crm/android/app/src/main/AndroidManifest.xml:50:22-65
 27    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-27-->/home/bravon/Desktop/clientflow/android/app/src/main/AndroidManifest.xml:49:5-80
-27-->/home/bravon/Desktop/clientflow/android/app/src/main/AndroidManifest.xml:49:22-78
+27-->/home/bravon/Desktop/crm/android/app/src/main/AndroidManifest.xml:51:5-80
+27-->/home/bravon/Desktop/crm/android/app/src/main/AndroidManifest.xml:51:22-78
 28    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-28-->/home/bravon/Desktop/clientflow/android/app/src/main/AndroidManifest.xml:50:5-79
-28-->/home/bravon/Desktop/clientflow/android/app/src/main/AndroidManifest.xml:50:22-76
+28-->/home/bravon/Desktop/crm/android/app/src/main/AndroidManifest.xml:52:5-79
+28-->/home/bravon/Desktop/crm/android/app/src/main/AndroidManifest.xml:52:22-76
 29    <uses-permission android:name="android.permission.VIBRATE" />
-29-->/home/bravon/Desktop/clientflow/android/app/src/main/AndroidManifest.xml:51:5-66
-29-->/home/bravon/Desktop/clientflow/android/app/src/main/AndroidManifest.xml:51:22-63
-30    <uses-permission android:name="android.permission.CALL_PHONE" />
-30-->/home/bravon/Desktop/clientflow/android/app/src/main/AndroidManifest.xml:52:5-69
-30-->/home/bravon/Desktop/clientflow/android/app/src/main/AndroidManifest.xml:52:22-66
-31    <!-- Permissions options for the `notification` group -->
-32    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" /> <!-- Required by older versions of Google Play services to create IID tokens -->
-32-->[:firebase_messaging] /home/bravon/Desktop/clientflow/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:11:5-77
-32-->[:firebase_messaging] /home/bravon/Desktop/clientflow/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:11:22-74
-33    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
-33-->[com.google.firebase:firebase-messaging:24.1.0] /home/bravon/.gradle/caches/transforms-3/d062f2851a9fbd0f4e240cd304be41fb/transformed/jetified-firebase-messaging-24.1.0/AndroidManifest.xml:26:5-82
-33-->[com.google.firebase:firebase-messaging:24.1.0] /home/bravon/.gradle/caches/transforms-3/d062f2851a9fbd0f4e240cd304be41fb/transformed/jetified-firebase-messaging-24.1.0/AndroidManifest.xml:26:22-79
-34    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
-34-->[com.google.android.gms:play-services-measurement-api:22.1.2] /home/bravon/.gradle/caches/transforms-3/4df8a7dc696586f932dae5a609bfa542/transformed/jetified-play-services-measurement-api-22.1.2/AndroidManifest.xml:25:5-79
-34-->[com.google.android.gms:play-services-measurement-api:22.1.2] /home/bravon/.gradle/caches/transforms-3/4df8a7dc696586f932dae5a609bfa542/transformed/jetified-play-services-measurement-api-22.1.2/AndroidManifest.xml:25:22-76
-35    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION" />
-35-->[com.google.android.gms:play-services-measurement-api:22.1.2] /home/bravon/.gradle/caches/transforms-3/4df8a7dc696586f932dae5a609bfa542/transformed/jetified-play-services-measurement-api-22.1.2/AndroidManifest.xml:26:5-88
-35-->[com.google.android.gms:play-services-measurement-api:22.1.2] /home/bravon/.gradle/caches/transforms-3/4df8a7dc696586f932dae5a609bfa542/transformed/jetified-play-services-measurement-api-22.1.2/AndroidManifest.xml:26:22-85
-36    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID" />
-36-->[com.google.android.gms:play-services-measurement-api:22.1.2] /home/bravon/.gradle/caches/transforms-3/4df8a7dc696586f932dae5a609bfa542/transformed/jetified-play-services-measurement-api-22.1.2/AndroidManifest.xml:27:5-82
-36-->[com.google.android.gms:play-services-measurement-api:22.1.2] /home/bravon/.gradle/caches/transforms-3/4df8a7dc696586f932dae5a609bfa542/transformed/jetified-play-services-measurement-api-22.1.2/AndroidManifest.xml:27:22-79
-37    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-37-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:26:5-77
-37-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:26:22-74
-38    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
-38-->[com.google.android.gms:play-services-measurement:22.1.2] /home/bravon/.gradle/caches/transforms-3/9d311cc6fba11b2a8564cffbee5b0d0b/transformed/jetified-play-services-measurement-22.1.2/AndroidManifest.xml:26:5-110
-38-->[com.google.android.gms:play-services-measurement:22.1.2] /home/bravon/.gradle/caches/transforms-3/9d311cc6fba11b2a8564cffbee5b0d0b/transformed/jetified-play-services-measurement-22.1.2/AndroidManifest.xml:26:22-107
-39
-40    <permission
-40-->[androidx.core:core:1.13.1] /home/bravon/.gradle/caches/transforms-3/7692241fa05c90634cc6fa3fa50f4202/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
-41        android:name="com.example.sales_navigator.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-41-->[androidx.core:core:1.13.1] /home/bravon/.gradle/caches/transforms-3/7692241fa05c90634cc6fa3fa50f4202/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
-42        android:protectionLevel="signature" />
-42-->[androidx.core:core:1.13.1] /home/bravon/.gradle/caches/transforms-3/7692241fa05c90634cc6fa3fa50f4202/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
-43
-44    <uses-permission android:name="com.example.sales_navigator.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-44-->[androidx.core:core:1.13.1] /home/bravon/.gradle/caches/transforms-3/7692241fa05c90634cc6fa3fa50f4202/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
-44-->[androidx.core:core:1.13.1] /home/bravon/.gradle/caches/transforms-3/7692241fa05c90634cc6fa3fa50f4202/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
-45
-46    <application
-47        android:name="android.app.Application"
-47-->/home/bravon/Desktop/clientflow/android/app/src/main/AndroidManifest.xml:4:9-42
-48        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-48-->[androidx.core:core:1.13.1] /home/bravon/.gradle/caches/transforms-3/7692241fa05c90634cc6fa3fa50f4202/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
-49        android:extractNativeLibs="true"
-50        android:icon="@mipmap/ic_launcher"
-50-->/home/bravon/Desktop/clientflow/android/app/src/main/AndroidManifest.xml:5:9-43
-51        android:label="Sales Navigator" >
-51-->/home/bravon/Desktop/clientflow/android/app/src/main/AndroidManifest.xml:3:9-40
-52        <activity
-52-->/home/bravon/Desktop/clientflow/android/app/src/main/AndroidManifest.xml:6:9-26:20
-53            android:name="com.example.sales_navigator.MainActivity"
-53-->/home/bravon/Desktop/clientflow/android/app/src/main/AndroidManifest.xml:7:13-41
-54            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-54-->/home/bravon/Desktop/clientflow/android/app/src/main/AndroidManifest.xml:11:13-163
-55            android:exported="true"
-55-->/home/bravon/Desktop/clientflow/android/app/src/main/AndroidManifest.xml:8:13-36
-56            android:hardwareAccelerated="true"
-56-->/home/bravon/Desktop/clientflow/android/app/src/main/AndroidManifest.xml:12:13-47
-57            android:launchMode="singleTop"
-57-->/home/bravon/Desktop/clientflow/android/app/src/main/AndroidManifest.xml:9:13-43
-58            android:theme="@style/LaunchTheme"
-58-->/home/bravon/Desktop/clientflow/android/app/src/main/AndroidManifest.xml:10:13-47
-59            android:windowSoftInputMode="adjustResize" >
-59-->/home/bravon/Desktop/clientflow/android/app/src/main/AndroidManifest.xml:13:13-55
-60
-61            <!--
-62                 Specifies an Android theme to apply to this Activity as soon as
-63                 the Android process has started. This theme is visible to the user
-64                 while the Flutter UI initializes. After that, this theme continues
-65                 to determine the Window background behind the Flutter UI.
-66            -->
-67            <meta-data
-67-->/home/bravon/Desktop/clientflow/android/app/src/main/AndroidManifest.xml:18:13-21:17
-68                android:name="io.flutter.embedding.android.NormalTheme"
-68-->/home/bravon/Desktop/clientflow/android/app/src/main/AndroidManifest.xml:19:15-70
-69                android:resource="@style/NormalTheme" />
-69-->/home/bravon/Desktop/clientflow/android/app/src/main/AndroidManifest.xml:20:15-52
-70
-71            <intent-filter>
-71-->/home/bravon/Desktop/clientflow/android/app/src/main/AndroidManifest.xml:22:13-25:29
-72                <action android:name="android.intent.action.MAIN" />
-72-->/home/bravon/Desktop/clientflow/android/app/src/main/AndroidManifest.xml:23:17-68
-72-->/home/bravon/Desktop/clientflow/android/app/src/main/AndroidManifest.xml:23:25-66
-73
-74                <category android:name="android.intent.category.LAUNCHER" />
-74-->/home/bravon/Desktop/clientflow/android/app/src/main/AndroidManifest.xml:24:17-76
-74-->/home/bravon/Desktop/clientflow/android/app/src/main/AndroidManifest.xml:24:27-74
-75            </intent-filter>
-76        </activity>
+29-->/home/bravon/Desktop/crm/android/app/src/main/AndroidManifest.xml:53:5-66
+29-->/home/bravon/Desktop/crm/android/app/src/main/AndroidManifest.xml:53:22-63
+30    <!-- Note: android.permission.CALL_PHONE might require user consent or be dangerous based on your app's use-case. -->
+31    <uses-permission android:name="android.permission.CALL_PHONE" />
+31-->/home/bravon/Desktop/crm/android/app/src/main/AndroidManifest.xml:55:5-69
+31-->/home/bravon/Desktop/crm/android/app/src/main/AndroidManifest.xml:55:22-66
+32
+33    <uses-feature
+33-->/home/bravon/Desktop/crm/android/app/src/main/AndroidManifest.xml:56:5-87
+34        android:name="android.hardware.telephony"
+34-->/home/bravon/Desktop/crm/android/app/src/main/AndroidManifest.xml:56:19-60
+35        android:required="false" />
+35-->/home/bravon/Desktop/crm/android/app/src/main/AndroidManifest.xml:56:61-85
+36    <!-- Permissions options for the `notification` group -->
+37    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+37-->[:firebase_messaging] /home/bravon/Desktop/crm/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:11:5-77
+37-->[:firebase_messaging] /home/bravon/Desktop/crm/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:11:22-74
+38    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+38-->[com.google.firebase:firebase-messaging:24.1.0] /home/bravon/.gradle/caches/transforms-3/d062f2851a9fbd0f4e240cd304be41fb/transformed/jetified-firebase-messaging-24.1.0/AndroidManifest.xml:26:5-82
+38-->[com.google.firebase:firebase-messaging:24.1.0] /home/bravon/.gradle/caches/transforms-3/d062f2851a9fbd0f4e240cd304be41fb/transformed/jetified-firebase-messaging-24.1.0/AndroidManifest.xml:26:22-79
+39    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+39-->[com.google.android.gms:play-services-measurement-api:22.1.2] /home/bravon/.gradle/caches/transforms-3/4df8a7dc696586f932dae5a609bfa542/transformed/jetified-play-services-measurement-api-22.1.2/AndroidManifest.xml:25:5-79
+39-->[com.google.android.gms:play-services-measurement-api:22.1.2] /home/bravon/.gradle/caches/transforms-3/4df8a7dc696586f932dae5a609bfa542/transformed/jetified-play-services-measurement-api-22.1.2/AndroidManifest.xml:25:22-76
+40    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION" />
+40-->[com.google.android.gms:play-services-measurement-api:22.1.2] /home/bravon/.gradle/caches/transforms-3/4df8a7dc696586f932dae5a609bfa542/transformed/jetified-play-services-measurement-api-22.1.2/AndroidManifest.xml:26:5-88
+40-->[com.google.android.gms:play-services-measurement-api:22.1.2] /home/bravon/.gradle/caches/transforms-3/4df8a7dc696586f932dae5a609bfa542/transformed/jetified-play-services-measurement-api-22.1.2/AndroidManifest.xml:26:22-85
+41    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID" />
+41-->[com.google.android.gms:play-services-measurement-api:22.1.2] /home/bravon/.gradle/caches/transforms-3/4df8a7dc696586f932dae5a609bfa542/transformed/jetified-play-services-measurement-api-22.1.2/AndroidManifest.xml:27:5-82
+41-->[com.google.android.gms:play-services-measurement-api:22.1.2] /home/bravon/.gradle/caches/transforms-3/4df8a7dc696586f932dae5a609bfa542/transformed/jetified-play-services-measurement-api-22.1.2/AndroidManifest.xml:27:22-79
+42    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+42-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:26:5-77
+42-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:26:22-74
+43    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+43-->[com.google.android.gms:play-services-measurement:22.1.2] /home/bravon/.gradle/caches/transforms-3/9d311cc6fba11b2a8564cffbee5b0d0b/transformed/jetified-play-services-measurement-22.1.2/AndroidManifest.xml:26:5-110
+43-->[com.google.android.gms:play-services-measurement:22.1.2] /home/bravon/.gradle/caches/transforms-3/9d311cc6fba11b2a8564cffbee5b0d0b/transformed/jetified-play-services-measurement-22.1.2/AndroidManifest.xml:26:22-107
+44
+45    <permission
+45-->[androidx.core:core:1.13.1] /home/bravon/.gradle/caches/transforms-3/7692241fa05c90634cc6fa3fa50f4202/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
+46        android:name="com.example.crm.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+46-->[androidx.core:core:1.13.1] /home/bravon/.gradle/caches/transforms-3/7692241fa05c90634cc6fa3fa50f4202/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
+47        android:protectionLevel="signature" />
+47-->[androidx.core:core:1.13.1] /home/bravon/.gradle/caches/transforms-3/7692241fa05c90634cc6fa3fa50f4202/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
+48
+49    <uses-permission android:name="com.example.crm.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+49-->[androidx.core:core:1.13.1] /home/bravon/.gradle/caches/transforms-3/7692241fa05c90634cc6fa3fa50f4202/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
+49-->[androidx.core:core:1.13.1] /home/bravon/.gradle/caches/transforms-3/7692241fa05c90634cc6fa3fa50f4202/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
+50
+51    <application
+51-->/home/bravon/Desktop/crm/android/app/src/main/AndroidManifest.xml:4:5-37:19
+52        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+52-->[androidx.core:core:1.13.1] /home/bravon/.gradle/caches/transforms-3/7692241fa05c90634cc6fa3fa50f4202/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
+53        android:extractNativeLibs="true"
+54        android:icon="@mipmap/ic_launcher_round"
+54-->/home/bravon/Desktop/crm/android/app/src/main/AndroidManifest.xml:6:9-49
+55        android:label="EnergyCRM" >
+55-->/home/bravon/Desktop/crm/android/app/src/main/AndroidManifest.xml:5:9-34
+56        <activity
+56-->/home/bravon/Desktop/crm/android/app/src/main/AndroidManifest.xml:8:9-28:20
+57            android:name="com.example.crm.MainActivity"
+57-->/home/bravon/Desktop/crm/android/app/src/main/AndroidManifest.xml:9:13-56
+58            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+58-->/home/bravon/Desktop/crm/android/app/src/main/AndroidManifest.xml:13:13-163
+59            android:exported="true"
+59-->/home/bravon/Desktop/crm/android/app/src/main/AndroidManifest.xml:10:13-36
+60            android:hardwareAccelerated="true"
+60-->/home/bravon/Desktop/crm/android/app/src/main/AndroidManifest.xml:14:13-47
+61            android:launchMode="singleTop"
+61-->/home/bravon/Desktop/crm/android/app/src/main/AndroidManifest.xml:11:13-43
+62            android:theme="@style/LaunchTheme"
+62-->/home/bravon/Desktop/crm/android/app/src/main/AndroidManifest.xml:12:13-47
+63            android:windowSoftInputMode="adjustResize" >
+63-->/home/bravon/Desktop/crm/android/app/src/main/AndroidManifest.xml:15:13-55
+64
+65            <!--
+66                 Specifies an Android theme to apply to this Activity as soon as
+67                 the Android process has started. This theme is visible to the user
+68                 while the Flutter UI initializes. After that, this theme continues
+69                 to determine the Window background behind the Flutter UI.
+70            -->
+71            <meta-data
+71-->/home/bravon/Desktop/crm/android/app/src/main/AndroidManifest.xml:20:13-23:19
+72                android:name="io.flutter.embedding.android.NormalTheme"
+72-->/home/bravon/Desktop/crm/android/app/src/main/AndroidManifest.xml:21:17-72
+73                android:resource="@style/NormalTheme" />
+73-->/home/bravon/Desktop/crm/android/app/src/main/AndroidManifest.xml:22:17-54
+74
+75            <intent-filter>
+75-->/home/bravon/Desktop/crm/android/app/src/main/AndroidManifest.xml:24:13-27:29
+76                <action android:name="android.intent.action.MAIN" />
+76-->/home/bravon/Desktop/crm/android/app/src/main/AndroidManifest.xml:25:17-68
+76-->/home/bravon/Desktop/crm/android/app/src/main/AndroidManifest.xml:25:25-66
 77
-78        <meta-data
-78-->/home/bravon/Desktop/clientflow/android/app/src/main/AndroidManifest.xml:27:13-29:59
-79            android:name="com.google.firebase.messaging.default_notification_channel_id"
-79-->/home/bravon/Desktop/clientflow/android/app/src/main/AndroidManifest.xml:28:17-93
-80            android:value="high_importance_channel" />
-80-->/home/bravon/Desktop/clientflow/android/app/src/main/AndroidManifest.xml:29:17-56
-81        <!--
-82             Don't delete the meta-data below.
-83             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
-84        -->
-85        <meta-data
-85-->/home/bravon/Desktop/clientflow/android/app/src/main/AndroidManifest.xml:32:9-34:33
-86            android:name="flutterEmbedding"
-86-->/home/bravon/Desktop/clientflow/android/app/src/main/AndroidManifest.xml:33:13-44
-87            android:value="2" />
-87-->/home/bravon/Desktop/clientflow/android/app/src/main/AndroidManifest.xml:34:13-30
-88
-89        <service
-89-->[:firebase_messaging] /home/bravon/Desktop/clientflow/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:14:9-17:72
-90            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService"
-90-->[:firebase_messaging] /home/bravon/Desktop/clientflow/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:15:13-107
-91            android:exported="false"
-91-->[:firebase_messaging] /home/bravon/Desktop/clientflow/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:16:13-37
-92            android:permission="android.permission.BIND_JOB_SERVICE" />
-92-->[:firebase_messaging] /home/bravon/Desktop/clientflow/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:17:13-69
+78                <category android:name="android.intent.category.LAUNCHER" />
+78-->/home/bravon/Desktop/crm/android/app/src/main/AndroidManifest.xml:26:17-76
+78-->/home/bravon/Desktop/crm/android/app/src/main/AndroidManifest.xml:26:27-74
+79            </intent-filter>
+80        </activity>
+81
+82        <meta-data
+82-->/home/bravon/Desktop/crm/android/app/src/main/AndroidManifest.xml:29:9-31:55
+83            android:name="com.google.firebase.messaging.default_notification_channel_id"
+83-->/home/bravon/Desktop/crm/android/app/src/main/AndroidManifest.xml:30:13-89
+84            android:value="high_importance_channel" />
+84-->/home/bravon/Desktop/crm/android/app/src/main/AndroidManifest.xml:31:13-52
+85        <!--
+86             Don't delete the meta-data below.
+87             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+88        -->
+89        <meta-data
+89-->/home/bravon/Desktop/crm/android/app/src/main/AndroidManifest.xml:34:9-36:33
+90            android:name="flutterEmbedding"
+90-->/home/bravon/Desktop/crm/android/app/src/main/AndroidManifest.xml:35:13-44
+91            android:value="2" />
+91-->/home/bravon/Desktop/crm/android/app/src/main/AndroidManifest.xml:36:13-30
+92
 93        <service
-93-->[:firebase_messaging] /home/bravon/Desktop/clientflow/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:18:9-24:19
-94            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService"
-94-->[:firebase_messaging] /home/bravon/Desktop/clientflow/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:19:13-97
-95            android:exported="false" >
-95-->[:firebase_messaging] /home/bravon/Desktop/clientflow/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:20:13-37
-96            <intent-filter>
-96-->[:firebase_messaging] /home/bravon/Desktop/clientflow/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:21:13-23:29
-97                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-97-->[:firebase_messaging] /home/bravon/Desktop/clientflow/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:22:17-78
-97-->[:firebase_messaging] /home/bravon/Desktop/clientflow/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:22:25-75
-98            </intent-filter>
-99        </service>
-100
-101        <receiver
-101-->[:firebase_messaging] /home/bravon/Desktop/clientflow/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:26:9-33:20
-102            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver"
-102-->[:firebase_messaging] /home/bravon/Desktop/clientflow/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:27:13-98
-103            android:exported="true"
-103-->[:firebase_messaging] /home/bravon/Desktop/clientflow/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:28:13-36
-104            android:permission="com.google.android.c2dm.permission.SEND" >
-104-->[:firebase_messaging] /home/bravon/Desktop/clientflow/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:29:13-73
-105            <intent-filter>
-105-->[:firebase_messaging] /home/bravon/Desktop/clientflow/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:30:13-32:29
-106                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-106-->[:firebase_messaging] /home/bravon/Desktop/clientflow/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:31:17-81
-106-->[:firebase_messaging] /home/bravon/Desktop/clientflow/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:31:25-78
-107            </intent-filter>
-108        </receiver>
-109
-110        <service
-110-->[:firebase_messaging] /home/bravon/Desktop/clientflow/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:35:9-39:19
-111            android:name="com.google.firebase.components.ComponentDiscoveryService"
-111-->[:firebase_messaging] /home/bravon/Desktop/clientflow/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:35:18-89
-112            android:directBootAware="true"
-112-->[com.google.firebase:firebase-common:21.0.0] /home/bravon/.gradle/caches/transforms-3/2e571082210d6af3e29b705abd11838d/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:32:13-43
-113            android:exported="false" >
-113-->[com.google.firebase:firebase-messaging:24.1.0] /home/bravon/.gradle/caches/transforms-3/d062f2851a9fbd0f4e240cd304be41fb/transformed/jetified-firebase-messaging-24.1.0/AndroidManifest.xml:56:13-37
-114            <meta-data
-114-->[:firebase_messaging] /home/bravon/Desktop/clientflow/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:36:13-38:85
-115                android:name="com.google.firebase.components:io.flutter.plugins.firebase.messaging.FlutterFirebaseAppRegistrar"
-115-->[:firebase_messaging] /home/bravon/Desktop/clientflow/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:37:17-128
-116                android:value="com.google.firebase.components.ComponentRegistrar" />
-116-->[:firebase_messaging] /home/bravon/Desktop/clientflow/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:38:17-82
-117            <meta-data
-117-->[:firebase_core] /home/bravon/Desktop/clientflow/build/firebase_core/intermediates/merged_manifest/release/AndroidManifest.xml:9:13-11:85
-118                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
-118-->[:firebase_core] /home/bravon/Desktop/clientflow/build/firebase_core/intermediates/merged_manifest/release/AndroidManifest.xml:10:17-124
-119                android:value="com.google.firebase.components.ComponentRegistrar" />
-119-->[:firebase_core] /home/bravon/Desktop/clientflow/build/firebase_core/intermediates/merged_manifest/release/AndroidManifest.xml:11:17-82
-120            <meta-data
-120-->[com.google.firebase:firebase-messaging:24.1.0] /home/bravon/.gradle/caches/transforms-3/d062f2851a9fbd0f4e240cd304be41fb/transformed/jetified-firebase-messaging-24.1.0/AndroidManifest.xml:57:13-59:85
-121                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar"
-121-->[com.google.firebase:firebase-messaging:24.1.0] /home/bravon/.gradle/caches/transforms-3/d062f2851a9fbd0f4e240cd304be41fb/transformed/jetified-firebase-messaging-24.1.0/AndroidManifest.xml:58:17-122
-122                android:value="com.google.firebase.components.ComponentRegistrar" />
-122-->[com.google.firebase:firebase-messaging:24.1.0] /home/bravon/.gradle/caches/transforms-3/d062f2851a9fbd0f4e240cd304be41fb/transformed/jetified-firebase-messaging-24.1.0/AndroidManifest.xml:59:17-82
-123            <meta-data
-123-->[com.google.firebase:firebase-messaging:24.1.0] /home/bravon/.gradle/caches/transforms-3/d062f2851a9fbd0f4e240cd304be41fb/transformed/jetified-firebase-messaging-24.1.0/AndroidManifest.xml:60:13-62:85
-124                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
-124-->[com.google.firebase:firebase-messaging:24.1.0] /home/bravon/.gradle/caches/transforms-3/d062f2851a9fbd0f4e240cd304be41fb/transformed/jetified-firebase-messaging-24.1.0/AndroidManifest.xml:61:17-119
-125                android:value="com.google.firebase.components.ComponentRegistrar" />
-125-->[com.google.firebase:firebase-messaging:24.1.0] /home/bravon/.gradle/caches/transforms-3/d062f2851a9fbd0f4e240cd304be41fb/transformed/jetified-firebase-messaging-24.1.0/AndroidManifest.xml:62:17-82
-126            <meta-data
-126-->[com.google.android.gms:play-services-measurement-api:22.1.2] /home/bravon/.gradle/caches/transforms-3/4df8a7dc696586f932dae5a609bfa542/transformed/jetified-play-services-measurement-api-22.1.2/AndroidManifest.xml:37:13-39:85
-127                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
-127-->[com.google.android.gms:play-services-measurement-api:22.1.2] /home/bravon/.gradle/caches/transforms-3/4df8a7dc696586f932dae5a609bfa542/transformed/jetified-play-services-measurement-api-22.1.2/AndroidManifest.xml:38:17-139
-128                android:value="com.google.firebase.components.ComponentRegistrar" />
-128-->[com.google.android.gms:play-services-measurement-api:22.1.2] /home/bravon/.gradle/caches/transforms-3/4df8a7dc696586f932dae5a609bfa542/transformed/jetified-play-services-measurement-api-22.1.2/AndroidManifest.xml:39:17-82
-129            <meta-data
-129-->[com.google.firebase:firebase-installations:18.0.0] /home/bravon/.gradle/caches/transforms-3/612980896649f5f64b724850628c4a6a/transformed/jetified-firebase-installations-18.0.0/AndroidManifest.xml:15:13-17:85
-130                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
-130-->[com.google.firebase:firebase-installations:18.0.0] /home/bravon/.gradle/caches/transforms-3/612980896649f5f64b724850628c4a6a/transformed/jetified-firebase-installations-18.0.0/AndroidManifest.xml:16:17-130
-131                android:value="com.google.firebase.components.ComponentRegistrar" />
-131-->[com.google.firebase:firebase-installations:18.0.0] /home/bravon/.gradle/caches/transforms-3/612980896649f5f64b724850628c4a6a/transformed/jetified-firebase-installations-18.0.0/AndroidManifest.xml:17:17-82
-132            <meta-data
-132-->[com.google.firebase:firebase-installations:18.0.0] /home/bravon/.gradle/caches/transforms-3/612980896649f5f64b724850628c4a6a/transformed/jetified-firebase-installations-18.0.0/AndroidManifest.xml:18:13-20:85
-133                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
-133-->[com.google.firebase:firebase-installations:18.0.0] /home/bravon/.gradle/caches/transforms-3/612980896649f5f64b724850628c4a6a/transformed/jetified-firebase-installations-18.0.0/AndroidManifest.xml:19:17-127
-134                android:value="com.google.firebase.components.ComponentRegistrar" />
-134-->[com.google.firebase:firebase-installations:18.0.0] /home/bravon/.gradle/caches/transforms-3/612980896649f5f64b724850628c4a6a/transformed/jetified-firebase-installations-18.0.0/AndroidManifest.xml:20:17-82
-135            <meta-data
-135-->[com.google.firebase:firebase-common-ktx:21.0.0] /home/bravon/.gradle/caches/transforms-3/36adc6a94776cb6bdb6630de67ae8cd8/transformed/jetified-firebase-common-ktx-21.0.0/AndroidManifest.xml:12:13-14:85
-136                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
-136-->[com.google.firebase:firebase-common-ktx:21.0.0] /home/bravon/.gradle/caches/transforms-3/36adc6a94776cb6bdb6630de67ae8cd8/transformed/jetified-firebase-common-ktx-21.0.0/AndroidManifest.xml:13:17-116
-137                android:value="com.google.firebase.components.ComponentRegistrar" />
-137-->[com.google.firebase:firebase-common-ktx:21.0.0] /home/bravon/.gradle/caches/transforms-3/36adc6a94776cb6bdb6630de67ae8cd8/transformed/jetified-firebase-common-ktx-21.0.0/AndroidManifest.xml:14:17-82
-138            <meta-data
-138-->[com.google.firebase:firebase-common:21.0.0] /home/bravon/.gradle/caches/transforms-3/2e571082210d6af3e29b705abd11838d/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:35:13-37:85
-139                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
-139-->[com.google.firebase:firebase-common:21.0.0] /home/bravon/.gradle/caches/transforms-3/2e571082210d6af3e29b705abd11838d/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:36:17-109
-140                android:value="com.google.firebase.components.ComponentRegistrar" />
-140-->[com.google.firebase:firebase-common:21.0.0] /home/bravon/.gradle/caches/transforms-3/2e571082210d6af3e29b705abd11838d/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:37:17-82
-141            <meta-data
-141-->[com.google.firebase:firebase-datatransport:18.2.0] /home/bravon/.gradle/caches/transforms-3/c0b10c1bbbf7625304e0e06a5389f8ee/transformed/jetified-firebase-datatransport-18.2.0/AndroidManifest.xml:25:13-27:85
-142                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
-142-->[com.google.firebase:firebase-datatransport:18.2.0] /home/bravon/.gradle/caches/transforms-3/c0b10c1bbbf7625304e0e06a5389f8ee/transformed/jetified-firebase-datatransport-18.2.0/AndroidManifest.xml:26:17-115
-143                android:value="com.google.firebase.components.ComponentRegistrar" />
-143-->[com.google.firebase:firebase-datatransport:18.2.0] /home/bravon/.gradle/caches/transforms-3/c0b10c1bbbf7625304e0e06a5389f8ee/transformed/jetified-firebase-datatransport-18.2.0/AndroidManifest.xml:27:17-82
-144        </service>
-145
-146        <provider
-146-->[:firebase_messaging] /home/bravon/Desktop/clientflow/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:41:9-45:38
-147            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider"
-147-->[:firebase_messaging] /home/bravon/Desktop/clientflow/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:42:13-102
-148            android:authorities="com.example.sales_navigator.flutterfirebasemessaginginitprovider"
-148-->[:firebase_messaging] /home/bravon/Desktop/clientflow/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:43:13-88
-149            android:exported="false"
-149-->[:firebase_messaging] /home/bravon/Desktop/clientflow/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:44:13-37
-150            android:initOrder="99" />
-150-->[:firebase_messaging] /home/bravon/Desktop/clientflow/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:45:13-35
-151
-152        <activity
-152-->[:url_launcher_android] /home/bravon/Desktop/clientflow/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:8:9-11:74
-153            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
-153-->[:url_launcher_android] /home/bravon/Desktop/clientflow/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:9:13-74
-154            android:exported="false"
-154-->[:url_launcher_android] /home/bravon/Desktop/clientflow/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:10:13-37
-155            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
-155-->[:url_launcher_android] /home/bravon/Desktop/clientflow/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-71
-156
-157        <receiver
-157-->[com.google.firebase:firebase-messaging:24.1.0] /home/bravon/.gradle/caches/transforms-3/d062f2851a9fbd0f4e240cd304be41fb/transformed/jetified-firebase-messaging-24.1.0/AndroidManifest.xml:29:9-40:20
-158            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
-158-->[com.google.firebase:firebase-messaging:24.1.0] /home/bravon/.gradle/caches/transforms-3/d062f2851a9fbd0f4e240cd304be41fb/transformed/jetified-firebase-messaging-24.1.0/AndroidManifest.xml:30:13-78
-159            android:exported="true"
-159-->[com.google.firebase:firebase-messaging:24.1.0] /home/bravon/.gradle/caches/transforms-3/d062f2851a9fbd0f4e240cd304be41fb/transformed/jetified-firebase-messaging-24.1.0/AndroidManifest.xml:31:13-36
-160            android:permission="com.google.android.c2dm.permission.SEND" >
-160-->[com.google.firebase:firebase-messaging:24.1.0] /home/bravon/.gradle/caches/transforms-3/d062f2851a9fbd0f4e240cd304be41fb/transformed/jetified-firebase-messaging-24.1.0/AndroidManifest.xml:32:13-73
-161            <intent-filter>
-161-->[:firebase_messaging] /home/bravon/Desktop/clientflow/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:30:13-32:29
-162                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-162-->[:firebase_messaging] /home/bravon/Desktop/clientflow/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:31:17-81
-162-->[:firebase_messaging] /home/bravon/Desktop/clientflow/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:31:25-78
-163            </intent-filter>
-164
-165            <meta-data
-165-->[com.google.firebase:firebase-messaging:24.1.0] /home/bravon/.gradle/caches/transforms-3/d062f2851a9fbd0f4e240cd304be41fb/transformed/jetified-firebase-messaging-24.1.0/AndroidManifest.xml:37:13-39:40
-166                android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED"
-166-->[com.google.firebase:firebase-messaging:24.1.0] /home/bravon/.gradle/caches/transforms-3/d062f2851a9fbd0f4e240cd304be41fb/transformed/jetified-firebase-messaging-24.1.0/AndroidManifest.xml:38:17-92
-167                android:value="true" />
-167-->[com.google.firebase:firebase-messaging:24.1.0] /home/bravon/.gradle/caches/transforms-3/d062f2851a9fbd0f4e240cd304be41fb/transformed/jetified-firebase-messaging-24.1.0/AndroidManifest.xml:39:17-37
-168        </receiver>
-169        <!--
-170             FirebaseMessagingService performs security checks at runtime,
-171             but set to not exported to explicitly avoid allowing another app to call it.
-172        -->
-173        <service
-173-->[com.google.firebase:firebase-messaging:24.1.0] /home/bravon/.gradle/caches/transforms-3/d062f2851a9fbd0f4e240cd304be41fb/transformed/jetified-firebase-messaging-24.1.0/AndroidManifest.xml:46:9-53:19
-174            android:name="com.google.firebase.messaging.FirebaseMessagingService"
-174-->[com.google.firebase:firebase-messaging:24.1.0] /home/bravon/.gradle/caches/transforms-3/d062f2851a9fbd0f4e240cd304be41fb/transformed/jetified-firebase-messaging-24.1.0/AndroidManifest.xml:47:13-82
-175            android:directBootAware="true"
-175-->[com.google.firebase:firebase-messaging:24.1.0] /home/bravon/.gradle/caches/transforms-3/d062f2851a9fbd0f4e240cd304be41fb/transformed/jetified-firebase-messaging-24.1.0/AndroidManifest.xml:48:13-43
-176            android:exported="false" >
-176-->[com.google.firebase:firebase-messaging:24.1.0] /home/bravon/.gradle/caches/transforms-3/d062f2851a9fbd0f4e240cd304be41fb/transformed/jetified-firebase-messaging-24.1.0/AndroidManifest.xml:49:13-37
-177            <intent-filter android:priority="-500" >
-177-->[:firebase_messaging] /home/bravon/Desktop/clientflow/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:21:13-23:29
-178                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-178-->[:firebase_messaging] /home/bravon/Desktop/clientflow/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:22:17-78
-178-->[:firebase_messaging] /home/bravon/Desktop/clientflow/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:22:25-75
-179            </intent-filter>
-180        </service>
-181
-182        <property
-182-->[com.google.android.gms:play-services-measurement-api:22.1.2] /home/bravon/.gradle/caches/transforms-3/4df8a7dc696586f932dae5a609bfa542/transformed/jetified-play-services-measurement-api-22.1.2/AndroidManifest.xml:30:9-32:61
-183            android:name="android.adservices.AD_SERVICES_CONFIG"
-183-->[com.google.android.gms:play-services-measurement-api:22.1.2] /home/bravon/.gradle/caches/transforms-3/4df8a7dc696586f932dae5a609bfa542/transformed/jetified-play-services-measurement-api-22.1.2/AndroidManifest.xml:31:13-65
-184            android:resource="@xml/ga_ad_services_config" />
-184-->[com.google.android.gms:play-services-measurement-api:22.1.2] /home/bravon/.gradle/caches/transforms-3/4df8a7dc696586f932dae5a609bfa542/transformed/jetified-play-services-measurement-api-22.1.2/AndroidManifest.xml:32:13-58
+93-->[:firebase_messaging] /home/bravon/Desktop/crm/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:14:9-17:72
+94            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService"
+94-->[:firebase_messaging] /home/bravon/Desktop/crm/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:15:13-107
+95            android:exported="false"
+95-->[:firebase_messaging] /home/bravon/Desktop/crm/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:16:13-37
+96            android:permission="android.permission.BIND_JOB_SERVICE" />
+96-->[:firebase_messaging] /home/bravon/Desktop/crm/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:17:13-69
+97        <service
+97-->[:firebase_messaging] /home/bravon/Desktop/crm/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:18:9-24:19
+98            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService"
+98-->[:firebase_messaging] /home/bravon/Desktop/crm/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:19:13-97
+99            android:exported="false" >
+99-->[:firebase_messaging] /home/bravon/Desktop/crm/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:20:13-37
+100            <intent-filter>
+100-->[:firebase_messaging] /home/bravon/Desktop/crm/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:21:13-23:29
+101                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+101-->[:firebase_messaging] /home/bravon/Desktop/crm/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:22:17-78
+101-->[:firebase_messaging] /home/bravon/Desktop/crm/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:22:25-75
+102            </intent-filter>
+103        </service>
+104
+105        <receiver
+105-->[:firebase_messaging] /home/bravon/Desktop/crm/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:26:9-33:20
+106            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver"
+106-->[:firebase_messaging] /home/bravon/Desktop/crm/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:27:13-98
+107            android:exported="true"
+107-->[:firebase_messaging] /home/bravon/Desktop/crm/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:28:13-36
+108            android:permission="com.google.android.c2dm.permission.SEND" >
+108-->[:firebase_messaging] /home/bravon/Desktop/crm/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:29:13-73
+109            <intent-filter>
+109-->[:firebase_messaging] /home/bravon/Desktop/crm/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:30:13-32:29
+110                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+110-->[:firebase_messaging] /home/bravon/Desktop/crm/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:31:17-81
+110-->[:firebase_messaging] /home/bravon/Desktop/crm/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:31:25-78
+111            </intent-filter>
+112        </receiver>
+113
+114        <service
+114-->[:firebase_messaging] /home/bravon/Desktop/crm/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:35:9-39:19
+115            android:name="com.google.firebase.components.ComponentDiscoveryService"
+115-->[:firebase_messaging] /home/bravon/Desktop/crm/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:35:18-89
+116            android:directBootAware="true"
+116-->[com.google.firebase:firebase-common:21.0.0] /home/bravon/.gradle/caches/transforms-3/2e571082210d6af3e29b705abd11838d/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:32:13-43
+117            android:exported="false" >
+117-->[com.google.firebase:firebase-messaging:24.1.0] /home/bravon/.gradle/caches/transforms-3/d062f2851a9fbd0f4e240cd304be41fb/transformed/jetified-firebase-messaging-24.1.0/AndroidManifest.xml:56:13-37
+118            <meta-data
+118-->[:firebase_messaging] /home/bravon/Desktop/crm/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:36:13-38:85
+119                android:name="com.google.firebase.components:io.flutter.plugins.firebase.messaging.FlutterFirebaseAppRegistrar"
+119-->[:firebase_messaging] /home/bravon/Desktop/crm/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:37:17-128
+120                android:value="com.google.firebase.components.ComponentRegistrar" />
+120-->[:firebase_messaging] /home/bravon/Desktop/crm/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:38:17-82
+121            <meta-data
+121-->[:firebase_core] /home/bravon/Desktop/crm/build/firebase_core/intermediates/merged_manifest/release/AndroidManifest.xml:9:13-11:85
+122                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+122-->[:firebase_core] /home/bravon/Desktop/crm/build/firebase_core/intermediates/merged_manifest/release/AndroidManifest.xml:10:17-124
+123                android:value="com.google.firebase.components.ComponentRegistrar" />
+123-->[:firebase_core] /home/bravon/Desktop/crm/build/firebase_core/intermediates/merged_manifest/release/AndroidManifest.xml:11:17-82
+124            <meta-data
+124-->[com.google.firebase:firebase-messaging:24.1.0] /home/bravon/.gradle/caches/transforms-3/d062f2851a9fbd0f4e240cd304be41fb/transformed/jetified-firebase-messaging-24.1.0/AndroidManifest.xml:57:13-59:85
+125                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar"
+125-->[com.google.firebase:firebase-messaging:24.1.0] /home/bravon/.gradle/caches/transforms-3/d062f2851a9fbd0f4e240cd304be41fb/transformed/jetified-firebase-messaging-24.1.0/AndroidManifest.xml:58:17-122
+126                android:value="com.google.firebase.components.ComponentRegistrar" />
+126-->[com.google.firebase:firebase-messaging:24.1.0] /home/bravon/.gradle/caches/transforms-3/d062f2851a9fbd0f4e240cd304be41fb/transformed/jetified-firebase-messaging-24.1.0/AndroidManifest.xml:59:17-82
+127            <meta-data
+127-->[com.google.firebase:firebase-messaging:24.1.0] /home/bravon/.gradle/caches/transforms-3/d062f2851a9fbd0f4e240cd304be41fb/transformed/jetified-firebase-messaging-24.1.0/AndroidManifest.xml:60:13-62:85
+128                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+128-->[com.google.firebase:firebase-messaging:24.1.0] /home/bravon/.gradle/caches/transforms-3/d062f2851a9fbd0f4e240cd304be41fb/transformed/jetified-firebase-messaging-24.1.0/AndroidManifest.xml:61:17-119
+129                android:value="com.google.firebase.components.ComponentRegistrar" />
+129-->[com.google.firebase:firebase-messaging:24.1.0] /home/bravon/.gradle/caches/transforms-3/d062f2851a9fbd0f4e240cd304be41fb/transformed/jetified-firebase-messaging-24.1.0/AndroidManifest.xml:62:17-82
+130            <meta-data
+130-->[com.google.android.gms:play-services-measurement-api:22.1.2] /home/bravon/.gradle/caches/transforms-3/4df8a7dc696586f932dae5a609bfa542/transformed/jetified-play-services-measurement-api-22.1.2/AndroidManifest.xml:37:13-39:85
+131                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+131-->[com.google.android.gms:play-services-measurement-api:22.1.2] /home/bravon/.gradle/caches/transforms-3/4df8a7dc696586f932dae5a609bfa542/transformed/jetified-play-services-measurement-api-22.1.2/AndroidManifest.xml:38:17-139
+132                android:value="com.google.firebase.components.ComponentRegistrar" />
+132-->[com.google.android.gms:play-services-measurement-api:22.1.2] /home/bravon/.gradle/caches/transforms-3/4df8a7dc696586f932dae5a609bfa542/transformed/jetified-play-services-measurement-api-22.1.2/AndroidManifest.xml:39:17-82
+133            <meta-data
+133-->[com.google.firebase:firebase-installations:18.0.0] /home/bravon/.gradle/caches/transforms-3/612980896649f5f64b724850628c4a6a/transformed/jetified-firebase-installations-18.0.0/AndroidManifest.xml:15:13-17:85
+134                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
+134-->[com.google.firebase:firebase-installations:18.0.0] /home/bravon/.gradle/caches/transforms-3/612980896649f5f64b724850628c4a6a/transformed/jetified-firebase-installations-18.0.0/AndroidManifest.xml:16:17-130
+135                android:value="com.google.firebase.components.ComponentRegistrar" />
+135-->[com.google.firebase:firebase-installations:18.0.0] /home/bravon/.gradle/caches/transforms-3/612980896649f5f64b724850628c4a6a/transformed/jetified-firebase-installations-18.0.0/AndroidManifest.xml:17:17-82
+136            <meta-data
+136-->[com.google.firebase:firebase-installations:18.0.0] /home/bravon/.gradle/caches/transforms-3/612980896649f5f64b724850628c4a6a/transformed/jetified-firebase-installations-18.0.0/AndroidManifest.xml:18:13-20:85
+137                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+137-->[com.google.firebase:firebase-installations:18.0.0] /home/bravon/.gradle/caches/transforms-3/612980896649f5f64b724850628c4a6a/transformed/jetified-firebase-installations-18.0.0/AndroidManifest.xml:19:17-127
+138                android:value="com.google.firebase.components.ComponentRegistrar" />
+138-->[com.google.firebase:firebase-installations:18.0.0] /home/bravon/.gradle/caches/transforms-3/612980896649f5f64b724850628c4a6a/transformed/jetified-firebase-installations-18.0.0/AndroidManifest.xml:20:17-82
+139            <meta-data
+139-->[com.google.firebase:firebase-common-ktx:21.0.0] /home/bravon/.gradle/caches/transforms-3/36adc6a94776cb6bdb6630de67ae8cd8/transformed/jetified-firebase-common-ktx-21.0.0/AndroidManifest.xml:12:13-14:85
+140                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+140-->[com.google.firebase:firebase-common-ktx:21.0.0] /home/bravon/.gradle/caches/transforms-3/36adc6a94776cb6bdb6630de67ae8cd8/transformed/jetified-firebase-common-ktx-21.0.0/AndroidManifest.xml:13:17-116
+141                android:value="com.google.firebase.components.ComponentRegistrar" />
+141-->[com.google.firebase:firebase-common-ktx:21.0.0] /home/bravon/.gradle/caches/transforms-3/36adc6a94776cb6bdb6630de67ae8cd8/transformed/jetified-firebase-common-ktx-21.0.0/AndroidManifest.xml:14:17-82
+142            <meta-data
+142-->[com.google.firebase:firebase-common:21.0.0] /home/bravon/.gradle/caches/transforms-3/2e571082210d6af3e29b705abd11838d/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:35:13-37:85
+143                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+143-->[com.google.firebase:firebase-common:21.0.0] /home/bravon/.gradle/caches/transforms-3/2e571082210d6af3e29b705abd11838d/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:36:17-109
+144                android:value="com.google.firebase.components.ComponentRegistrar" />
+144-->[com.google.firebase:firebase-common:21.0.0] /home/bravon/.gradle/caches/transforms-3/2e571082210d6af3e29b705abd11838d/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:37:17-82
+145            <meta-data
+145-->[com.google.firebase:firebase-datatransport:18.2.0] /home/bravon/.gradle/caches/transforms-3/c0b10c1bbbf7625304e0e06a5389f8ee/transformed/jetified-firebase-datatransport-18.2.0/AndroidManifest.xml:25:13-27:85
+146                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+146-->[com.google.firebase:firebase-datatransport:18.2.0] /home/bravon/.gradle/caches/transforms-3/c0b10c1bbbf7625304e0e06a5389f8ee/transformed/jetified-firebase-datatransport-18.2.0/AndroidManifest.xml:26:17-115
+147                android:value="com.google.firebase.components.ComponentRegistrar" />
+147-->[com.google.firebase:firebase-datatransport:18.2.0] /home/bravon/.gradle/caches/transforms-3/c0b10c1bbbf7625304e0e06a5389f8ee/transformed/jetified-firebase-datatransport-18.2.0/AndroidManifest.xml:27:17-82
+148        </service>
+149
+150        <provider
+150-->[:firebase_messaging] /home/bravon/Desktop/crm/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:41:9-45:38
+151            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider"
+151-->[:firebase_messaging] /home/bravon/Desktop/crm/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:42:13-102
+152            android:authorities="com.example.crm.flutterfirebasemessaginginitprovider"
+152-->[:firebase_messaging] /home/bravon/Desktop/crm/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:43:13-88
+153            android:exported="false"
+153-->[:firebase_messaging] /home/bravon/Desktop/crm/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:44:13-37
+154            android:initOrder="99" />
+154-->[:firebase_messaging] /home/bravon/Desktop/crm/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:45:13-35
+155
+156        <activity
+156-->[:url_launcher_android] /home/bravon/Desktop/crm/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:8:9-11:74
+157            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+157-->[:url_launcher_android] /home/bravon/Desktop/crm/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:9:13-74
+158            android:exported="false"
+158-->[:url_launcher_android] /home/bravon/Desktop/crm/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:10:13-37
+159            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+159-->[:url_launcher_android] /home/bravon/Desktop/crm/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-71
+160
+161        <receiver
+161-->[com.google.firebase:firebase-messaging:24.1.0] /home/bravon/.gradle/caches/transforms-3/d062f2851a9fbd0f4e240cd304be41fb/transformed/jetified-firebase-messaging-24.1.0/AndroidManifest.xml:29:9-40:20
+162            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+162-->[com.google.firebase:firebase-messaging:24.1.0] /home/bravon/.gradle/caches/transforms-3/d062f2851a9fbd0f4e240cd304be41fb/transformed/jetified-firebase-messaging-24.1.0/AndroidManifest.xml:30:13-78
+163            android:exported="true"
+163-->[com.google.firebase:firebase-messaging:24.1.0] /home/bravon/.gradle/caches/transforms-3/d062f2851a9fbd0f4e240cd304be41fb/transformed/jetified-firebase-messaging-24.1.0/AndroidManifest.xml:31:13-36
+164            android:permission="com.google.android.c2dm.permission.SEND" >
+164-->[com.google.firebase:firebase-messaging:24.1.0] /home/bravon/.gradle/caches/transforms-3/d062f2851a9fbd0f4e240cd304be41fb/transformed/jetified-firebase-messaging-24.1.0/AndroidManifest.xml:32:13-73
+165            <intent-filter>
+165-->[:firebase_messaging] /home/bravon/Desktop/crm/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:30:13-32:29
+166                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+166-->[:firebase_messaging] /home/bravon/Desktop/crm/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:31:17-81
+166-->[:firebase_messaging] /home/bravon/Desktop/crm/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:31:25-78
+167            </intent-filter>
+168
+169            <meta-data
+169-->[com.google.firebase:firebase-messaging:24.1.0] /home/bravon/.gradle/caches/transforms-3/d062f2851a9fbd0f4e240cd304be41fb/transformed/jetified-firebase-messaging-24.1.0/AndroidManifest.xml:37:13-39:40
+170                android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED"
+170-->[com.google.firebase:firebase-messaging:24.1.0] /home/bravon/.gradle/caches/transforms-3/d062f2851a9fbd0f4e240cd304be41fb/transformed/jetified-firebase-messaging-24.1.0/AndroidManifest.xml:38:17-92
+171                android:value="true" />
+171-->[com.google.firebase:firebase-messaging:24.1.0] /home/bravon/.gradle/caches/transforms-3/d062f2851a9fbd0f4e240cd304be41fb/transformed/jetified-firebase-messaging-24.1.0/AndroidManifest.xml:39:17-37
+172        </receiver>
+173        <!--
+174             FirebaseMessagingService performs security checks at runtime,
+175             but set to not exported to explicitly avoid allowing another app to call it.
+176        -->
+177        <service
+177-->[com.google.firebase:firebase-messaging:24.1.0] /home/bravon/.gradle/caches/transforms-3/d062f2851a9fbd0f4e240cd304be41fb/transformed/jetified-firebase-messaging-24.1.0/AndroidManifest.xml:46:9-53:19
+178            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+178-->[com.google.firebase:firebase-messaging:24.1.0] /home/bravon/.gradle/caches/transforms-3/d062f2851a9fbd0f4e240cd304be41fb/transformed/jetified-firebase-messaging-24.1.0/AndroidManifest.xml:47:13-82
+179            android:directBootAware="true"
+179-->[com.google.firebase:firebase-messaging:24.1.0] /home/bravon/.gradle/caches/transforms-3/d062f2851a9fbd0f4e240cd304be41fb/transformed/jetified-firebase-messaging-24.1.0/AndroidManifest.xml:48:13-43
+180            android:exported="false" >
+180-->[com.google.firebase:firebase-messaging:24.1.0] /home/bravon/.gradle/caches/transforms-3/d062f2851a9fbd0f4e240cd304be41fb/transformed/jetified-firebase-messaging-24.1.0/AndroidManifest.xml:49:13-37
+181            <intent-filter android:priority="-500" >
+181-->[:firebase_messaging] /home/bravon/Desktop/crm/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:21:13-23:29
+182                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+182-->[:firebase_messaging] /home/bravon/Desktop/crm/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:22:17-78
+182-->[:firebase_messaging] /home/bravon/Desktop/crm/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:22:25-75
+183            </intent-filter>
+184        </service>
 185
-186        <provider
-186-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:29:9-37:20
-187            android:name="androidx.startup.InitializationProvider"
-187-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:30:13-67
-188            android:authorities="com.example.sales_navigator.androidx-startup"
-188-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:31:13-68
-189            android:exported="false" >
-189-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:32:13-37
-190            <meta-data
-190-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:34:13-36:52
-191                android:name="androidx.work.WorkManagerInitializer"
-191-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:35:17-68
-192                android:value="androidx.startup" />
-192-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:36:17-49
-193            <meta-data
-193-->[androidx.lifecycle:lifecycle-process:2.7.0] /home/bravon/.gradle/caches/transforms-3/d6ba82887ea707f3e3581aa2bb810af6/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:29:13-31:52
-194                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-194-->[androidx.lifecycle:lifecycle-process:2.7.0] /home/bravon/.gradle/caches/transforms-3/d6ba82887ea707f3e3581aa2bb810af6/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:30:17-78
-195                android:value="androidx.startup" />
-195-->[androidx.lifecycle:lifecycle-process:2.7.0] /home/bravon/.gradle/caches/transforms-3/d6ba82887ea707f3e3581aa2bb810af6/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:31:17-49
-196            <meta-data
-196-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/bravon/.gradle/caches/transforms-3/c4a1ee19371a348f1a3383d4c6e35be0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
-197                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-197-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/bravon/.gradle/caches/transforms-3/c4a1ee19371a348f1a3383d4c6e35be0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
-198                android:value="androidx.startup" />
-198-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/bravon/.gradle/caches/transforms-3/c4a1ee19371a348f1a3383d4c6e35be0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
-199        </provider>
-200
-201        <service
-201-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:39:9-45:35
-202            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
-202-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:40:13-88
-203            android:directBootAware="false"
-203-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:41:13-44
-204            android:enabled="@bool/enable_system_alarm_service_default"
-204-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:42:13-72
-205            android:exported="false" />
-205-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:43:13-37
-206        <service
-206-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:46:9-52:35
-207            android:name="androidx.work.impl.background.systemjob.SystemJobService"
-207-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:47:13-84
-208            android:directBootAware="false"
-208-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:48:13-44
-209            android:enabled="@bool/enable_system_job_service_default"
-209-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:49:13-70
-210            android:exported="true"
-210-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:50:13-36
-211            android:permission="android.permission.BIND_JOB_SERVICE" />
-211-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:51:13-69
-212        <service
-212-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:53:9-59:35
-213            android:name="androidx.work.impl.foreground.SystemForegroundService"
-213-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:54:13-81
-214            android:directBootAware="false"
-214-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:55:13-44
-215            android:enabled="@bool/enable_system_foreground_service_default"
-215-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:56:13-77
-216            android:exported="false" />
-216-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:57:13-37
-217
-218        <receiver
-218-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:61:9-66:35
-219            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
-219-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:62:13-88
-220            android:directBootAware="false"
-220-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:63:13-44
-221            android:enabled="true"
-221-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:64:13-35
-222            android:exported="false" />
-222-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:65:13-37
-223        <receiver
-223-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:67:9-77:20
-224            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
-224-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:68:13-106
-225            android:directBootAware="false"
-225-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:69:13-44
-226            android:enabled="false"
-226-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:70:13-36
-227            android:exported="false" >
-227-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:71:13-37
-228            <intent-filter>
-228-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:73:13-76:29
-229                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
-229-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:74:17-87
-229-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:74:25-84
-230                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
-230-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:75:17-90
-230-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:75:25-87
-231            </intent-filter>
-232        </receiver>
-233        <receiver
-233-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:78:9-88:20
-234            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
-234-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:79:13-104
-235            android:directBootAware="false"
-235-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:80:13-44
-236            android:enabled="false"
-236-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:81:13-36
-237            android:exported="false" >
-237-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:82:13-37
-238            <intent-filter>
-238-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:84:13-87:29
-239                <action android:name="android.intent.action.BATTERY_OKAY" />
-239-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:85:17-77
-239-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:85:25-74
-240                <action android:name="android.intent.action.BATTERY_LOW" />
-240-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:86:17-76
-240-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:86:25-73
-241            </intent-filter>
-242        </receiver>
-243        <receiver
-243-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:89:9-99:20
-244            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
-244-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:90:13-104
-245            android:directBootAware="false"
-245-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:91:13-44
-246            android:enabled="false"
-246-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:92:13-36
-247            android:exported="false" >
-247-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:93:13-37
-248            <intent-filter>
-248-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:95:13-98:29
-249                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
-249-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:96:17-83
-249-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:96:25-80
-250                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
-250-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:97:17-82
-250-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:97:25-79
-251            </intent-filter>
-252        </receiver>
-253        <receiver
-253-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:100:9-109:20
-254            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
-254-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:101:13-103
-255            android:directBootAware="false"
-255-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:102:13-44
-256            android:enabled="false"
-256-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:103:13-36
-257            android:exported="false" >
-257-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:104:13-37
-258            <intent-filter>
-258-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:106:13-108:29
-259                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
-259-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:107:17-79
-259-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:107:25-76
-260            </intent-filter>
-261        </receiver>
-262        <receiver
-262-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:110:9-121:20
-263            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
-263-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:111:13-88
-264            android:directBootAware="false"
-264-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:112:13-44
-265            android:enabled="false"
-265-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:113:13-36
-266            android:exported="false" >
-266-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:114:13-37
-267            <intent-filter>
-267-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:116:13-120:29
-268                <action android:name="android.intent.action.BOOT_COMPLETED" />
-268-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:117:17-79
-268-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:117:25-76
-269                <action android:name="android.intent.action.TIME_SET" />
-269-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:118:17-73
-269-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:118:25-70
-270                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
-270-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:119:17-81
-270-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:119:25-78
-271            </intent-filter>
-272        </receiver>
-273        <receiver
-273-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:122:9-131:20
-274            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
-274-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:123:13-99
-275            android:directBootAware="false"
-275-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:124:13-44
-276            android:enabled="@bool/enable_system_alarm_service_default"
-276-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:125:13-72
-277            android:exported="false" >
-277-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:126:13-37
-278            <intent-filter>
-278-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:128:13-130:29
-279                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
-279-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:129:17-98
-279-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:129:25-95
-280            </intent-filter>
-281        </receiver>
-282        <receiver
-282-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:132:9-142:20
-283            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
-283-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:133:13-78
-284            android:directBootAware="false"
-284-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:134:13-44
-285            android:enabled="true"
-285-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:135:13-35
-286            android:exported="true"
-286-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:136:13-36
-287            android:permission="android.permission.DUMP" >
-287-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:137:13-57
-288            <intent-filter>
-288-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:139:13-141:29
-289                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
-289-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:140:17-88
-289-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:140:25-85
-290            </intent-filter>
-291        </receiver>
-292
-293        <activity
-293-->[com.google.android.gms:play-services-auth:20.6.0] /home/bravon/.gradle/caches/transforms-3/e457fb1a9bb88a96fcc729c053cd1ba0/transformed/jetified-play-services-auth-20.6.0/AndroidManifest.xml:23:9-27:75
-294            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
-294-->[com.google.android.gms:play-services-auth:20.6.0] /home/bravon/.gradle/caches/transforms-3/e457fb1a9bb88a96fcc729c053cd1ba0/transformed/jetified-play-services-auth-20.6.0/AndroidManifest.xml:24:13-93
-295            android:excludeFromRecents="true"
-295-->[com.google.android.gms:play-services-auth:20.6.0] /home/bravon/.gradle/caches/transforms-3/e457fb1a9bb88a96fcc729c053cd1ba0/transformed/jetified-play-services-auth-20.6.0/AndroidManifest.xml:25:13-46
-296            android:exported="false"
-296-->[com.google.android.gms:play-services-auth:20.6.0] /home/bravon/.gradle/caches/transforms-3/e457fb1a9bb88a96fcc729c053cd1ba0/transformed/jetified-play-services-auth-20.6.0/AndroidManifest.xml:26:13-37
-297            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-297-->[com.google.android.gms:play-services-auth:20.6.0] /home/bravon/.gradle/caches/transforms-3/e457fb1a9bb88a96fcc729c053cd1ba0/transformed/jetified-play-services-auth-20.6.0/AndroidManifest.xml:27:13-72
-298        <!--
-299            Service handling Google Sign-In user revocation. For apps that do not integrate with
-300            Google Sign-In, this service will never be started.
-301        -->
-302        <service
-302-->[com.google.android.gms:play-services-auth:20.6.0] /home/bravon/.gradle/caches/transforms-3/e457fb1a9bb88a96fcc729c053cd1ba0/transformed/jetified-play-services-auth-20.6.0/AndroidManifest.xml:33:9-37:51
-303            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
-303-->[com.google.android.gms:play-services-auth:20.6.0] /home/bravon/.gradle/caches/transforms-3/e457fb1a9bb88a96fcc729c053cd1ba0/transformed/jetified-play-services-auth-20.6.0/AndroidManifest.xml:34:13-89
-304            android:exported="true"
-304-->[com.google.android.gms:play-services-auth:20.6.0] /home/bravon/.gradle/caches/transforms-3/e457fb1a9bb88a96fcc729c053cd1ba0/transformed/jetified-play-services-auth-20.6.0/AndroidManifest.xml:35:13-36
-305            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
-305-->[com.google.android.gms:play-services-auth:20.6.0] /home/bravon/.gradle/caches/transforms-3/e457fb1a9bb88a96fcc729c053cd1ba0/transformed/jetified-play-services-auth-20.6.0/AndroidManifest.xml:36:13-107
-306            android:visibleToInstantApps="true" />
-306-->[com.google.android.gms:play-services-auth:20.6.0] /home/bravon/.gradle/caches/transforms-3/e457fb1a9bb88a96fcc729c053cd1ba0/transformed/jetified-play-services-auth-20.6.0/AndroidManifest.xml:37:13-48
-307
-308        <provider
-308-->[com.google.firebase:firebase-common:21.0.0] /home/bravon/.gradle/caches/transforms-3/2e571082210d6af3e29b705abd11838d/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:23:9-28:39
-309            android:name="com.google.firebase.provider.FirebaseInitProvider"
-309-->[com.google.firebase:firebase-common:21.0.0] /home/bravon/.gradle/caches/transforms-3/2e571082210d6af3e29b705abd11838d/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:24:13-77
-310            android:authorities="com.example.sales_navigator.firebaseinitprovider"
-310-->[com.google.firebase:firebase-common:21.0.0] /home/bravon/.gradle/caches/transforms-3/2e571082210d6af3e29b705abd11838d/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:25:13-72
-311            android:directBootAware="true"
-311-->[com.google.firebase:firebase-common:21.0.0] /home/bravon/.gradle/caches/transforms-3/2e571082210d6af3e29b705abd11838d/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:26:13-43
-312            android:exported="false"
-312-->[com.google.firebase:firebase-common:21.0.0] /home/bravon/.gradle/caches/transforms-3/2e571082210d6af3e29b705abd11838d/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:27:13-37
-313            android:initOrder="100" />
-313-->[com.google.firebase:firebase-common:21.0.0] /home/bravon/.gradle/caches/transforms-3/2e571082210d6af3e29b705abd11838d/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:28:13-36
-314
-315        <receiver
-315-->[com.google.android.gms:play-services-measurement:22.1.2] /home/bravon/.gradle/caches/transforms-3/9d311cc6fba11b2a8564cffbee5b0d0b/transformed/jetified-play-services-measurement-22.1.2/AndroidManifest.xml:29:9-33:20
-316            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
-316-->[com.google.android.gms:play-services-measurement:22.1.2] /home/bravon/.gradle/caches/transforms-3/9d311cc6fba11b2a8564cffbee5b0d0b/transformed/jetified-play-services-measurement-22.1.2/AndroidManifest.xml:30:13-85
-317            android:enabled="true"
-317-->[com.google.android.gms:play-services-measurement:22.1.2] /home/bravon/.gradle/caches/transforms-3/9d311cc6fba11b2a8564cffbee5b0d0b/transformed/jetified-play-services-measurement-22.1.2/AndroidManifest.xml:31:13-35
-318            android:exported="false" >
-318-->[com.google.android.gms:play-services-measurement:22.1.2] /home/bravon/.gradle/caches/transforms-3/9d311cc6fba11b2a8564cffbee5b0d0b/transformed/jetified-play-services-measurement-22.1.2/AndroidManifest.xml:32:13-37
-319        </receiver>
-320
-321        <service
-321-->[com.google.android.gms:play-services-measurement:22.1.2] /home/bravon/.gradle/caches/transforms-3/9d311cc6fba11b2a8564cffbee5b0d0b/transformed/jetified-play-services-measurement-22.1.2/AndroidManifest.xml:35:9-38:40
-322            android:name="com.google.android.gms.measurement.AppMeasurementService"
-322-->[com.google.android.gms:play-services-measurement:22.1.2] /home/bravon/.gradle/caches/transforms-3/9d311cc6fba11b2a8564cffbee5b0d0b/transformed/jetified-play-services-measurement-22.1.2/AndroidManifest.xml:36:13-84
-323            android:enabled="true"
-323-->[com.google.android.gms:play-services-measurement:22.1.2] /home/bravon/.gradle/caches/transforms-3/9d311cc6fba11b2a8564cffbee5b0d0b/transformed/jetified-play-services-measurement-22.1.2/AndroidManifest.xml:37:13-35
-324            android:exported="false" />
-324-->[com.google.android.gms:play-services-measurement:22.1.2] /home/bravon/.gradle/caches/transforms-3/9d311cc6fba11b2a8564cffbee5b0d0b/transformed/jetified-play-services-measurement-22.1.2/AndroidManifest.xml:38:13-37
+186        <property
+186-->[com.google.android.gms:play-services-measurement-api:22.1.2] /home/bravon/.gradle/caches/transforms-3/4df8a7dc696586f932dae5a609bfa542/transformed/jetified-play-services-measurement-api-22.1.2/AndroidManifest.xml:30:9-32:61
+187            android:name="android.adservices.AD_SERVICES_CONFIG"
+187-->[com.google.android.gms:play-services-measurement-api:22.1.2] /home/bravon/.gradle/caches/transforms-3/4df8a7dc696586f932dae5a609bfa542/transformed/jetified-play-services-measurement-api-22.1.2/AndroidManifest.xml:31:13-65
+188            android:resource="@xml/ga_ad_services_config" />
+188-->[com.google.android.gms:play-services-measurement-api:22.1.2] /home/bravon/.gradle/caches/transforms-3/4df8a7dc696586f932dae5a609bfa542/transformed/jetified-play-services-measurement-api-22.1.2/AndroidManifest.xml:32:13-58
+189
+190        <provider
+190-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:29:9-37:20
+191            android:name="androidx.startup.InitializationProvider"
+191-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:30:13-67
+192            android:authorities="com.example.crm.androidx-startup"
+192-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:31:13-68
+193            android:exported="false" >
+193-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:32:13-37
+194            <meta-data
+194-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:34:13-36:52
+195                android:name="androidx.work.WorkManagerInitializer"
+195-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:35:17-68
+196                android:value="androidx.startup" />
+196-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:36:17-49
+197            <meta-data
+197-->[androidx.lifecycle:lifecycle-process:2.7.0] /home/bravon/.gradle/caches/transforms-3/d6ba82887ea707f3e3581aa2bb810af6/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:29:13-31:52
+198                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+198-->[androidx.lifecycle:lifecycle-process:2.7.0] /home/bravon/.gradle/caches/transforms-3/d6ba82887ea707f3e3581aa2bb810af6/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:30:17-78
+199                android:value="androidx.startup" />
+199-->[androidx.lifecycle:lifecycle-process:2.7.0] /home/bravon/.gradle/caches/transforms-3/d6ba82887ea707f3e3581aa2bb810af6/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:31:17-49
+200            <meta-data
+200-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/bravon/.gradle/caches/transforms-3/c4a1ee19371a348f1a3383d4c6e35be0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+201                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+201-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/bravon/.gradle/caches/transforms-3/c4a1ee19371a348f1a3383d4c6e35be0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+202                android:value="androidx.startup" />
+202-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/bravon/.gradle/caches/transforms-3/c4a1ee19371a348f1a3383d4c6e35be0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+203        </provider>
+204
+205        <service
+205-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:39:9-45:35
+206            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+206-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:40:13-88
+207            android:directBootAware="false"
+207-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:41:13-44
+208            android:enabled="@bool/enable_system_alarm_service_default"
+208-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:42:13-72
+209            android:exported="false" />
+209-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:43:13-37
+210        <service
+210-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:46:9-52:35
+211            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+211-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:47:13-84
+212            android:directBootAware="false"
+212-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:48:13-44
+213            android:enabled="@bool/enable_system_job_service_default"
+213-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:49:13-70
+214            android:exported="true"
+214-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:50:13-36
+215            android:permission="android.permission.BIND_JOB_SERVICE" />
+215-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:51:13-69
+216        <service
+216-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:53:9-59:35
+217            android:name="androidx.work.impl.foreground.SystemForegroundService"
+217-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:54:13-81
+218            android:directBootAware="false"
+218-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:55:13-44
+219            android:enabled="@bool/enable_system_foreground_service_default"
+219-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:56:13-77
+220            android:exported="false" />
+220-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:57:13-37
+221
+222        <receiver
+222-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:61:9-66:35
+223            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+223-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:62:13-88
+224            android:directBootAware="false"
+224-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:63:13-44
+225            android:enabled="true"
+225-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:64:13-35
+226            android:exported="false" />
+226-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:65:13-37
+227        <receiver
+227-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:67:9-77:20
+228            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+228-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:68:13-106
+229            android:directBootAware="false"
+229-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:69:13-44
+230            android:enabled="false"
+230-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:70:13-36
+231            android:exported="false" >
+231-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:71:13-37
+232            <intent-filter>
+232-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:73:13-76:29
+233                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+233-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:74:17-87
+233-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:74:25-84
+234                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+234-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:75:17-90
+234-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:75:25-87
+235            </intent-filter>
+236        </receiver>
+237        <receiver
+237-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:78:9-88:20
+238            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+238-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:79:13-104
+239            android:directBootAware="false"
+239-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:80:13-44
+240            android:enabled="false"
+240-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:81:13-36
+241            android:exported="false" >
+241-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:82:13-37
+242            <intent-filter>
+242-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:84:13-87:29
+243                <action android:name="android.intent.action.BATTERY_OKAY" />
+243-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:85:17-77
+243-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:85:25-74
+244                <action android:name="android.intent.action.BATTERY_LOW" />
+244-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:86:17-76
+244-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:86:25-73
+245            </intent-filter>
+246        </receiver>
+247        <receiver
+247-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:89:9-99:20
+248            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+248-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:90:13-104
+249            android:directBootAware="false"
+249-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:91:13-44
+250            android:enabled="false"
+250-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:92:13-36
+251            android:exported="false" >
+251-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:93:13-37
+252            <intent-filter>
+252-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:95:13-98:29
+253                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+253-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:96:17-83
+253-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:96:25-80
+254                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+254-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:97:17-82
+254-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:97:25-79
+255            </intent-filter>
+256        </receiver>
+257        <receiver
+257-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:100:9-109:20
+258            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+258-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:101:13-103
+259            android:directBootAware="false"
+259-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:102:13-44
+260            android:enabled="false"
+260-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:103:13-36
+261            android:exported="false" >
+261-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:104:13-37
+262            <intent-filter>
+262-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:106:13-108:29
+263                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+263-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:107:17-79
+263-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:107:25-76
+264            </intent-filter>
+265        </receiver>
+266        <receiver
+266-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:110:9-121:20
+267            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+267-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:111:13-88
+268            android:directBootAware="false"
+268-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:112:13-44
+269            android:enabled="false"
+269-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:113:13-36
+270            android:exported="false" >
+270-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:114:13-37
+271            <intent-filter>
+271-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:116:13-120:29
+272                <action android:name="android.intent.action.BOOT_COMPLETED" />
+272-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:117:17-79
+272-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:117:25-76
+273                <action android:name="android.intent.action.TIME_SET" />
+273-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:118:17-73
+273-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:118:25-70
+274                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+274-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:119:17-81
+274-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:119:25-78
+275            </intent-filter>
+276        </receiver>
+277        <receiver
+277-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:122:9-131:20
+278            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+278-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:123:13-99
+279            android:directBootAware="false"
+279-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:124:13-44
+280            android:enabled="@bool/enable_system_alarm_service_default"
+280-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:125:13-72
+281            android:exported="false" >
+281-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:126:13-37
+282            <intent-filter>
+282-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:128:13-130:29
+283                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+283-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:129:17-98
+283-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:129:25-95
+284            </intent-filter>
+285        </receiver>
+286        <receiver
+286-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:132:9-142:20
+287            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+287-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:133:13-78
+288            android:directBootAware="false"
+288-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:134:13-44
+289            android:enabled="true"
+289-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:135:13-35
+290            android:exported="true"
+290-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:136:13-36
+291            android:permission="android.permission.DUMP" >
+291-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:137:13-57
+292            <intent-filter>
+292-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:139:13-141:29
+293                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+293-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:140:17-88
+293-->[androidx.work:work-runtime:2.8.1] /home/bravon/.gradle/caches/transforms-3/63fbbf71f18e180b193c3ba2c7ffefa9/transformed/work-runtime-2.8.1/AndroidManifest.xml:140:25-85
+294            </intent-filter>
+295        </receiver>
+296
+297        <activity
+297-->[com.google.android.gms:play-services-auth:20.6.0] /home/bravon/.gradle/caches/transforms-3/e457fb1a9bb88a96fcc729c053cd1ba0/transformed/jetified-play-services-auth-20.6.0/AndroidManifest.xml:23:9-27:75
+298            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+298-->[com.google.android.gms:play-services-auth:20.6.0] /home/bravon/.gradle/caches/transforms-3/e457fb1a9bb88a96fcc729c053cd1ba0/transformed/jetified-play-services-auth-20.6.0/AndroidManifest.xml:24:13-93
+299            android:excludeFromRecents="true"
+299-->[com.google.android.gms:play-services-auth:20.6.0] /home/bravon/.gradle/caches/transforms-3/e457fb1a9bb88a96fcc729c053cd1ba0/transformed/jetified-play-services-auth-20.6.0/AndroidManifest.xml:25:13-46
+300            android:exported="false"
+300-->[com.google.android.gms:play-services-auth:20.6.0] /home/bravon/.gradle/caches/transforms-3/e457fb1a9bb88a96fcc729c053cd1ba0/transformed/jetified-play-services-auth-20.6.0/AndroidManifest.xml:26:13-37
+301            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+301-->[com.google.android.gms:play-services-auth:20.6.0] /home/bravon/.gradle/caches/transforms-3/e457fb1a9bb88a96fcc729c053cd1ba0/transformed/jetified-play-services-auth-20.6.0/AndroidManifest.xml:27:13-72
+302        <!--
+303            Service handling Google Sign-In user revocation. For apps that do not integrate with
+304            Google Sign-In, this service will never be started.
+305        -->
+306        <service
+306-->[com.google.android.gms:play-services-auth:20.6.0] /home/bravon/.gradle/caches/transforms-3/e457fb1a9bb88a96fcc729c053cd1ba0/transformed/jetified-play-services-auth-20.6.0/AndroidManifest.xml:33:9-37:51
+307            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+307-->[com.google.android.gms:play-services-auth:20.6.0] /home/bravon/.gradle/caches/transforms-3/e457fb1a9bb88a96fcc729c053cd1ba0/transformed/jetified-play-services-auth-20.6.0/AndroidManifest.xml:34:13-89
+308            android:exported="true"
+308-->[com.google.android.gms:play-services-auth:20.6.0] /home/bravon/.gradle/caches/transforms-3/e457fb1a9bb88a96fcc729c053cd1ba0/transformed/jetified-play-services-auth-20.6.0/AndroidManifest.xml:35:13-36
+309            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+309-->[com.google.android.gms:play-services-auth:20.6.0] /home/bravon/.gradle/caches/transforms-3/e457fb1a9bb88a96fcc729c053cd1ba0/transformed/jetified-play-services-auth-20.6.0/AndroidManifest.xml:36:13-107
+310            android:visibleToInstantApps="true" />
+310-->[com.google.android.gms:play-services-auth:20.6.0] /home/bravon/.gradle/caches/transforms-3/e457fb1a9bb88a96fcc729c053cd1ba0/transformed/jetified-play-services-auth-20.6.0/AndroidManifest.xml:37:13-48
+311
+312        <provider
+312-->[com.google.firebase:firebase-common:21.0.0] /home/bravon/.gradle/caches/transforms-3/2e571082210d6af3e29b705abd11838d/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:23:9-28:39
+313            android:name="com.google.firebase.provider.FirebaseInitProvider"
+313-->[com.google.firebase:firebase-common:21.0.0] /home/bravon/.gradle/caches/transforms-3/2e571082210d6af3e29b705abd11838d/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:24:13-77
+314            android:authorities="com.example.crm.firebaseinitprovider"
+314-->[com.google.firebase:firebase-common:21.0.0] /home/bravon/.gradle/caches/transforms-3/2e571082210d6af3e29b705abd11838d/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:25:13-72
+315            android:directBootAware="true"
+315-->[com.google.firebase:firebase-common:21.0.0] /home/bravon/.gradle/caches/transforms-3/2e571082210d6af3e29b705abd11838d/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:26:13-43
+316            android:exported="false"
+316-->[com.google.firebase:firebase-common:21.0.0] /home/bravon/.gradle/caches/transforms-3/2e571082210d6af3e29b705abd11838d/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:27:13-37
+317            android:initOrder="100" />
+317-->[com.google.firebase:firebase-common:21.0.0] /home/bravon/.gradle/caches/transforms-3/2e571082210d6af3e29b705abd11838d/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:28:13-36
+318
+319        <receiver
+319-->[com.google.android.gms:play-services-measurement:22.1.2] /home/bravon/.gradle/caches/transforms-3/9d311cc6fba11b2a8564cffbee5b0d0b/transformed/jetified-play-services-measurement-22.1.2/AndroidManifest.xml:29:9-33:20
+320            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+320-->[com.google.android.gms:play-services-measurement:22.1.2] /home/bravon/.gradle/caches/transforms-3/9d311cc6fba11b2a8564cffbee5b0d0b/transformed/jetified-play-services-measurement-22.1.2/AndroidManifest.xml:30:13-85
+321            android:enabled="true"
+321-->[com.google.android.gms:play-services-measurement:22.1.2] /home/bravon/.gradle/caches/transforms-3/9d311cc6fba11b2a8564cffbee5b0d0b/transformed/jetified-play-services-measurement-22.1.2/AndroidManifest.xml:31:13-35
+322            android:exported="false" >
+322-->[com.google.android.gms:play-services-measurement:22.1.2] /home/bravon/.gradle/caches/transforms-3/9d311cc6fba11b2a8564cffbee5b0d0b/transformed/jetified-play-services-measurement-22.1.2/AndroidManifest.xml:32:13-37
+323        </receiver>
+324
 325        <service
-325-->[com.google.android.gms:play-services-measurement:22.1.2] /home/bravon/.gradle/caches/transforms-3/9d311cc6fba11b2a8564cffbee5b0d0b/transformed/jetified-play-services-measurement-22.1.2/AndroidManifest.xml:39:9-43:72
-326            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
-326-->[com.google.android.gms:play-services-measurement:22.1.2] /home/bravon/.gradle/caches/transforms-3/9d311cc6fba11b2a8564cffbee5b0d0b/transformed/jetified-play-services-measurement-22.1.2/AndroidManifest.xml:40:13-87
+325-->[com.google.android.gms:play-services-measurement:22.1.2] /home/bravon/.gradle/caches/transforms-3/9d311cc6fba11b2a8564cffbee5b0d0b/transformed/jetified-play-services-measurement-22.1.2/AndroidManifest.xml:35:9-38:40
+326            android:name="com.google.android.gms.measurement.AppMeasurementService"
+326-->[com.google.android.gms:play-services-measurement:22.1.2] /home/bravon/.gradle/caches/transforms-3/9d311cc6fba11b2a8564cffbee5b0d0b/transformed/jetified-play-services-measurement-22.1.2/AndroidManifest.xml:36:13-84
 327            android:enabled="true"
-327-->[com.google.android.gms:play-services-measurement:22.1.2] /home/bravon/.gradle/caches/transforms-3/9d311cc6fba11b2a8564cffbee5b0d0b/transformed/jetified-play-services-measurement-22.1.2/AndroidManifest.xml:41:13-35
-328            android:exported="false"
-328-->[com.google.android.gms:play-services-measurement:22.1.2] /home/bravon/.gradle/caches/transforms-3/9d311cc6fba11b2a8564cffbee5b0d0b/transformed/jetified-play-services-measurement-22.1.2/AndroidManifest.xml:42:13-37
-329            android:permission="android.permission.BIND_JOB_SERVICE" />
-329-->[com.google.android.gms:play-services-measurement:22.1.2] /home/bravon/.gradle/caches/transforms-3/9d311cc6fba11b2a8564cffbee5b0d0b/transformed/jetified-play-services-measurement-22.1.2/AndroidManifest.xml:43:13-69
-330
-331        <activity
-331-->[com.google.android.gms:play-services-base:18.5.0] /home/bravon/.gradle/caches/transforms-3/6a4216d4ff72dce15d9770503335f1fa/transformed/jetified-play-services-base-18.5.0/AndroidManifest.xml:5:9-173
-332            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-332-->[com.google.android.gms:play-services-base:18.5.0] /home/bravon/.gradle/caches/transforms-3/6a4216d4ff72dce15d9770503335f1fa/transformed/jetified-play-services-base-18.5.0/AndroidManifest.xml:5:19-85
-333            android:exported="false"
-333-->[com.google.android.gms:play-services-base:18.5.0] /home/bravon/.gradle/caches/transforms-3/6a4216d4ff72dce15d9770503335f1fa/transformed/jetified-play-services-base-18.5.0/AndroidManifest.xml:5:146-170
-334            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-334-->[com.google.android.gms:play-services-base:18.5.0] /home/bravon/.gradle/caches/transforms-3/6a4216d4ff72dce15d9770503335f1fa/transformed/jetified-play-services-base-18.5.0/AndroidManifest.xml:5:86-145
-335
-336        <uses-library
-336-->[androidx.window:window:1.2.0] /home/bravon/.gradle/caches/transforms-3/ad4234e6c7f9a7882406d3a97bf5dbfa/transformed/jetified-window-1.2.0/AndroidManifest.xml:23:9-25:40
-337            android:name="androidx.window.extensions"
-337-->[androidx.window:window:1.2.0] /home/bravon/.gradle/caches/transforms-3/ad4234e6c7f9a7882406d3a97bf5dbfa/transformed/jetified-window-1.2.0/AndroidManifest.xml:24:13-54
-338            android:required="false" />
-338-->[androidx.window:window:1.2.0] /home/bravon/.gradle/caches/transforms-3/ad4234e6c7f9a7882406d3a97bf5dbfa/transformed/jetified-window-1.2.0/AndroidManifest.xml:25:13-37
-339        <uses-library
-339-->[androidx.window:window:1.2.0] /home/bravon/.gradle/caches/transforms-3/ad4234e6c7f9a7882406d3a97bf5dbfa/transformed/jetified-window-1.2.0/AndroidManifest.xml:26:9-28:40
-340            android:name="androidx.window.sidecar"
-340-->[androidx.window:window:1.2.0] /home/bravon/.gradle/caches/transforms-3/ad4234e6c7f9a7882406d3a97bf5dbfa/transformed/jetified-window-1.2.0/AndroidManifest.xml:27:13-51
-341            android:required="false" />
-341-->[androidx.window:window:1.2.0] /home/bravon/.gradle/caches/transforms-3/ad4234e6c7f9a7882406d3a97bf5dbfa/transformed/jetified-window-1.2.0/AndroidManifest.xml:28:13-37
-342        <uses-library
-342-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] /home/bravon/.gradle/caches/transforms-3/3e4e15ed4a782f39c8f15b43731683b4/transformed/jetified-ads-adservices-1.0.0-beta05/AndroidManifest.xml:23:9-25:40
-343            android:name="android.ext.adservices"
-343-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] /home/bravon/.gradle/caches/transforms-3/3e4e15ed4a782f39c8f15b43731683b4/transformed/jetified-ads-adservices-1.0.0-beta05/AndroidManifest.xml:24:13-50
-344            android:required="false" />
-344-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] /home/bravon/.gradle/caches/transforms-3/3e4e15ed4a782f39c8f15b43731683b4/transformed/jetified-ads-adservices-1.0.0-beta05/AndroidManifest.xml:25:13-37
-345
-346        <meta-data
-346-->[com.google.android.gms:play-services-basement:18.4.0] /home/bravon/.gradle/caches/transforms-3/4b5f83f34584db2d6b90c8f8bfb26fed/transformed/jetified-play-services-basement-18.4.0/AndroidManifest.xml:6:9-122
-347            android:name="com.google.android.gms.version"
-347-->[com.google.android.gms:play-services-basement:18.4.0] /home/bravon/.gradle/caches/transforms-3/4b5f83f34584db2d6b90c8f8bfb26fed/transformed/jetified-play-services-basement-18.4.0/AndroidManifest.xml:6:20-65
-348            android:value="@integer/google_play_services_version" />
-348-->[com.google.android.gms:play-services-basement:18.4.0] /home/bravon/.gradle/caches/transforms-3/4b5f83f34584db2d6b90c8f8bfb26fed/transformed/jetified-play-services-basement-18.4.0/AndroidManifest.xml:6:66-119
+327-->[com.google.android.gms:play-services-measurement:22.1.2] /home/bravon/.gradle/caches/transforms-3/9d311cc6fba11b2a8564cffbee5b0d0b/transformed/jetified-play-services-measurement-22.1.2/AndroidManifest.xml:37:13-35
+328            android:exported="false" />
+328-->[com.google.android.gms:play-services-measurement:22.1.2] /home/bravon/.gradle/caches/transforms-3/9d311cc6fba11b2a8564cffbee5b0d0b/transformed/jetified-play-services-measurement-22.1.2/AndroidManifest.xml:38:13-37
+329        <service
+329-->[com.google.android.gms:play-services-measurement:22.1.2] /home/bravon/.gradle/caches/transforms-3/9d311cc6fba11b2a8564cffbee5b0d0b/transformed/jetified-play-services-measurement-22.1.2/AndroidManifest.xml:39:9-43:72
+330            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+330-->[com.google.android.gms:play-services-measurement:22.1.2] /home/bravon/.gradle/caches/transforms-3/9d311cc6fba11b2a8564cffbee5b0d0b/transformed/jetified-play-services-measurement-22.1.2/AndroidManifest.xml:40:13-87
+331            android:enabled="true"
+331-->[com.google.android.gms:play-services-measurement:22.1.2] /home/bravon/.gradle/caches/transforms-3/9d311cc6fba11b2a8564cffbee5b0d0b/transformed/jetified-play-services-measurement-22.1.2/AndroidManifest.xml:41:13-35
+332            android:exported="false"
+332-->[com.google.android.gms:play-services-measurement:22.1.2] /home/bravon/.gradle/caches/transforms-3/9d311cc6fba11b2a8564cffbee5b0d0b/transformed/jetified-play-services-measurement-22.1.2/AndroidManifest.xml:42:13-37
+333            android:permission="android.permission.BIND_JOB_SERVICE" />
+333-->[com.google.android.gms:play-services-measurement:22.1.2] /home/bravon/.gradle/caches/transforms-3/9d311cc6fba11b2a8564cffbee5b0d0b/transformed/jetified-play-services-measurement-22.1.2/AndroidManifest.xml:43:13-69
+334
+335        <activity
+335-->[com.google.android.gms:play-services-base:18.5.0] /home/bravon/.gradle/caches/transforms-3/6a4216d4ff72dce15d9770503335f1fa/transformed/jetified-play-services-base-18.5.0/AndroidManifest.xml:5:9-173
+336            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+336-->[com.google.android.gms:play-services-base:18.5.0] /home/bravon/.gradle/caches/transforms-3/6a4216d4ff72dce15d9770503335f1fa/transformed/jetified-play-services-base-18.5.0/AndroidManifest.xml:5:19-85
+337            android:exported="false"
+337-->[com.google.android.gms:play-services-base:18.5.0] /home/bravon/.gradle/caches/transforms-3/6a4216d4ff72dce15d9770503335f1fa/transformed/jetified-play-services-base-18.5.0/AndroidManifest.xml:5:146-170
+338            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+338-->[com.google.android.gms:play-services-base:18.5.0] /home/bravon/.gradle/caches/transforms-3/6a4216d4ff72dce15d9770503335f1fa/transformed/jetified-play-services-base-18.5.0/AndroidManifest.xml:5:86-145
+339
+340        <uses-library
+340-->[androidx.window:window:1.2.0] /home/bravon/.gradle/caches/transforms-3/ad4234e6c7f9a7882406d3a97bf5dbfa/transformed/jetified-window-1.2.0/AndroidManifest.xml:23:9-25:40
+341            android:name="androidx.window.extensions"
+341-->[androidx.window:window:1.2.0] /home/bravon/.gradle/caches/transforms-3/ad4234e6c7f9a7882406d3a97bf5dbfa/transformed/jetified-window-1.2.0/AndroidManifest.xml:24:13-54
+342            android:required="false" />
+342-->[androidx.window:window:1.2.0] /home/bravon/.gradle/caches/transforms-3/ad4234e6c7f9a7882406d3a97bf5dbfa/transformed/jetified-window-1.2.0/AndroidManifest.xml:25:13-37
+343        <uses-library
+343-->[androidx.window:window:1.2.0] /home/bravon/.gradle/caches/transforms-3/ad4234e6c7f9a7882406d3a97bf5dbfa/transformed/jetified-window-1.2.0/AndroidManifest.xml:26:9-28:40
+344            android:name="androidx.window.sidecar"
+344-->[androidx.window:window:1.2.0] /home/bravon/.gradle/caches/transforms-3/ad4234e6c7f9a7882406d3a97bf5dbfa/transformed/jetified-window-1.2.0/AndroidManifest.xml:27:13-51
+345            android:required="false" />
+345-->[androidx.window:window:1.2.0] /home/bravon/.gradle/caches/transforms-3/ad4234e6c7f9a7882406d3a97bf5dbfa/transformed/jetified-window-1.2.0/AndroidManifest.xml:28:13-37
+346        <uses-library
+346-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] /home/bravon/.gradle/caches/transforms-3/3e4e15ed4a782f39c8f15b43731683b4/transformed/jetified-ads-adservices-1.0.0-beta05/AndroidManifest.xml:23:9-25:40
+347            android:name="android.ext.adservices"
+347-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] /home/bravon/.gradle/caches/transforms-3/3e4e15ed4a782f39c8f15b43731683b4/transformed/jetified-ads-adservices-1.0.0-beta05/AndroidManifest.xml:24:13-50
+348            android:required="false" />
+348-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] /home/bravon/.gradle/caches/transforms-3/3e4e15ed4a782f39c8f15b43731683b4/transformed/jetified-ads-adservices-1.0.0-beta05/AndroidManifest.xml:25:13-37
 349
-350        <receiver
-350-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/bravon/.gradle/caches/transforms-3/c4a1ee19371a348f1a3383d4c6e35be0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
-351            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-351-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/bravon/.gradle/caches/transforms-3/c4a1ee19371a348f1a3383d4c6e35be0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
-352            android:directBootAware="false"
-352-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/bravon/.gradle/caches/transforms-3/c4a1ee19371a348f1a3383d4c6e35be0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
-353            android:enabled="true"
-353-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/bravon/.gradle/caches/transforms-3/c4a1ee19371a348f1a3383d4c6e35be0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
-354            android:exported="true"
-354-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/bravon/.gradle/caches/transforms-3/c4a1ee19371a348f1a3383d4c6e35be0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
-355            android:permission="android.permission.DUMP" >
-355-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/bravon/.gradle/caches/transforms-3/c4a1ee19371a348f1a3383d4c6e35be0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
-356            <intent-filter>
-356-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/bravon/.gradle/caches/transforms-3/c4a1ee19371a348f1a3383d4c6e35be0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
-357                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-357-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/bravon/.gradle/caches/transforms-3/c4a1ee19371a348f1a3383d4c6e35be0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
-357-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/bravon/.gradle/caches/transforms-3/c4a1ee19371a348f1a3383d4c6e35be0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
-358            </intent-filter>
-359            <intent-filter>
-359-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/bravon/.gradle/caches/transforms-3/c4a1ee19371a348f1a3383d4c6e35be0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
-360                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-360-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/bravon/.gradle/caches/transforms-3/c4a1ee19371a348f1a3383d4c6e35be0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
-360-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/bravon/.gradle/caches/transforms-3/c4a1ee19371a348f1a3383d4c6e35be0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
-361            </intent-filter>
-362            <intent-filter>
-362-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/bravon/.gradle/caches/transforms-3/c4a1ee19371a348f1a3383d4c6e35be0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
-363                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-363-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/bravon/.gradle/caches/transforms-3/c4a1ee19371a348f1a3383d4c6e35be0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
-363-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/bravon/.gradle/caches/transforms-3/c4a1ee19371a348f1a3383d4c6e35be0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
-364            </intent-filter>
-365            <intent-filter>
-365-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/bravon/.gradle/caches/transforms-3/c4a1ee19371a348f1a3383d4c6e35be0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
-366                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-366-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/bravon/.gradle/caches/transforms-3/c4a1ee19371a348f1a3383d4c6e35be0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
-366-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/bravon/.gradle/caches/transforms-3/c4a1ee19371a348f1a3383d4c6e35be0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
-367            </intent-filter>
-368        </receiver>
-369
-370        <service
-370-->[androidx.room:room-runtime:2.5.0] /home/bravon/.gradle/caches/transforms-3/1d29a4530e0c5b489484dee3dcf0b734/transformed/room-runtime-2.5.0/AndroidManifest.xml:24:9-28:63
-371            android:name="androidx.room.MultiInstanceInvalidationService"
-371-->[androidx.room:room-runtime:2.5.0] /home/bravon/.gradle/caches/transforms-3/1d29a4530e0c5b489484dee3dcf0b734/transformed/room-runtime-2.5.0/AndroidManifest.xml:25:13-74
-372            android:directBootAware="true"
-372-->[androidx.room:room-runtime:2.5.0] /home/bravon/.gradle/caches/transforms-3/1d29a4530e0c5b489484dee3dcf0b734/transformed/room-runtime-2.5.0/AndroidManifest.xml:26:13-43
-373            android:exported="false" />
-373-->[androidx.room:room-runtime:2.5.0] /home/bravon/.gradle/caches/transforms-3/1d29a4530e0c5b489484dee3dcf0b734/transformed/room-runtime-2.5.0/AndroidManifest.xml:27:13-37
+350        <meta-data
+350-->[com.google.android.gms:play-services-basement:18.4.0] /home/bravon/.gradle/caches/transforms-3/4b5f83f34584db2d6b90c8f8bfb26fed/transformed/jetified-play-services-basement-18.4.0/AndroidManifest.xml:6:9-122
+351            android:name="com.google.android.gms.version"
+351-->[com.google.android.gms:play-services-basement:18.4.0] /home/bravon/.gradle/caches/transforms-3/4b5f83f34584db2d6b90c8f8bfb26fed/transformed/jetified-play-services-basement-18.4.0/AndroidManifest.xml:6:20-65
+352            android:value="@integer/google_play_services_version" />
+352-->[com.google.android.gms:play-services-basement:18.4.0] /home/bravon/.gradle/caches/transforms-3/4b5f83f34584db2d6b90c8f8bfb26fed/transformed/jetified-play-services-basement-18.4.0/AndroidManifest.xml:6:66-119
+353
+354        <receiver
+354-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/bravon/.gradle/caches/transforms-3/c4a1ee19371a348f1a3383d4c6e35be0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+355            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+355-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/bravon/.gradle/caches/transforms-3/c4a1ee19371a348f1a3383d4c6e35be0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+356            android:directBootAware="false"
+356-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/bravon/.gradle/caches/transforms-3/c4a1ee19371a348f1a3383d4c6e35be0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+357            android:enabled="true"
+357-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/bravon/.gradle/caches/transforms-3/c4a1ee19371a348f1a3383d4c6e35be0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+358            android:exported="true"
+358-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/bravon/.gradle/caches/transforms-3/c4a1ee19371a348f1a3383d4c6e35be0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+359            android:permission="android.permission.DUMP" >
+359-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/bravon/.gradle/caches/transforms-3/c4a1ee19371a348f1a3383d4c6e35be0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+360            <intent-filter>
+360-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/bravon/.gradle/caches/transforms-3/c4a1ee19371a348f1a3383d4c6e35be0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+361                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+361-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/bravon/.gradle/caches/transforms-3/c4a1ee19371a348f1a3383d4c6e35be0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+361-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/bravon/.gradle/caches/transforms-3/c4a1ee19371a348f1a3383d4c6e35be0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+362            </intent-filter>
+363            <intent-filter>
+363-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/bravon/.gradle/caches/transforms-3/c4a1ee19371a348f1a3383d4c6e35be0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+364                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+364-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/bravon/.gradle/caches/transforms-3/c4a1ee19371a348f1a3383d4c6e35be0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+364-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/bravon/.gradle/caches/transforms-3/c4a1ee19371a348f1a3383d4c6e35be0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+365            </intent-filter>
+366            <intent-filter>
+366-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/bravon/.gradle/caches/transforms-3/c4a1ee19371a348f1a3383d4c6e35be0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+367                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+367-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/bravon/.gradle/caches/transforms-3/c4a1ee19371a348f1a3383d4c6e35be0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+367-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/bravon/.gradle/caches/transforms-3/c4a1ee19371a348f1a3383d4c6e35be0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+368            </intent-filter>
+369            <intent-filter>
+369-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/bravon/.gradle/caches/transforms-3/c4a1ee19371a348f1a3383d4c6e35be0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+370                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+370-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/bravon/.gradle/caches/transforms-3/c4a1ee19371a348f1a3383d4c6e35be0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+370-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/bravon/.gradle/caches/transforms-3/c4a1ee19371a348f1a3383d4c6e35be0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
+371            </intent-filter>
+372        </receiver>
+373
 374        <service
-374-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /home/bravon/.gradle/caches/transforms-3/7da4a327e2991ccb8c36469afcde82f1/transformed/jetified-transport-backend-cct-3.1.9/AndroidManifest.xml:28:9-34:19
-375            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
-375-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /home/bravon/.gradle/caches/transforms-3/7da4a327e2991ccb8c36469afcde82f1/transformed/jetified-transport-backend-cct-3.1.9/AndroidManifest.xml:29:13-103
-376            android:exported="false" >
-376-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /home/bravon/.gradle/caches/transforms-3/7da4a327e2991ccb8c36469afcde82f1/transformed/jetified-transport-backend-cct-3.1.9/AndroidManifest.xml:30:13-37
-377            <meta-data
-377-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /home/bravon/.gradle/caches/transforms-3/7da4a327e2991ccb8c36469afcde82f1/transformed/jetified-transport-backend-cct-3.1.9/AndroidManifest.xml:31:13-33:39
-378                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
-378-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /home/bravon/.gradle/caches/transforms-3/7da4a327e2991ccb8c36469afcde82f1/transformed/jetified-transport-backend-cct-3.1.9/AndroidManifest.xml:32:17-94
-379                android:value="cct" />
-379-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /home/bravon/.gradle/caches/transforms-3/7da4a327e2991ccb8c36469afcde82f1/transformed/jetified-transport-backend-cct-3.1.9/AndroidManifest.xml:33:17-36
-380        </service>
-381        <service
-381-->[com.google.android.datatransport:transport-runtime:3.1.9] /home/bravon/.gradle/caches/transforms-3/bbbd5ff93e18ee4836894abf63cce929/transformed/jetified-transport-runtime-3.1.9/AndroidManifest.xml:26:9-30:19
-382            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
-382-->[com.google.android.datatransport:transport-runtime:3.1.9] /home/bravon/.gradle/caches/transforms-3/bbbd5ff93e18ee4836894abf63cce929/transformed/jetified-transport-runtime-3.1.9/AndroidManifest.xml:27:13-117
-383            android:exported="false"
-383-->[com.google.android.datatransport:transport-runtime:3.1.9] /home/bravon/.gradle/caches/transforms-3/bbbd5ff93e18ee4836894abf63cce929/transformed/jetified-transport-runtime-3.1.9/AndroidManifest.xml:28:13-37
-384            android:permission="android.permission.BIND_JOB_SERVICE" >
-384-->[com.google.android.datatransport:transport-runtime:3.1.9] /home/bravon/.gradle/caches/transforms-3/bbbd5ff93e18ee4836894abf63cce929/transformed/jetified-transport-runtime-3.1.9/AndroidManifest.xml:29:13-69
-385        </service>
-386
-387        <receiver
-387-->[com.google.android.datatransport:transport-runtime:3.1.9] /home/bravon/.gradle/caches/transforms-3/bbbd5ff93e18ee4836894abf63cce929/transformed/jetified-transport-runtime-3.1.9/AndroidManifest.xml:32:9-34:40
-388            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
-388-->[com.google.android.datatransport:transport-runtime:3.1.9] /home/bravon/.gradle/caches/transforms-3/bbbd5ff93e18ee4836894abf63cce929/transformed/jetified-transport-runtime-3.1.9/AndroidManifest.xml:33:13-132
-389            android:exported="false" />
-389-->[com.google.android.datatransport:transport-runtime:3.1.9] /home/bravon/.gradle/caches/transforms-3/bbbd5ff93e18ee4836894abf63cce929/transformed/jetified-transport-runtime-3.1.9/AndroidManifest.xml:34:13-37
-390    </application>
-391
-392</manifest>
+374-->[androidx.room:room-runtime:2.5.0] /home/bravon/.gradle/caches/transforms-3/1d29a4530e0c5b489484dee3dcf0b734/transformed/room-runtime-2.5.0/AndroidManifest.xml:24:9-28:63
+375            android:name="androidx.room.MultiInstanceInvalidationService"
+375-->[androidx.room:room-runtime:2.5.0] /home/bravon/.gradle/caches/transforms-3/1d29a4530e0c5b489484dee3dcf0b734/transformed/room-runtime-2.5.0/AndroidManifest.xml:25:13-74
+376            android:directBootAware="true"
+376-->[androidx.room:room-runtime:2.5.0] /home/bravon/.gradle/caches/transforms-3/1d29a4530e0c5b489484dee3dcf0b734/transformed/room-runtime-2.5.0/AndroidManifest.xml:26:13-43
+377            android:exported="false" />
+377-->[androidx.room:room-runtime:2.5.0] /home/bravon/.gradle/caches/transforms-3/1d29a4530e0c5b489484dee3dcf0b734/transformed/room-runtime-2.5.0/AndroidManifest.xml:27:13-37
+378        <service
+378-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /home/bravon/.gradle/caches/transforms-3/7da4a327e2991ccb8c36469afcde82f1/transformed/jetified-transport-backend-cct-3.1.9/AndroidManifest.xml:28:9-34:19
+379            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+379-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /home/bravon/.gradle/caches/transforms-3/7da4a327e2991ccb8c36469afcde82f1/transformed/jetified-transport-backend-cct-3.1.9/AndroidManifest.xml:29:13-103
+380            android:exported="false" >
+380-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /home/bravon/.gradle/caches/transforms-3/7da4a327e2991ccb8c36469afcde82f1/transformed/jetified-transport-backend-cct-3.1.9/AndroidManifest.xml:30:13-37
+381            <meta-data
+381-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /home/bravon/.gradle/caches/transforms-3/7da4a327e2991ccb8c36469afcde82f1/transformed/jetified-transport-backend-cct-3.1.9/AndroidManifest.xml:31:13-33:39
+382                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+382-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /home/bravon/.gradle/caches/transforms-3/7da4a327e2991ccb8c36469afcde82f1/transformed/jetified-transport-backend-cct-3.1.9/AndroidManifest.xml:32:17-94
+383                android:value="cct" />
+383-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /home/bravon/.gradle/caches/transforms-3/7da4a327e2991ccb8c36469afcde82f1/transformed/jetified-transport-backend-cct-3.1.9/AndroidManifest.xml:33:17-36
+384        </service>
+385        <service
+385-->[com.google.android.datatransport:transport-runtime:3.1.9] /home/bravon/.gradle/caches/transforms-3/bbbd5ff93e18ee4836894abf63cce929/transformed/jetified-transport-runtime-3.1.9/AndroidManifest.xml:26:9-30:19
+386            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+386-->[com.google.android.datatransport:transport-runtime:3.1.9] /home/bravon/.gradle/caches/transforms-3/bbbd5ff93e18ee4836894abf63cce929/transformed/jetified-transport-runtime-3.1.9/AndroidManifest.xml:27:13-117
+387            android:exported="false"
+387-->[com.google.android.datatransport:transport-runtime:3.1.9] /home/bravon/.gradle/caches/transforms-3/bbbd5ff93e18ee4836894abf63cce929/transformed/jetified-transport-runtime-3.1.9/AndroidManifest.xml:28:13-37
+388            android:permission="android.permission.BIND_JOB_SERVICE" >
+388-->[com.google.android.datatransport:transport-runtime:3.1.9] /home/bravon/.gradle/caches/transforms-3/bbbd5ff93e18ee4836894abf63cce929/transformed/jetified-transport-runtime-3.1.9/AndroidManifest.xml:29:13-69
+389        </service>
+390
+391        <receiver
+391-->[com.google.android.datatransport:transport-runtime:3.1.9] /home/bravon/.gradle/caches/transforms-3/bbbd5ff93e18ee4836894abf63cce929/transformed/jetified-transport-runtime-3.1.9/AndroidManifest.xml:32:9-34:40
+392            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+392-->[com.google.android.datatransport:transport-runtime:3.1.9] /home/bravon/.gradle/caches/transforms-3/bbbd5ff93e18ee4836894abf63cce929/transformed/jetified-transport-runtime-3.1.9/AndroidManifest.xml:33:13-132
+393            android:exported="false" />
+393-->[com.google.android.datatransport:transport-runtime:3.1.9] /home/bravon/.gradle/caches/transforms-3/bbbd5ff93e18ee4836894abf63cce929/transformed/jetified-transport-runtime-3.1.9/AndroidManifest.xml:34:13-37
+394    </application>
+395
+396</manifest>

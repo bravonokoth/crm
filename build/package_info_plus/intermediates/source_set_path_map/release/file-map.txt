@@ -20,8 +20,8 @@ dev.fluttercommunity.plus.packageinfo.package_info_plus-jetified-startup-runtime
 dev.fluttercommunity.plus.packageinfo.package_info_plus-core-runtime-2.2.0-19 /home/bravon/.gradle/caches/transforms-3/fc4579e1a7c1d61eafaea0752944bb38/transformed/core-runtime-2.2.0/res
 dev.fluttercommunity.plus.packageinfo.package_info_plus-main-20 /home/bravon/.pub-cache/hosted/pub.dev/package_info_plus-8.1.4/android/src/main/res
 dev.fluttercommunity.plus.packageinfo.package_info_plus-release-21 /home/bravon/.pub-cache/hosted/pub.dev/package_info_plus-8.1.4/android/src/release/res
-dev.fluttercommunity.plus.packageinfo.package_info_plus-pngs-22 /home/bravon/Desktop/clientflow/build/package_info_plus/generated/res/pngs/release
-dev.fluttercommunity.plus.packageinfo.package_info_plus-resValues-23 /home/bravon/Desktop/clientflow/build/package_info_plus/generated/res/resValues/release
-dev.fluttercommunity.plus.packageinfo.package_info_plus-mergeReleaseResources-24 /home/bravon/Desktop/clientflow/build/package_info_plus/intermediates/incremental/release/mergeReleaseResources/merged.dir
-dev.fluttercommunity.plus.packageinfo.package_info_plus-mergeReleaseResources-25 /home/bravon/Desktop/clientflow/build/package_info_plus/intermediates/incremental/release/mergeReleaseResources/stripped.dir
-dev.fluttercommunity.plus.packageinfo.package_info_plus-merged_res-26 /home/bravon/Desktop/clientflow/build/package_info_plus/intermediates/merged_res/release
+dev.fluttercommunity.plus.packageinfo.package_info_plus-pngs-22 /home/bravon/Desktop/crm/build/package_info_plus/generated/res/pngs/release
+dev.fluttercommunity.plus.packageinfo.package_info_plus-resValues-23 /home/bravon/Desktop/crm/build/package_info_plus/generated/res/resValues/release
+dev.fluttercommunity.plus.packageinfo.package_info_plus-mergeReleaseResources-24 /home/bravon/Desktop/crm/build/package_info_plus/intermediates/incremental/release/mergeReleaseResources/merged.dir
+dev.fluttercommunity.plus.packageinfo.package_info_plus-mergeReleaseResources-25 /home/bravon/Desktop/crm/build/package_info_plus/intermediates/incremental/release/mergeReleaseResources/stripped.dir
+dev.fluttercommunity.plus.packageinfo.package_info_plus-merged_res-26 /home/bravon/Desktop/crm/build/package_info_plus/intermediates/merged_res/release

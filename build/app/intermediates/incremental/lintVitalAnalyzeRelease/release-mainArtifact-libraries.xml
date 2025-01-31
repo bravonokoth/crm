@@ -1,13 +1,13 @@
 <libraries>
   <library
-      name="__local_aars__:/home/bravon/Desktop/clientflow/build/app/intermediates/flutter/release/libs.jar:unspecified@jar"
-      jars="/home/bravon/Desktop/clientflow/build/app/intermediates/flutter/release/libs.jar"
-      resolved="__local_aars__:/home/bravon/Desktop/clientflow/build/app/intermediates/flutter/release/libs.jar:unspecified"/>
+      name="__local_aars__:/home/bravon/Desktop/crm/build/app/intermediates/flutter/release/libs.jar:unspecified@jar"
+      jars="/home/bravon/Desktop/crm/build/app/intermediates/flutter/release/libs.jar"
+      resolved="__local_aars__:/home/bravon/Desktop/crm/build/app/intermediates/flutter/release/libs.jar:unspecified"/>
   <library
-      name="/home/bravon/Desktop/clientflow/android@@:audio_session::release"
-      jars="/home/bravon/Desktop/clientflow/build/audio_session/.transforms/abddafd717a71c288c5de572db9031be/transformed/out/jars/classes.jar:/home/bravon/Desktop/clientflow/build/audio_session/.transforms/abddafd717a71c288c5de572db9031be/transformed/out/jars/libs/R.jar"
+      name="/home/bravon/Desktop/crm/android@@:audio_session::release"
+      jars="/home/bravon/Desktop/crm/build/audio_session/.transforms/ee5b6e3b45619e707acddbef19009bad/transformed/out/jars/classes.jar:/home/bravon/Desktop/crm/build/audio_session/.transforms/ee5b6e3b45619e707acddbef19009bad/transformed/out/jars/libs/R.jar"
       resolved="com.ryanheise.audio_session:audio_session:unspecified"
-      folder="/home/bravon/Desktop/clientflow/build/audio_session/.transforms/abddafd717a71c288c5de572db9031be/transformed/out"
+      folder="/home/bravon/Desktop/crm/build/audio_session/.transforms/ee5b6e3b45619e707acddbef19009bad/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -17,10 +17,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="/home/bravon/Desktop/clientflow/android@@:connectivity_plus::release"
-      jars="/home/bravon/Desktop/clientflow/build/connectivity_plus/.transforms/4993785c11e128badc38ad3fef395287/transformed/out/jars/classes.jar:/home/bravon/Desktop/clientflow/build/connectivity_plus/.transforms/4993785c11e128badc38ad3fef395287/transformed/out/jars/libs/R.jar"
+      name="/home/bravon/Desktop/crm/android@@:connectivity_plus::release"
+      jars="/home/bravon/Desktop/crm/build/connectivity_plus/.transforms/9b527b4e7af7327b201e230c913ef537/transformed/out/jars/classes.jar:/home/bravon/Desktop/crm/build/connectivity_plus/.transforms/9b527b4e7af7327b201e230c913ef537/transformed/out/jars/libs/R.jar"
       resolved="dev.fluttercommunity.plus.connectivity:connectivity_plus:unspecified"
-      folder="/home/bravon/Desktop/clientflow/build/connectivity_plus/.transforms/4993785c11e128badc38ad3fef395287/transformed/out"
+      folder="/home/bravon/Desktop/crm/build/connectivity_plus/.transforms/9b527b4e7af7327b201e230c913ef537/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -30,10 +30,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="/home/bravon/Desktop/clientflow/android@@:firebase_messaging::release"
-      jars="/home/bravon/Desktop/clientflow/build/firebase_messaging/.transforms/be38ae1a58e1f2eec5c48f355e48801f/transformed/out/jars/classes.jar:/home/bravon/Desktop/clientflow/build/firebase_messaging/.transforms/be38ae1a58e1f2eec5c48f355e48801f/transformed/out/jars/libs/R.jar"
+      name="/home/bravon/Desktop/crm/android@@:firebase_messaging::release"
+      jars="/home/bravon/Desktop/crm/build/firebase_messaging/.transforms/f9ca6ea11d5da0cc58b32a99a9b571b1/transformed/out/jars/classes.jar:/home/bravon/Desktop/crm/build/firebase_messaging/.transforms/f9ca6ea11d5da0cc58b32a99a9b571b1/transformed/out/jars/libs/R.jar"
       resolved="io.flutter.plugins.firebasemessaging:firebase_messaging:unspecified"
-      folder="/home/bravon/Desktop/clientflow/build/firebase_messaging/.transforms/be38ae1a58e1f2eec5c48f355e48801f/transformed/out"
+      folder="/home/bravon/Desktop/crm/build/firebase_messaging/.transforms/f9ca6ea11d5da0cc58b32a99a9b571b1/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -43,10 +43,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="/home/bravon/Desktop/clientflow/android@@:firebase_core::release"
-      jars="/home/bravon/Desktop/clientflow/build/firebase_core/.transforms/5bad430fd6669913db3be663f366f01c/transformed/out/jars/classes.jar:/home/bravon/Desktop/clientflow/build/firebase_core/.transforms/5bad430fd6669913db3be663f366f01c/transformed/out/jars/libs/R.jar"
+      name="/home/bravon/Desktop/crm/android@@:firebase_core::release"
+      jars="/home/bravon/Desktop/crm/build/firebase_core/.transforms/b6dbe790202e592b142fca3ed90d73a7/transformed/out/jars/classes.jar:/home/bravon/Desktop/crm/build/firebase_core/.transforms/b6dbe790202e592b142fca3ed90d73a7/transformed/out/jars/libs/R.jar"
       resolved="io.flutter.plugins.firebase.core:firebase_core:unspecified"
-      folder="/home/bravon/Desktop/clientflow/build/firebase_core/.transforms/5bad430fd6669913db3be663f366f01c/transformed/out"
+      folder="/home/bravon/Desktop/crm/build/firebase_core/.transforms/b6dbe790202e592b142fca3ed90d73a7/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -56,10 +56,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="/home/bravon/Desktop/clientflow/android@@:flutter_local_notifications::release"
-      jars="/home/bravon/Desktop/clientflow/build/flutter_local_notifications/.transforms/0417d7eae96e12cc44ba6568c17ede54/transformed/out/jars/classes.jar:/home/bravon/Desktop/clientflow/build/flutter_local_notifications/.transforms/0417d7eae96e12cc44ba6568c17ede54/transformed/out/jars/libs/R.jar"
+      name="/home/bravon/Desktop/crm/android@@:flutter_local_notifications::release"
+      jars="/home/bravon/Desktop/crm/build/flutter_local_notifications/.transforms/125cd108b167469f0e6ee6f6131a75dd/transformed/out/jars/classes.jar:/home/bravon/Desktop/crm/build/flutter_local_notifications/.transforms/125cd108b167469f0e6ee6f6131a75dd/transformed/out/jars/libs/R.jar"
       resolved="com.dexterous.flutterlocalnotifications:flutter_local_notifications:unspecified"
-      folder="/home/bravon/Desktop/clientflow/build/flutter_local_notifications/.transforms/0417d7eae96e12cc44ba6568c17ede54/transformed/out"
+      folder="/home/bravon/Desktop/crm/build/flutter_local_notifications/.transforms/125cd108b167469f0e6ee6f6131a75dd/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -69,10 +69,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="/home/bravon/Desktop/clientflow/android@@:just_audio::release"
-      jars="/home/bravon/Desktop/clientflow/build/just_audio/.transforms/a49d0b8582fbd18017451c10fc7d5992/transformed/out/jars/classes.jar:/home/bravon/Desktop/clientflow/build/just_audio/.transforms/a49d0b8582fbd18017451c10fc7d5992/transformed/out/jars/libs/R.jar"
+      name="/home/bravon/Desktop/crm/android@@:just_audio::release"
+      jars="/home/bravon/Desktop/crm/build/just_audio/.transforms/ec8ce1bfd906698c9bd92218b07f8ebd/transformed/out/jars/classes.jar:/home/bravon/Desktop/crm/build/just_audio/.transforms/ec8ce1bfd906698c9bd92218b07f8ebd/transformed/out/jars/libs/R.jar"
       resolved="com.ryanheise.just_audio:just_audio:unspecified"
-      folder="/home/bravon/Desktop/clientflow/build/just_audio/.transforms/a49d0b8582fbd18017451c10fc7d5992/transformed/out"
+      folder="/home/bravon/Desktop/crm/build/just_audio/.transforms/ec8ce1bfd906698c9bd92218b07f8ebd/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -82,10 +82,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="/home/bravon/Desktop/clientflow/android@@:package_info_plus::release"
-      jars="/home/bravon/Desktop/clientflow/build/package_info_plus/.transforms/f58872983a1f5b703ea9d94297562129/transformed/out/jars/classes.jar:/home/bravon/Desktop/clientflow/build/package_info_plus/.transforms/f58872983a1f5b703ea9d94297562129/transformed/out/jars/libs/R.jar"
+      name="/home/bravon/Desktop/crm/android@@:package_info_plus::release"
+      jars="/home/bravon/Desktop/crm/build/package_info_plus/.transforms/c4522d98afebf89de47c3caa0dd84236/transformed/out/jars/classes.jar:/home/bravon/Desktop/crm/build/package_info_plus/.transforms/c4522d98afebf89de47c3caa0dd84236/transformed/out/jars/libs/R.jar"
       resolved="dev.fluttercommunity.plus.packageinfo:package_info_plus:unspecified"
-      folder="/home/bravon/Desktop/clientflow/build/package_info_plus/.transforms/f58872983a1f5b703ea9d94297562129/transformed/out"
+      folder="/home/bravon/Desktop/crm/build/package_info_plus/.transforms/c4522d98afebf89de47c3caa0dd84236/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -95,10 +95,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="/home/bravon/Desktop/clientflow/android@@:path_provider_android::release"
-      jars="/home/bravon/Desktop/clientflow/build/path_provider_android/.transforms/b6388cc1903155da4ae2a2d89a054af0/transformed/out/jars/classes.jar:/home/bravon/Desktop/clientflow/build/path_provider_android/.transforms/b6388cc1903155da4ae2a2d89a054af0/transformed/out/jars/libs/R.jar"
+      name="/home/bravon/Desktop/crm/android@@:path_provider_android::release"
+      jars="/home/bravon/Desktop/crm/build/path_provider_android/.transforms/50c2da1c6d853904e1871b72d2e39097/transformed/out/jars/classes.jar:/home/bravon/Desktop/crm/build/path_provider_android/.transforms/50c2da1c6d853904e1871b72d2e39097/transformed/out/jars/libs/R.jar"
       resolved="io.flutter.plugins.pathprovider:path_provider_android:unspecified"
-      folder="/home/bravon/Desktop/clientflow/build/path_provider_android/.transforms/b6388cc1903155da4ae2a2d89a054af0/transformed/out"
+      folder="/home/bravon/Desktop/crm/build/path_provider_android/.transforms/50c2da1c6d853904e1871b72d2e39097/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -108,10 +108,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="/home/bravon/Desktop/clientflow/android@@:permission_handler_android::release"
-      jars="/home/bravon/Desktop/clientflow/build/permission_handler_android/.transforms/440b1debf54d0cdc42a13ebc756a6bba/transformed/out/jars/classes.jar:/home/bravon/Desktop/clientflow/build/permission_handler_android/.transforms/440b1debf54d0cdc42a13ebc756a6bba/transformed/out/jars/libs/R.jar"
+      name="/home/bravon/Desktop/crm/android@@:permission_handler_android::release"
+      jars="/home/bravon/Desktop/crm/build/permission_handler_android/.transforms/c5460bf4053f74f2225505b52906999e/transformed/out/jars/classes.jar:/home/bravon/Desktop/crm/build/permission_handler_android/.transforms/c5460bf4053f74f2225505b52906999e/transformed/out/jars/libs/R.jar"
       resolved="com.baseflow.permissionhandler:permission_handler_android:unspecified"
-      folder="/home/bravon/Desktop/clientflow/build/permission_handler_android/.transforms/440b1debf54d0cdc42a13ebc756a6bba/transformed/out"
+      folder="/home/bravon/Desktop/crm/build/permission_handler_android/.transforms/c5460bf4053f74f2225505b52906999e/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -121,10 +121,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="/home/bravon/Desktop/clientflow/android@@:shared_preferences_android::release"
-      jars="/home/bravon/Desktop/clientflow/build/shared_preferences_android/.transforms/6807cdac309de3ec7f43bc2482887cc4/transformed/out/jars/classes.jar:/home/bravon/Desktop/clientflow/build/shared_preferences_android/.transforms/6807cdac309de3ec7f43bc2482887cc4/transformed/out/jars/libs/R.jar"
+      name="/home/bravon/Desktop/crm/android@@:shared_preferences_android::release"
+      jars="/home/bravon/Desktop/crm/build/shared_preferences_android/.transforms/090c67f6982a7eb119bddc3ae13c2f78/transformed/out/jars/classes.jar:/home/bravon/Desktop/crm/build/shared_preferences_android/.transforms/090c67f6982a7eb119bddc3ae13c2f78/transformed/out/jars/libs/R.jar"
       resolved="io.flutter.plugins.sharedpreferences:shared_preferences_android:unspecified"
-      folder="/home/bravon/Desktop/clientflow/build/shared_preferences_android/.transforms/6807cdac309de3ec7f43bc2482887cc4/transformed/out"
+      folder="/home/bravon/Desktop/crm/build/shared_preferences_android/.transforms/090c67f6982a7eb119bddc3ae13c2f78/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -134,10 +134,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="/home/bravon/Desktop/clientflow/android@@:sqflite_android::release"
-      jars="/home/bravon/Desktop/clientflow/build/sqflite_android/.transforms/8fdfa6477a3b584ce308b0316f90a5a1/transformed/out/jars/classes.jar:/home/bravon/Desktop/clientflow/build/sqflite_android/.transforms/8fdfa6477a3b584ce308b0316f90a5a1/transformed/out/jars/libs/R.jar"
+      name="/home/bravon/Desktop/crm/android@@:sqflite_android::release"
+      jars="/home/bravon/Desktop/crm/build/sqflite_android/.transforms/d8f7d5be8b61ef1532aff5ad794b2a18/transformed/out/jars/classes.jar:/home/bravon/Desktop/crm/build/sqflite_android/.transforms/d8f7d5be8b61ef1532aff5ad794b2a18/transformed/out/jars/libs/R.jar"
       resolved="com.tekartik.sqflite:sqflite_android:unspecified"
-      folder="/home/bravon/Desktop/clientflow/build/sqflite_android/.transforms/8fdfa6477a3b584ce308b0316f90a5a1/transformed/out"
+      folder="/home/bravon/Desktop/crm/build/sqflite_android/.transforms/d8f7d5be8b61ef1532aff5ad794b2a18/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -147,10 +147,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="/home/bravon/Desktop/clientflow/android@@:url_launcher_android::release"
-      jars="/home/bravon/Desktop/clientflow/build/url_launcher_android/.transforms/e0ab3e7c85c278652583ebcca0e0ed2c/transformed/out/jars/classes.jar:/home/bravon/Desktop/clientflow/build/url_launcher_android/.transforms/e0ab3e7c85c278652583ebcca0e0ed2c/transformed/out/jars/libs/R.jar"
+      name="/home/bravon/Desktop/crm/android@@:url_launcher_android::release"
+      jars="/home/bravon/Desktop/crm/build/url_launcher_android/.transforms/6e8e8dc7003f5e86e97a0ca2522a5a6f/transformed/out/jars/classes.jar:/home/bravon/Desktop/crm/build/url_launcher_android/.transforms/6e8e8dc7003f5e86e97a0ca2522a5a6f/transformed/out/jars/libs/R.jar"
       resolved="io.flutter.plugins.urllauncher:url_launcher_android:unspecified"
-      folder="/home/bravon/Desktop/clientflow/build/url_launcher_android/.transforms/e0ab3e7c85c278652583ebcca0e0ed2c/transformed/out"
+      folder="/home/bravon/Desktop/crm/build/url_launcher_android/.transforms/6e8e8dc7003f5e86e97a0ca2522a5a6f/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -160,10 +160,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="/home/bravon/Desktop/clientflow/android@@:video_player_android::release"
-      jars="/home/bravon/Desktop/clientflow/build/video_player_android/.transforms/158f3c3ddd9f812ba7976d80259a2bf1/transformed/out/jars/classes.jar:/home/bravon/Desktop/clientflow/build/video_player_android/.transforms/158f3c3ddd9f812ba7976d80259a2bf1/transformed/out/jars/libs/R.jar"
+      name="/home/bravon/Desktop/crm/android@@:video_player_android::release"
+      jars="/home/bravon/Desktop/crm/build/video_player_android/.transforms/c6336ce4d1e26729e6b304fc353b14cf/transformed/out/jars/classes.jar:/home/bravon/Desktop/crm/build/video_player_android/.transforms/c6336ce4d1e26729e6b304fc353b14cf/transformed/out/jars/libs/R.jar"
       resolved="io.flutter.plugins.videoplayer:video_player_android:unspecified"
-      folder="/home/bravon/Desktop/clientflow/build/video_player_android/.transforms/158f3c3ddd9f812ba7976d80259a2bf1/transformed/out"
+      folder="/home/bravon/Desktop/crm/build/video_player_android/.transforms/c6336ce4d1e26729e6b304fc353b14cf/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -173,10 +173,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="/home/bravon/Desktop/clientflow/android@@:wakelock_plus::release"
-      jars="/home/bravon/Desktop/clientflow/build/wakelock_plus/.transforms/8e6861b19b1fdf3746c19e18a28ec695/transformed/out/jars/classes.jar:/home/bravon/Desktop/clientflow/build/wakelock_plus/.transforms/8e6861b19b1fdf3746c19e18a28ec695/transformed/out/jars/libs/R.jar"
+      name="/home/bravon/Desktop/crm/android@@:wakelock_plus::release"
+      jars="/home/bravon/Desktop/crm/build/wakelock_plus/.transforms/8ce5948055e787f40aa2973ae726bf94/transformed/out/jars/classes.jar:/home/bravon/Desktop/crm/build/wakelock_plus/.transforms/8ce5948055e787f40aa2973ae726bf94/transformed/out/jars/libs/R.jar"
       resolved="dev.fluttercommunity.plus.wakelock:wakelock_plus:unspecified"
-      folder="/home/bravon/Desktop/clientflow/build/wakelock_plus/.transforms/8e6861b19b1fdf3746c19e18a28ec695/transformed/out"
+      folder="/home/bravon/Desktop/crm/build/wakelock_plus/.transforms/8ce5948055e787f40aa2973ae726bf94/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -186,10 +186,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="/home/bravon/Desktop/clientflow/android@@:webview_flutter_android::release"
-      jars="/home/bravon/Desktop/clientflow/build/webview_flutter_android/.transforms/c288be21e33656571eef1c639ba4a5da/transformed/out/jars/classes.jar:/home/bravon/Desktop/clientflow/build/webview_flutter_android/.transforms/c288be21e33656571eef1c639ba4a5da/transformed/out/jars/libs/R.jar"
+      name="/home/bravon/Desktop/crm/android@@:webview_flutter_android::release"
+      jars="/home/bravon/Desktop/crm/build/webview_flutter_android/.transforms/fd51755bdba831db14438f1fd64e4df9/transformed/out/jars/classes.jar:/home/bravon/Desktop/crm/build/webview_flutter_android/.transforms/fd51755bdba831db14438f1fd64e4df9/transformed/out/jars/libs/R.jar"
       resolved="io.flutter.plugins.webviewflutter:webview_flutter_android:unspecified"
-      folder="/home/bravon/Desktop/clientflow/build/webview_flutter_android/.transforms/c288be21e33656571eef1c639ba4a5da/transformed/out"
+      folder="/home/bravon/Desktop/crm/build/webview_flutter_android/.transforms/fd51755bdba831db14438f1fd64e4df9/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -199,10 +199,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="/home/bravon/Desktop/clientflow/android@@:workmanager::release"
-      jars="/home/bravon/Desktop/clientflow/build/workmanager/.transforms/f0778fcf6e14472efe8b437617d25b59/transformed/out/jars/classes.jar:/home/bravon/Desktop/clientflow/build/workmanager/.transforms/f0778fcf6e14472efe8b437617d25b59/transformed/out/jars/libs/R.jar"
+      name="/home/bravon/Desktop/crm/android@@:workmanager::release"
+      jars="/home/bravon/Desktop/crm/build/workmanager/.transforms/2c60ccfa2e3c8476f34df14c3051f915/transformed/out/jars/classes.jar:/home/bravon/Desktop/crm/build/workmanager/.transforms/2c60ccfa2e3c8476f34df14c3051f915/transformed/out/jars/libs/R.jar"
       resolved="dev.fluttercommunity.workmanager:workmanager:unspecified"
-      folder="/home/bravon/Desktop/clientflow/build/workmanager/.transforms/f0778fcf6e14472efe8b437617d25b59/transformed/out"
+      folder="/home/bravon/Desktop/crm/build/workmanager/.transforms/2c60ccfa2e3c8476f34df14c3051f915/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"

@@ -1,0 +1,19 @@
+<lint-module
+    format="1"
+    dir="/home/bravon/Desktop/crm/android/app"
+    name=":app"
+    type="APP"
+    maven="android:app:"
+    agpVersion="8.1.0"
+    buildFolder="/home/bravon/Desktop/crm/build/app"
+    bootClassPath="/home/bravon/Android/Sdk/platforms/android-35/android.jar:/home/bravon/Android/Sdk/build-tools/33.0.1/core-lambda-stubs.jar"
+    javaSourceLevel="1.8"
+    compileTarget="android-35">
+  <lintOptions
+      baselineFile="lint-baseline.xml"
+      abortOnError="true"
+      absolutePaths="true"
+      checkReleaseBuilds="true"
+      explainIssues="true"/>
+  <variant name="debug"/>
+</lint-module>

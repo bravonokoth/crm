@@ -1,0 +1,37 @@
+<lint-module
+    format="1"
+    dir="/home/bravon/.pub-cache/hosted/pub.dev/audio_session-0.1.24/android"
+    name=":audio_session"
+    type="LIBRARY"
+    maven="com.ryanheise.audio_session:audio_session:"
+    agpVersion="8.1.0"
+    buildFolder="/home/bravon/Desktop/crm/build/audio_session"
+    bootClassPath="/home/bravon/Android/Sdk/platforms/android-34/android.jar:/home/bravon/Android/Sdk/build-tools/33.0.1/core-lambda-stubs.jar"
+    javaSourceLevel="1.8"
+    compileTarget="android-34"
+    neverShrinking="true">
+  <lintOptions
+      disable="AndroidGradlePluginVersion,InvalidPackage,GradleDependency,NewerVersionAvailable"
+      abortOnError="true"
+      absolutePaths="true"
+      checkAllWarnings="true"
+      warningsAsErrors="true"
+      checkReleaseBuilds="true"
+      explainIssues="true">
+    <severities>
+      <severity
+        id="AndroidGradlePluginVersion"
+        severity="IGNORE" />
+      <severity
+        id="GradleDependency"
+        severity="IGNORE" />
+      <severity
+        id="InvalidPackage"
+        severity="IGNORE" />
+      <severity
+        id="NewerVersionAvailable"
+        severity="IGNORE" />
+    </severities>
+  </lintOptions>
+  <variant name="debug"/>
+</lint-module>

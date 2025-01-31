@@ -19479,11 +19479,11 @@ com.dexterous.flutterlocalnotifications.isolate.IsolatePreferences:
     private static final java.lang.String SHARED_PREFS_FILE_NAME
 com.dexterous.flutterlocalnotifications.utils.LongUtils:
     public void <init>()
-com.example.sales_navigator.R$drawable
-com.example.sales_navigator.R$mipmap
-com.example.sales_navigator.R$string
-com.example.sales_navigator.R$style
-com.example.sales_navigator.R
+com.example.crm.R$drawable
+com.example.crm.R$mipmap
+com.example.crm.R$string
+com.example.crm.R$style
+com.example.crm.R
 com.getkeepsafe.relinker.ApkLibraryInstaller:
     private static final int COPY_BUFFER_SIZE
     private static final int MAX_TRIES

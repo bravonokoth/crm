@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.sales_navigator.app-mergeReleaseResources-58:/values-en-rGB/values-en-rGB.xml",
+            "outputFile": "com.example.crm.app-mergeReleaseResources-58:/values-en-rGB/values-en-rGB.xml",
             "map": [
                 {
                     "source": "/home/bravon/.gradle/caches/transforms-3/6a4216d4ff72dce15d9770503335f1fa/transformed/jetified-play-services-base-18.5.0/res/values-en-rGB/values.xml",

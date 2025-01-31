@@ -3,6 +3,7 @@ local
 drawable launch_background
 drawable sales_navigator
 mipmap ic_launcher
+mipmap ic_launcher_round
 mipmap sales_navigator
 string gcm_defaultSenderId
 string google_api_key

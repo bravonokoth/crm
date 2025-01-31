@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.1.0" type="conditional_incidents">
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data minSdk="ffffffffffff8000" requiresApi="fffffffffffc0000"/>
+        <location
+            file="${:just_audio*debug*sourceProvider*0*javaDir*0}/com/ryanheise/just_audio/AudioPlayer.java"
+            line="826"
+            column="11"
+            startOffset="37024"
+            endLine="826"
+            endColumn="27"
+            endOffset="37040"/>
+        <map>
+            <api-levels id="minSdk"
+                value="ffffffffffff8000"/>
+            <api-levels id="requiresApi"
+                value="fffffffffffc0000"/>
+            <entry
+                name="message"
+                string="Class requires API level 19 (current min is %1$s): `android.media.audiofx.LoudnessEnhancer`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data minSdk="ffffffffffff8000" requiresApi="fffffffffffc0000"/>
+        <location
+            file="${:just_audio*debug*sourceProvider*0*javaDir*0}/com/ryanheise/just_audio/AudioPlayer.java"
+            line="826"
+            column="76"
+            startOffset="37089"
+            endLine="826"
+            endColumn="89"
+            endOffset="37102"/>
+        <map>
+            <api-levels id="minSdk"
+                value="ffffffffffff8000"/>
+            <api-levels id="requiresApi"
+                value="fffffffffffc0000"/>
+            <entry
+                name="message"
+                string="Call requires API level 19 (current min is %1$s): `android.media.audiofx.LoudnessEnhancer#setTargetGain`"/>
+        </map>
+    </incident>
+
+</incidents>
