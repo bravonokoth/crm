@@ -1,70 +1,70 @@
 [
     {
-        "merged": "com.example.crm.app-merged_res-60:/mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "com.example.crm.app-main-54:/mipmap-mdpi/ic_launcher_round.png"
+        "merged": "com.example.crm.app-merged_res-50:/mipmap-xxxhdpi_sales_navigator.png.flat",
+        "source": "com.example.crm.app-main-45:/mipmap-xxxhdpi/sales_navigator.png"
     },
     {
-        "merged": "com.example.crm.app-merged_res-60:/mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "com.example.crm.app-main-54:/mipmap-xhdpi/ic_launcher_round.png"
+        "merged": "com.example.crm.app-merged_res-50:/mipmap-mdpi_sales_navigator.png.flat",
+        "source": "com.example.crm.app-main-45:/mipmap-mdpi/sales_navigator.png"
     },
     {
-        "merged": "com.example.crm.app-merged_res-60:/mipmap-mdpi_sales_navigator.png.flat",
-        "source": "com.example.crm.app-main-54:/mipmap-mdpi/sales_navigator.png"
+        "merged": "com.example.crm.app-merged_res-50:/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "com.example.crm.app-main-45:/mipmap-mdpi/ic_launcher_round.png"
     },
     {
-        "merged": "com.example.crm.app-merged_res-60:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "com.example.crm.app-main-54:/mipmap-xxxhdpi/ic_launcher_round.png"
+        "merged": "com.example.crm.app-merged_res-50:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.example.crm.app-main-45:/mipmap-xxhdpi/ic_launcher.png"
     },
     {
-        "merged": "com.example.crm.app-merged_res-60:/mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "com.example.crm.app-main-54:/mipmap-hdpi/ic_launcher_round.png"
+        "merged": "com.example.crm.app-merged_res-50:/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "com.example.crm.app-main-45:/mipmap-hdpi/ic_launcher_round.png"
     },
     {
-        "merged": "com.example.crm.app-merged_res-60:/mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "com.example.crm.app-main-54:/mipmap-xxhdpi/ic_launcher.png"
+        "merged": "com.example.crm.app-merged_res-50:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.example.crm.app-main-45:/mipmap-hdpi/ic_launcher.png"
     },
     {
-        "merged": "com.example.crm.app-merged_res-60:/mipmap-mdpi_ic_launcher.png.flat",
-        "source": "com.example.crm.app-main-54:/mipmap-mdpi/ic_launcher.png"
+        "merged": "com.example.crm.app-merged_res-50:/mipmap-xhdpi_sales_navigator.png.flat",
+        "source": "com.example.crm.app-main-45:/mipmap-xhdpi/sales_navigator.png"
     },
     {
-        "merged": "com.example.crm.app-merged_res-60:/mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "com.example.crm.app-main-54:/mipmap-xhdpi/ic_launcher.png"
+        "merged": "com.example.crm.app-merged_res-50:/drawable-v21_launch_background.xml.flat",
+        "source": "com.example.crm.app-main-45:/drawable-v21/launch_background.xml"
     },
     {
-        "merged": "com.example.crm.app-merged_res-60:/drawable-v21_launch_background.xml.flat",
-        "source": "com.example.crm.app-main-54:/drawable-v21/launch_background.xml"
+        "merged": "com.example.crm.app-merged_res-50:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "com.example.crm.app-main-45:/mipmap-xxxhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "com.example.crm.app-merged_res-60:/mipmap-xxxhdpi_sales_navigator.png.flat",
-        "source": "com.example.crm.app-main-54:/mipmap-xxxhdpi/sales_navigator.png"
+        "merged": "com.example.crm.app-merged_res-50:/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "com.example.crm.app-main-45:/mipmap-xhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "com.example.crm.app-merged_res-60:/mipmap-xhdpi_sales_navigator.png.flat",
-        "source": "com.example.crm.app-main-54:/mipmap-xhdpi/sales_navigator.png"
+        "merged": "com.example.crm.app-merged_res-50:/drawable-v21_sales_navigator.png.flat",
+        "source": "com.example.crm.app-main-45:/drawable-v21/sales_navigator.png"
     },
     {
-        "merged": "com.example.crm.app-merged_res-60:/drawable-v21_sales_navigator.png.flat",
-        "source": "com.example.crm.app-main-54:/drawable-v21/sales_navigator.png"
+        "merged": "com.example.crm.app-merged_res-50:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.example.crm.app-main-45:/mipmap-mdpi/ic_launcher.png"
     },
     {
-        "merged": "com.example.crm.app-merged_res-60:/mipmap-hdpi_ic_launcher.png.flat",
-        "source": "com.example.crm.app-main-54:/mipmap-hdpi/ic_launcher.png"
+        "merged": "com.example.crm.app-merged_res-50:/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "com.example.crm.app-main-45:/mipmap-xxhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "com.example.crm.app-merged_res-60:/mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "com.example.crm.app-main-54:/mipmap-xxhdpi/ic_launcher_round.png"
+        "merged": "com.example.crm.app-merged_res-50:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.example.crm.app-main-45:/mipmap-xxxhdpi/ic_launcher.png"
     },
     {
-        "merged": "com.example.crm.app-merged_res-60:/mipmap-hdpi_sales_navigator.png.flat",
-        "source": "com.example.crm.app-main-54:/mipmap-hdpi/sales_navigator.png"
+        "merged": "com.example.crm.app-merged_res-50:/mipmap-xxhdpi_sales_navigator.png.flat",
+        "source": "com.example.crm.app-main-45:/mipmap-xxhdpi/sales_navigator.png"
     },
     {
-        "merged": "com.example.crm.app-merged_res-60:/mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "com.example.crm.app-main-54:/mipmap-xxxhdpi/ic_launcher.png"
+        "merged": "com.example.crm.app-merged_res-50:/mipmap-hdpi_sales_navigator.png.flat",
+        "source": "com.example.crm.app-main-45:/mipmap-hdpi/sales_navigator.png"
     },
     {
-        "merged": "com.example.crm.app-merged_res-60:/mipmap-xxhdpi_sales_navigator.png.flat",
-        "source": "com.example.crm.app-main-54:/mipmap-xxhdpi/sales_navigator.png"
+        "merged": "com.example.crm.app-merged_res-50:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.example.crm.app-main-45:/mipmap-xhdpi/ic_launcher.png"
     }
 ]

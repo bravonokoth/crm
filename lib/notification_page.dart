@@ -1,6 +1,5 @@
 // ignore_for_file: unused_import, unused_local_variable
 
-import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:mysql1/mysql1.dart';
 import 'package:intl/intl.dart';
@@ -11,9 +10,7 @@ import 'package:http/http.dart' as http;
 import 'dart:convert';
 
 class NotificationsPage extends StatefulWidget {
-  final RemoteMessage? message;
-
-  const NotificationsPage({super.key, this.message});
+  const NotificationsPage({super.key});
   static const route = '/notification-page';
 
   @override
@@ -29,8 +26,7 @@ class _NotificationsPageState extends State<NotificationsPage> {
   @override
   void initState() {
     super.initState();
-    developer
-        .log("NotificationsPage initialized with message: ${widget.message}");
+    developer.log("NotificationsPage initialized");
     _initializeSalesmanId().then((_) => _fetchNotifications());
   }
 
@@ -125,14 +121,6 @@ class _NotificationsPageState extends State<NotificationsPage> {
 
   @override
   Widget build(BuildContext context) {
-    final RemoteMessage? message =
-        ModalRoute.of(context)!.settings.arguments as RemoteMessage?;
-
-    if (message != null) {
-      developer.log(
-          "Building NotificationsPage with message: ${message.notification?.title}");
-    }
-
     return PopScope(
       canPop: false,
       onPopInvoked: (didPop) {
@@ -171,7 +159,6 @@ class _NotificationsPageState extends State<NotificationsPage> {
     int? relatedId = notification['related_lead_id'];
 
     switch (notificationType) {
-      // Navigate to order processing stage
       case 'ORDER_STATUS_CHANGED':
         Navigator.pushReplacement(
           context,
@@ -180,7 +167,6 @@ class _NotificationsPageState extends State<NotificationsPage> {
           ),
         );
         break;
-      // Navigate to negociation stage
       case 'TASK_DUE_SOON':
         Navigator.push(
           context,
@@ -189,7 +175,6 @@ class _NotificationsPageState extends State<NotificationsPage> {
           ),
         );
         break;
-      // Navigate to opportunities stage
       case 'NEW_SALES_LEAD':
         Navigator.push(
           context,

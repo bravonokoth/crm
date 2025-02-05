@@ -2,7 +2,7 @@
 
 ## Overview
 
-**ClientFlow** is a comprehensive Flutter-Dart based application designed to enhance Customer Relationship Management (CRM) with a primary focus on **Sales Management**. The project aims to improve the existing web application architecture by refining the **User Experience (UX)**, integrating **real-time analytics** and dashboards, and providing **mobile compatibility**. With an interactive and user-friendly interface, this project helps businesses manage customer relations effectively, providing real-time insights into sales, customer trends, and business performance.
+CRM is a comprehensive Flutter-Dart based application designed to enhance Customer Relationship Management (CRM) with a primary focus on **Sales Management**. The project aims to improve the existing web application architecture by refining the **User Experience (UX)**, integrating **real-time analytics** and dashboards, and providing **mobile compatibility**. With an interactive and user-friendly interface, this project helps businesses manage customer relations effectively, providing real-time insights into sales, customer trends, and business performance.
 
 ### Key Features:
 

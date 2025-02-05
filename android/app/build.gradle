@@ -1,6 +1,6 @@
 plugins {
     id "com.android.application"
-    id "com.google.gms.google-services"
+   // id "com.google.gms.google-services"
     id "kotlin-android"
     id "dev.flutter.flutter-gradle-plugin"
 }
@@ -75,14 +75,14 @@ flutter {
 
 dependencies {
     implementation 'androidx.multidex:multidex:2.0.1'
-    implementation 'com.google.android.gms:play-services-auth:20.6.0'
-    implementation 'com.google.firebase:firebase-core:21.1.1'
+   // implementation 'com.google.android.gms:play-services-auth:20.6.0'
+   // implementation 'com.google.firebase:firebase-core:21.1.1'
     
     // If you're using other Firebase services, add them here
     // implementation 'com.google.firebase:firebase-analytics:21.4.0'
     // implementation 'com.google.firebase:firebase-messaging:23.0.6'
 }
 
-afterEvaluate {
-    tasks.getByName('mapDebugSourceSetPaths').dependsOn 'processDebugGoogleServices'
-}
+//afterEvaluate {
+ //   tasks.getByName('mapDebugSourceSetPaths').dependsOn 'processDebugGoogleServices'
+//}

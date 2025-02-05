@@ -1,10 +1,6 @@
 # This is a generated file; do not edit or check into version control.
 audio_session=/home/bravon/.pub-cache/hosted/pub.dev/audio_session-0.1.24/
 connectivity_plus=/home/bravon/.pub-cache/hosted/pub.dev/connectivity_plus-6.1.2/
-firebase_core=/home/bravon/.pub-cache/hosted/pub.dev/firebase_core-3.10.1/
-firebase_core_web=/home/bravon/.pub-cache/hosted/pub.dev/firebase_core_web-2.19.0/
-firebase_messaging=/home/bravon/.pub-cache/hosted/pub.dev/firebase_messaging-15.2.1/
-firebase_messaging_web=/home/bravon/.pub-cache/hosted/pub.dev/firebase_messaging_web-3.10.1/
 flutter_local_notifications=/home/bravon/.pub-cache/hosted/pub.dev/flutter_local_notifications-18.0.1/
 flutter_local_notifications_linux=/home/bravon/.pub-cache/hosted/pub.dev/flutter_local_notifications_linux-5.0.0/
 just_audio=/home/bravon/.pub-cache/hosted/pub.dev/just_audio-0.9.44/

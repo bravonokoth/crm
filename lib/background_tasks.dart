@@ -55,7 +55,7 @@ void callbackDispatcher() {
 
 Future<void> checkOrderStatusAndNotify(int salesmanId) async {
   final String baseUrl =
-      'https://haluansama.com/crm-sales/api/background_tasks/get_order_status.php?salesman_id=$salesmanId';
+      's';
 
   try {
     final response = await http.get(Uri.parse(baseUrl));

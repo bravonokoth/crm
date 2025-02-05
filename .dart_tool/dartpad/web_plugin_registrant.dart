@@ -8,8 +8,6 @@
 
 import 'package:audio_session/audio_session_web.dart';
 import 'package:connectivity_plus/src/connectivity_plus_web.dart';
-import 'package:firebase_core_web/firebase_core_web.dart';
-import 'package:firebase_messaging_web/firebase_messaging_web.dart';
 import 'package:just_audio_web/just_audio_web.dart';
 import 'package:package_info_plus/src/package_info_plus_web.dart';
 import 'package:permission_handler_html/permission_handler_html.dart';
@@ -23,8 +21,6 @@ void registerPlugins([final Registrar? pluginRegistrar]) {
   final Registrar registrar = pluginRegistrar ?? webPluginRegistrar;
   AudioSessionWeb.registerWith(registrar);
   ConnectivityPlusWebPlugin.registerWith(registrar);
-  FirebaseCoreWeb.registerWith(registrar);
-  FirebaseMessagingWeb.registerWith(registrar);
   JustAudioPlugin.registerWith(registrar);
   PackageInfoPlusWebPlugin.registerWith(registrar);
   WebPermissionHandler.registerWith(registrar);

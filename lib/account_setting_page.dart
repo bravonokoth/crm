@@ -52,7 +52,7 @@ class _AccountSettingState extends State<AccountSetting> {
 
     try {
       // Prepare API URL
-      final url = Uri.parse('https://haluansama.com/crm-sales/api/salesman/update_salesman_details.php');
+      final url = Uri.parse('');
 
       // Make POST request to API with salesman details
       final response = await http.post(

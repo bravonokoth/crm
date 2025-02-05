@@ -1,137 +1,71 @@
 import 'package:flutter/material.dart';
 import 'package:crypto/crypto.dart';
-import 'package:ClientFlow/background_tasks.dart';
-import 'package:workmanager/workmanager.dart';
-import 'home_page.dart';
 import 'dart:convert';
-import 'package:shared_preferences/shared_preferences.dart';
-import 'dart:developer' as developer;
 import 'package:http/http.dart' as http;
+import 'dart:developer' as developer;
+import 'dart:io';
+import 'package:ClientFlow/home_page.dart';  // Correct import for HomePage
 
 class LoginPage extends StatelessWidget {
-  final TextEditingController usernameController = TextEditingController();
+  final TextEditingController emailController = TextEditingController();
   final TextEditingController passwordController = TextEditingController();
 
   LoginPage({super.key});
 
-  void signIn(BuildContext context) async {
-    String username = usernameController.text;
-    String password = passwordController.text;
 
-    // Hash the password using MD5
-    String hashedPassword = md5.convert(utf8.encode(password)).toString();
+
+  /// Handles user sign-in
+  void signIn(BuildContext context) async {
+    String email = emailController.text.trim(); // Trim to remove extra spaces
+    String password = passwordController.text.trim();
+
+    // Debugging: Print email and password before sending request
+    developer.log("Email entered: $email");
+    developer.log("Password entered: $password");
+
+    if (email.isEmpty || password.isEmpty) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('Please enter both email and password.')),
+      );
+      return; // Stop execution if fields are empty
+    }
 
     try {
-      // API URL for the login request
-      var url = Uri.parse(
-          'https://haluansama.com/crm-sales/api/authentication/authenticate_login.php');
+      String apiUrl = "https://2416-102-215-77-46.ngrok-free.app/api/login";
+      final Uri url = Uri.parse(apiUrl);
 
-      // Make a POST request to the API
       var response = await http.post(
         url,
-        body: {
-          'username': username,
-          'password': hashedPassword,
+        headers: {
+          'Content-Type': 'application/json', // Explicitly set content type
         },
+        body: jsonEncode({'email': email, 'password': password}),
       );
 
-      // Parse the JSON response
-      var jsonResponse = jsonDecode(response.body);
+      developer.log("Response Status: ${response.statusCode}");
+      developer.log("Response Body: ${response.body}");
 
-      if (jsonResponse['status'] == 'success') {
-        // Fetch salesman data from the response
-        var salesman = jsonResponse['salesman'];
-
-        // Save salesman data to shared preferences
-        SharedPreferences prefs = await SharedPreferences.getInstance();
-        prefs.setInt('id', salesman['id']);
-        print(
-            "Saved salesman_id to SharedPreferences: ${salesman['id']}"); // Add this log
-        prefs.setInt('area', salesman['area']);
-        prefs.setString('salesmanName', salesman['salesman_name']);
-        prefs.setString('username', salesman['username']);
-        prefs.setString('contactNumber', salesman['contact_number']);
-        prefs.setString('email', salesman['email']);
-        prefs.setString('repriceAuthority', salesman['reprice_authority']);
-        prefs.setString('discountAuthority', salesman['discount_authority']);
-        prefs.setInt('status', salesman['status']);
-
-        // Save login status and expiration time to shared preferences
-        prefs.setBool('isLoggedIn', true);
-        prefs.setInt(
-            'loginExpirationTime',
-            DateTime.now()
-                .add(const Duration(days: 31))
-                .millisecondsSinceEpoch);
-
-        // Initialize Workmanager and register tasks
-        await _initializeBackgroundTasks();
-
-        // Navigate to HomePage
-        Navigator.pushReplacement(
-            context,
-            MaterialPageRoute(
-              builder: (context) => const HomePage(),
-            ));
-      } else {
-        // Show an error message if login fails
+      if (response.statusCode == 200) {
+        var jsonResponse = jsonDecode(response.body);
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text(jsonResponse['message'])),
+          SnackBar(content: Text("Login successful! Welcome ${jsonResponse['user']['name']}")),
+        );
+
+        // Navigate to the homepage
+        Navigator.pushReplacement(
+          context,
+          MaterialPageRoute(builder: (context) => HomePage()),
+        );
+      } else {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(content: Text('Login failed. Please check your credentials.')),
         );
       }
     } catch (e) {
       developer.log('Error signing in: $e', error: e);
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Login failed. Please try again.'),
-        ),
+        const SnackBar(content: Text('Login failed. Please try again.')),
       );
-    }
-  }
-
-  Future<void> _initializeBackgroundTasks() async {
-    await Workmanager().initialize(callbackDispatcher, isInDebugMode: false);
-
-    await Workmanager().registerPeriodicTask(
-      "1",
-      "fetchSalesOrderStatus",
-      frequency: const Duration(minutes: 15),
-      constraints: Constraints(
-        networkType: NetworkType.connected,
-      ),
-    );
-
-    await Workmanager().registerPeriodicTask(
-      "2",
-      "checkTaskDueDates",
-      frequency: const Duration(days: 1),
-      constraints: Constraints(
-        networkType: NetworkType.connected,
-      ),
-    );
-
-    await Workmanager().registerPeriodicTask(
-      "3",
-      "checkNewSalesLeads",
-      frequency: const Duration(days: 1),
-      constraints: Constraints(
-        networkType: NetworkType.connected,
-      ),
-    );
-  }
-
-  Future<bool> checkLoginStatus() async {
-    SharedPreferences prefs = await SharedPreferences.getInstance();
-    bool isLoggedIn = prefs.getBool('isLoggedIn') ?? false;
-    int loginExpirationTime = prefs.getInt('loginExpirationTime') ?? 0;
-
-    if (isLoggedIn &&
-        loginExpirationTime > DateTime.now().millisecondsSinceEpoch) {
-      return true;
-    } else {
-      prefs.remove('isLoggedIn');
-      prefs.remove('loginExpirationTime');
-      return false;
     }
   }
 
@@ -148,8 +82,8 @@ class LoginPage extends StatelessWidget {
               children: [
                 Text('Please contact our support team for assistance:'),
                 SizedBox(height: 10),
-                Text('Phone: +60-82362333, 362666, 362999'),
-                Text('Email: FYHKCH@hotmail.com'),
+                Text('Phone: +254791418021'),
+                Text('Email: energycrm.com'),
               ],
             ),
           ),
@@ -168,148 +102,129 @@ class LoginPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return FutureBuilder<bool>(
-      future: checkLoginStatus(),
-      builder: (BuildContext context, AsyncSnapshot<bool> snapshot) {
-        if (snapshot.connectionState == ConnectionState.waiting) {
-          // Show a loading indicator while checking login status
-          return const Scaffold(
-            body: Center(
-              child: CircularProgressIndicator(),
+    return Scaffold(
+      body: SingleChildScrollView(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Container(
+              padding: const EdgeInsets.only(
+                left: 18,
+                top: 50,
+                bottom: 20,
+              ),
+              alignment: Alignment.centerLeft,
+              child: Image.asset('asset/logo/logo_fyh.png',
+                  width: 200, height: 100),
             ),
-          );
-        } else if (snapshot.hasData && snapshot.data!) {
-          // If logged in, navigate to HomePage
-          return const HomePage();
-        } else {
-          // If not logged in, show the login page
-          return Scaffold(
-            body: SingleChildScrollView(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Container(
-                    padding: const EdgeInsets.only(
-                      left: 18,
-                      top: 50,
-                      bottom: 20,
-                    ),
-                    alignment: Alignment.centerLeft,
-                    child: Image.asset('asset/logo/logo_fyh.png',
-                        width: 200, height: 100),
-                  ),
-                  Container(
-                    alignment: Alignment.centerLeft,
-                    padding: const EdgeInsets.only(
-                      left: 20,
-                      bottom: 24,
-                    ),
-                    child: const Text(
-                      'Control your Sales\ntoday.',
-                      style:
-                          TextStyle(fontSize: 20, fontWeight: FontWeight.w400),
-                    ),
-                  ),
-
-                  // Email input field
-                  const SizedBox(height: 10),
-                  Container(
-                    margin: const EdgeInsets.only(
-                        top: 10, bottom: 10, left: 20, right: 20),
-                    child: TextFormField(
-                      controller: usernameController,
-                      decoration: const InputDecoration(
-                        border: OutlineInputBorder(),
-                        labelText: 'Username',
-                        // hintText: 'fyh@mail.com',
-                      ),
-                    ),
-                  ),
-
-                  // Password input field
-                  const SizedBox(height: 10),
-                  Container(
-                    margin: const EdgeInsets.only(top: 10, left: 20, right: 20),
-                    child: TextFormField(
-                      controller: passwordController,
-                      obscureText: true,
-                      decoration: const InputDecoration(
-                        border: OutlineInputBorder(),
-                        labelText: 'Password',
-                      ),
-                    ),
-                  ),
-
-                  // Sign in button
-                  const SizedBox(height: 10),
-                  Container(
-                    padding:
-                        const EdgeInsets.only(top: 10, left: 80, right: 80),
-                    width: double.infinity,
-                    child: ElevatedButton(
-                      onPressed: () {
-                        // Call the sign in method
-                        signIn(context);
-                      },
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: const Color.fromARGB(255, 7, 148, 255),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(18),
-                        ),
-                      ),
-                      child: const Text(
-                        'Sign In',
-                        style: TextStyle(
-                          color: Colors.white,
-                        ),
-                      ),
-                    ),
-                  ),
-
-                  // Forgot password button
-                  const SizedBox(height: 4),
-                  TextButton(
-                    onPressed: () {
-                      // Show pop up window
-                      showContactInfoDialog(context);
-                    },
-                    child: const Text(
-                      'Forgot Password',
-                      style: TextStyle(
-                        color: Colors.black,
-                        decoration: TextDecoration.underline,
-                        decorationThickness: 2.0,
-                      ),
-                    ),
-                  ),
-                  Stack(
-                    alignment: Alignment.center,
-                    children: [
-                      SizedBox(
-                        width: 800, // Set your desired width
-                        child: Image.asset(
-                          'asset/SN_ELEMENTS_CENTER.png',
-                        ),
-                      ),
-                      Positioned(
-                        top: 10,
-                        // Adjust the position of the new image as needed
-                        child: SizedBox(
-                          width:
-                              200, // Set your desired width for the new image
-                          child: Image.asset(
-                            'asset/chart_illu.png',
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ],
+            Container(
+              alignment: Alignment.centerLeft,
+              padding: const EdgeInsets.only(
+                left: 20,
+                bottom: 24,
+              ),
+              child: const Text(
+                'Control your Sales\ntoday.',
+                style:
+                    TextStyle(fontSize: 20, fontWeight: FontWeight.w400),
               ),
             ),
-          );
-        }
-      },
+
+            // Email input field
+            const SizedBox(height: 10),
+            Container(
+              margin: const EdgeInsets.only(
+                  top: 10, bottom: 10, left: 20, right: 20),
+              child: TextFormField(
+                controller: emailController,
+                decoration: const InputDecoration(
+                  border: OutlineInputBorder(),
+                  labelText: 'Username',
+                ),
+              ),
+            ),
+
+            // Password input field
+            const SizedBox(height: 10),
+            Container(
+              margin: const EdgeInsets.only(top: 10, left: 20, right: 20),
+              child: TextFormField(
+                controller: passwordController,
+                obscureText: true,
+                decoration: const InputDecoration(
+                  border: OutlineInputBorder(),
+                  labelText: 'Password',
+                ),
+              ),
+            ),
+
+            // Sign in button
+            const SizedBox(height: 10),
+            Container(
+              padding:
+                  const EdgeInsets.only(top: 10, left: 80, right: 80),
+              width: double.infinity,
+              child: ElevatedButton(
+                onPressed: () {
+                  // Call the sign in method
+                  signIn(context);
+                },
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: const Color.fromARGB(255, 7, 148, 255),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(18),
+                  ),
+                ),
+                child: const Text(
+                  'Sign In',
+                  style: TextStyle(
+                    color: Colors.white,
+                  ),
+                ),
+              ),
+            ),
+
+            // Forgot password button
+            const SizedBox(height: 4),
+            TextButton(
+              onPressed: () {
+                // Show pop up window
+                showContactInfoDialog(context);
+              },
+              child: const Text(
+                'Forgot Password',
+                style: TextStyle(
+                  color: Colors.black,
+                  decoration: TextDecoration.underline,
+                  decorationThickness: 2.0,
+                ),
+              ),
+            ),
+            Stack(
+              alignment: Alignment.center,
+              children: [
+                SizedBox(
+                  width: 800, // Set your desired width
+                  child: Image.asset(
+                    'asset/SN_ELEMENTS_CENTER.png',
+                  ),
+                ),
+                Positioned(
+                  top: 10,
+                  // Adjust the position of the new image as needed
+                  child: SizedBox(
+                    width:
+                        200, // Set your desired width for the new image
+                    child: Image.asset(
+                      'asset/chart_illu.png',
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ],
+        ),
+      ),
     );
   }
 }

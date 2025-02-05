@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.crm.app-mergeDebugResources-58:/values-sw360dp-v13/values-sw360dp-v13.xml",
+            "outputFile": "com.example.crm.app-mergeDebugResources-48:/values-sw360dp-v13/values-sw360dp-v13.xml",
             "map": [
                 {
-                    "source": "/home/bravon/.gradle/caches/transforms-3/33ed1aec02a52dbb5c945161151158cd/transformed/preference-1.2.1/res/values-sw360dp-v13/values-sw360dp-v13.xml",
+                    "source": "/home/bravon/.gradle/caches/transforms-3/f6391d408b624862ad32d2599c98eb31/transformed/preference-1.2.1/res/values-sw360dp-v13/values-sw360dp-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
