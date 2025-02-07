@@ -100,7 +100,7 @@ class _OrderSubmittedPageState extends State<OrderSubmittedPage> {
                     Navigator.pushReplacement(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const HomePage(),
+                        builder: (context) =>  HomePage(),
                       ),
                     );
                   },

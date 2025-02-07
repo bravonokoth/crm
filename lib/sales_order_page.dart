@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'package:ClientFlow/home_page.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -145,36 +146,38 @@ class _SalesOrderPageState extends State<SalesOrderPage> {
     }
   }
 
-  Future<void> fetchItemsForNewOrder() async {
-    String apiUrl = 'https://2416-102-215-77-46.ngrok-free.app/api/items';
-    try {
-      final Uri itemsUrl = Uri.parse(apiUrl);
-      final response = await http.get(itemsUrl);
-      if (response.statusCode == 200) {
-        final Map data = json.decode(response.body);
-        setState(() {
-          crmitems = List<Map<String, String>>.from(
-            data['items'].map((i) => {
-              'id': i['id'].toString(),
-              'item': i['item'].toString(),
-              'rate': i['rate'].toString(),
-              'unit': i['unit'].toString(),
-              'sku_code': i['sku_code'].toString(),
-            }),
-          );
-        });
-      } else {
-        developer.log('Failed to load items. Status code: ${response.statusCode}');
-        throw Exception('Failed to load items');
-      }
-    } catch (e) {
-      developer.log("Items URL $apiUrl not reachable: $e");
-      throw Exception("Items URL is not reachable!");
+Future<void> fetchItemsForNewOrder() async {
+  String apiUrl = 'https://60ea-102-215-77-46.ngrok-free.app/api/items';
+  try {
+    final Uri itemsUrl = Uri.parse(apiUrl);
+    final response = await http.get(itemsUrl);
+    if (response.statusCode == 200) {
+      final Map data = json.decode(response.body);
+      setState(() {
+        crmitems = List<Map<String, String>>.from(
+          // Assuming 'items' in the response is a list of item maps
+          data['items'].asMap().map((index, item) => MapEntry(index, {
+            'id': (index + 1).toString(), // Using index + 1 as a placeholder for id
+            'item': item['name'].toString(),
+            'rate': item['rate'].toString(),
+            'unit': item['unit'].toString(),
+            'sku_code': item['sku_code'].toString(),
+          })).values,
+        );
+      });
+      developer.log('Number of items fetched: ${crmitems.length}');
+    } else {
+      developer.log('Failed to load items. Status code: ${response.statusCode}');
+      throw Exception('Failed to load items');
     }
+  } catch (e) {
+    developer.log("Items URL $apiUrl not reachable: $e");
+    throw Exception("Items URL is not reachable!");
   }
+}
 
   Future<void> fetchCustomersForNewOrder() async {
-    String apiUrl = 'https://2416-102-215-77-46.ngrok-free.app/api/customers';
+    String apiUrl = 'https://60ea-102-215-77-46.ngrok-free.app/api/customers';
     try {
       final Uri customersUrl = Uri.parse(apiUrl);
       final response = await http.get(customersUrl);
@@ -288,7 +291,7 @@ class _SalesOrderPageState extends State<SalesOrderPage> {
                   };
                 }).toList();
 
-                final url = Uri.parse('https://2416-102-215-77-46.ngrok-free.app/api/create_order');
+                final url = Uri.parse('https://60ea-102-215-77-46.ngrok-free.app/api/create_order');
                 final response = await http.post(
                   url,
                   headers: <String, String>{
@@ -349,6 +352,19 @@ Widget build(BuildContext context) {
   var sp = (double fontSize) => fontSize * MediaQuery.of(context).textScaleFactor;
 
   return Scaffold(
+    appBar: AppBar(
+      leading: IconButton(
+        icon: Icon(Icons.arrow_back),
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => HomePage()),
+          );
+        },
+      ),
+      title: Text('Sales Order Page'),
+      backgroundColor: Colors.purple, // Violet color for the app bar
+    ),
     backgroundColor: const Color(0xffF5F5F5),
     body: SafeArea(
       child: Stack(
@@ -475,7 +491,8 @@ Widget build(BuildContext context) {
                                     Row(
                                       children: [
                                         Text(
-                                          'Select Items *',
+
+ 'Select Items *',
                                           textAlign: TextAlign.center,
                                           style: GoogleFonts.poppins(
                                             textStyle: TextStyle(
@@ -486,271 +503,249 @@ Widget build(BuildContext context) {
                                         ),
                                       ],
                                     ),
-                                    ConstrainedBox(
-                                      constraints: BoxConstraints(
-                                        maxHeight: height * 0.5, // Adjust as needed
-                                      ),
-                                      child: ListView.builder(
-                                        shrinkWrap: true,
-                                        physics: NeverScrollableScrollPhysics(),
-                                        itemCount: crmitems.length,
-                                        itemBuilder: (context, index) {
-                                          final item = crmitems[index];
-                                          final originalRate = double.parse(item['rate']!);
+                                    SizedBox(height: height * 0.01),
+                                    // Removed ConstrainedBox to allow natural expansion
+                                    ListView.builder(
+                                      shrinkWrap: true,
+                                      physics: NeverScrollableScrollPhysics(),
+                                      itemCount: crmitems.length,
+                                      itemBuilder: (context, index) {
+                                        final item = crmitems[index];
+                                        final originalRate = double.parse(item['rate']!);
 
-                                          // Initialize controllers if not already present
-                                          if (!rateControllers.containsKey(index)) {
-                                            rateControllers[index] = TextEditingController();
-                                            quantityControllers[index] = TextEditingController();
-                                          }
+                                        // Initialize controllers if not already present
+                                        if (!rateControllers.containsKey(index)) {
+                                          rateControllers[index] = TextEditingController();
+                                          quantityControllers[index] = TextEditingController();
+                                        }
 
-                                          final rateController = rateControllers[index]!;
-                                          final quantityController = quantityControllers[index]!;
+                                        final rateController = rateControllers[index]!;
+                                        final quantityController = quantityControllers[index]!;
 
-                                          return Card(
-                                            shape: RoundedRectangleBorder(
-                                              side: BorderSide(
-                                                color: Color(0xFF764abc),
-                                                width: 2.0,
-                                              ),
-                                              borderRadius: BorderRadius.circular(6.0),
+                                        return Card(
+                                          shape: RoundedRectangleBorder(
+                                            side: BorderSide(
+                                              color: Color(0xFF764abc),
+                                              width: 2.0,
                                             ),
-                                            child: Padding(
-                                              padding: const EdgeInsets.all(8.0),
-                                              child: Column(
-                                                crossAxisAlignment: CrossAxisAlignment.start,
-                                                children: [
-                                                  Text(
-                                                    item['item']!,
-                                                    style: TextStyle(
-                                                      
-                                                                     fontWeight: FontWeight.bold,
-                                                  color: Color(0xFF764abc),
-                                                ),
-                                              ),
-                                              Row(
-                                                children: [
-                                                  Expanded(
-                                                    child: Row(
-                                                      children: [
-                                                        IconButton(
-                                                          icon: Icon(Icons.remove),
-                                                          onPressed: () {
-                                                            double currentRate = double.tryParse(rateController.text) ?? originalRate;
-                                                            if (currentRate > originalRate) {
-                                                              setState(() {
-                                                                rateController.text = (currentRate - 1).toStringAsFixed(2);
-                                                              });
-                                                            }
-                                                          },
-                                                        ),
-                                                        Expanded(
-                                                          child: TextFormField(
-                                                            controller: rateController,
-                                                            decoration: InputDecoration(
-                                                              labelText: 'Rate',
-                                                            ),
-                                                            keyboardType: TextInputType.numberWithOptions(decimal: true),
-                                                            onChanged: (value) {
-                                                              if (value.isNotEmpty) {
-                                                                final enteredRate = double.tryParse(value);
-                                                                if (enteredRate != null && enteredRate < originalRate) {
-                                                                  ScaffoldMessenger.of(context).showSnackBar(
-                                                                    SnackBar(
-                                                                      content: Text('Rate cannot be less than ${originalRate.toStringAsFixed(2)} KES'),
-                                                                    ),
-                                                                  );
-                                                                  rateController.text = originalRate.toStringAsFixed(2);
-                                                                }
-                                                              }
-                                                            },
-                                                          ),
-                                                        ),
-                                                        IconButton(
-                                                          icon: Icon(Icons.add),
-                                                          onPressed: () {
-                                                            double currentRate = double.tryParse(rateController.text) ?? originalRate;
-                                                            setState(() {
-                                                              rateController.text = (currentRate + 1).toStringAsFixed(2);
-                                                            });
-                                                          },
-                                                        ),
-                                                      ],
-                                                    ),
+                                            borderRadius: BorderRadius.circular(6.0),
+                                          ),
+                                          child: Padding(
+                                            padding: const EdgeInsets.all(8.0),
+                                            child: Column(
+                                              crossAxisAlignment: CrossAxisAlignment.start,
+                                              children: [
+                                                Text(
+                                                  item['item']!,
+                                                  style: TextStyle(
+                                                    fontWeight: FontWeight.bold,
+                                                    color: Color(0xFF764abc),
                                                   ),
-                                                  SizedBox(width: 16),
-                                                  Expanded(
-                                                    child: Row(
-                                                      children: [
-                                                        IconButton(
-                                                          icon: Icon(Icons.remove),
-                                                          onPressed: () {
-                                                            int currentQuantity = int.tryParse(quantityController.text) ?? 0;
-                                                            if (currentQuantity > 0) {
-                                                              setState(() {
-                                                                quantityController.text = (currentQuantity - 1).toString();
-                                                                updateOrderItems(index, rateController, currentQuantity - 1);
-                                                              });
-                                                            }
-                                                          },
-                                                        ),
-                                                        Expanded(
-                                                          child: TextFormField(
-                                                            controller: quantityController,
-                                                            decoration: InputDecoration(
-                                                              labelText: 'Quantity',
-                                                            ),
-                                                            keyboardType: TextInputType.number,
-                                                            onChanged: (value) {
-                                                              if (value.isNotEmpty) {
+                                                ),
+                                                Row(
+                                                  children: [
+                                                    Expanded(
+                                                      child: Row(
+                                                        children: [
+                                                          IconButton(
+                                                            icon: Icon(Icons.remove),
+                                                            onPressed: () {
+                                                              double currentRate = double.tryParse(rateController.text) ?? originalRate;
+                                                              if (currentRate > originalRate) {
                                                                 setState(() {
-                                                                  updateOrderItems(index, rateController, int.parse(value));
+                                                                  rateController.text = (currentRate - 1).toStringAsFixed(2);
                                                                 });
                                                               }
                                                             },
                                                           ),
-                                                        ),
-                                                        IconButton(
-                                                          icon: Icon(Icons.add),
-                                                          onPressed: () {
-                                                            int currentQuantity = int.tryParse(quantityController.text) ?? 0;
-                                                            setState(() {
-                                                              quantityController.text = (currentQuantity + 1).toString();
-                                                              updateOrderItems(index, rateController, currentQuantity + 1);
-                                                            });
-                                                          },
-                                                        ),
-                                                      ],
+                                                          Expanded(
+                                                            child: TextFormField(
+                                                              controller: rateController,
+                                                              decoration: InputDecoration(
+                                                                labelText: 'Rate',
+                                                              ),
+                                                              keyboardType: TextInputType.numberWithOptions(decimal: true),
+                                                              onChanged: (value) {
+                                                                if (value.isNotEmpty) {
+                                                                  final enteredRate = double.tryParse(value);
+                                                                  if (enteredRate != null && enteredRate < originalRate) {
+                                                                    ScaffoldMessenger.of(context).showSnackBar(
+                                                                      SnackBar(
+                                                                        content: Text('Rate cannot be less than ${originalRate.toStringAsFixed(2)} KES'),
+                                                                      ),
+                                                                    );
+                                                                    rateController.text = originalRate.toStringAsFixed(2);
+                                                                  }
+                                                                }
+                                                              },
+                                                            ),
+                                                          ),
+                                                          IconButton(
+                                                            icon: Icon(Icons.add),
+                                                            onPressed: () {
+                                                              double currentRate = double.tryParse(rateController.text) ?? originalRate;
+                                                              setState(() {
+                                                                rateController.text = (currentRate + 1).toStringAsFixed(2);
+                                                              });
+                                                            },
+                                                          ),
+                                                        ],
+                                                      ),
                                                     ),
-                                                  ),
-                                                ],
-                                              ),
-                                            ],
-                                          ),
+                                                    SizedBox(width: 16),
+                                                    Expanded(
+                                                      child: Row(
+                                                        children: [
+                                                          IconButton(
+                                                            icon: Icon(Icons.remove),
+                                                            onPressed: () {
+                                                              int currentQuantity = int.tryParse(quantityController.text) ?? 0;
+                                                              if (currentQuantity > 0) {
+                                                                setState(() {
+                                                                  quantityController.text = (currentQuantity - 1).toString();
+                                                                  updateOrderItems(index, rateController, currentQuantity - 1);
+                                                                });
+                                                              }
+                                                            },
+                                                          ),
+                                                          Expanded(
+                                                            child: TextFormField(
+                                                              controller: quantityController,
+                                                              decoration: InputDecoration(
+                                                                labelText: 'Quantity',
+                                                              ),
+                                                              keyboardType: TextInputType.number,
+                                                              onChanged: (value) {
+                                                                if (value.isNotEmpty) {
+                                                                  setState(() {
+                                                                    updateOrderItems(index, rateController, int.parse(value));
+                                                                  });
+                                                                }
+                                                              },
+                                                            ),
+                                                          ),
+                                                          IconButton(
+                                                            icon: Icon(Icons.add),
+                                                            onPressed: () {
+                                                              int currentQuantity = int.tryParse(quantityController.text) ?? 0;
+                                                              setState(() {
+                                                                quantityController.text = (currentQuantity + 1).toString();
+                                                                updateOrderItems(index, rateController, currentQuantity + 1);
+                                                              });
+                                                            },
+                                                          ),
+                                                        ],
+                                                      ),
+                                                    ),
+                                                  ],
+                                                ),
+                                              ],
                                             ),
+                                          ),
                                         );
                                       },
                                     ),
-                                  ),
-                                  SizedBox(height: height * 0.02),
-                                  Row(
-                                    children: [
-                                      Text(
-                                        'Notes *',
-                                        textAlign: TextAlign.center,
-                                        style: GoogleFonts.poppins(
-                                          textStyle: TextStyle(
-                                            fontSize: sp(10.0),
-                                            fontWeight: FontWeight.w400,
+                                    SizedBox(height: height * 0.02),
+                                    Row(
+                                      children: [
+                                        Text(
+                                          'Notes *',
+                                          textAlign: TextAlign.center,
+                                          style: GoogleFonts.poppins(
+                                            textStyle: TextStyle(
+                                              fontSize: sp(10.0),
+                                              fontWeight: FontWeight.w400,
+                                            ),
                                           ),
                                         ),
-                                      ),
-                                    ],
-                                  ),
-                                  SizedBox(height: height * 0.01),
-                                  TextFormField(
-                                    controller: notesController,
-                                    decoration: InputDecoration(
-                                      border: OutlineInputBorder(
-                                        borderRadius: BorderRadius.circular(10.0),
-                                        borderSide: BorderSide.none,
-                                      ),
-                                      fillColor: Colors.white,
-                                      filled: true,
-                                      prefixIcon: Icon(Icons.note_alt),
+                                      ],
                                     ),
-                                  ),
-                                  SizedBox(height: height * 0.02),
-                                  SizedBox(height: height * 0.01),
-                                  Row(
-                                    children: [
-                                      Text(
-                                        'Terms and Conditions *',
-                                        textAlign: TextAlign.center,
-                                        style: GoogleFonts.poppins(
-                                          textStyle: TextStyle(
-                                            fontSize: sp(10.0),
-                                            fontWeight: FontWeight.w400,
+                                    SizedBox(height: height * 0.01),
+                                    TextFormField(
+                                      controller: notesController,
+                                      decoration: InputDecoration(
+                                        border: OutlineInputBorder(
+                                          borderRadius: BorderRadius.circular(10.0),
+                                          borderSide: BorderSide.none,
+                                        ),
+                                        fillColor: Colors.white,
+                                        filled: true,
+                                        prefixIcon: Icon(Icons.note_alt),
+                                      ),
+                                    ),
+                                    SizedBox(height: height * 0.02),
+                                    SizedBox(height: height * 0.01),
+                                    Row(
+                                      children: [
+                                        Text(
+                                          'Terms and Conditions *',
+                                          textAlign: TextAlign.center,
+                                          style: GoogleFonts.poppins(
+                                            textStyle: TextStyle(
+                                              fontSize: sp(10.0),
+                                              fontWeight: FontWeight.w400,
+                                            ),
                                           ),
                                         ),
-                                      ),
-                                    ],
-                                  ),
-                                  SizedBox(height: height * 0.01),
-                                  TextFormField(
-                                    controller: termsController,
-                                    decoration: InputDecoration(
-                                      border: OutlineInputBorder(
-                                        borderRadius: BorderRadius.circular(10.0),
-                                        borderSide: BorderSide.none,
-                                      ),
-                                      fillColor: Colors.white,
-                                      filled: true,
-                                      prefixIcon: Icon(Icons.description),
+                                      ],
                                     ),
-                                  ),
-                                  SizedBox(height: height * 0.02),
-                                  SizedBox(height: height * 0.01),
-                                  Row(
-                                    children: [
-                                      Text(
-                                        'Delivery Location *',
-                                        textAlign: TextAlign.center,
-                                        style: GoogleFonts.poppins(
-                                          textStyle: TextStyle(
-                                            fontSize: sp(10.0),
-                                            fontWeight: FontWeight.w400,
+                                    SizedBox(height: height * 0.01),
+                                    TextFormField(
+                                      controller: termsController,
+                                      decoration: InputDecoration(
+                                        border: OutlineInputBorder(
+                                          borderRadius: BorderRadius.circular(10.0),
+                                          borderSide: BorderSide.none,
+                                        ),
+                                        fillColor: Colors.white,
+                                        filled: true,
+                                        prefixIcon: Icon(Icons.description),
+                                      ),
+                                    ),
+                                    SizedBox(height: height * 0.02),
+                                    SizedBox(height: height * 0.01),
+                                    Row(
+                                      children: [
+                                        Text(
+                                          'Delivery Location *',
+                                          textAlign: TextAlign.center,
+                                          style: GoogleFonts.poppins(
+                                            textStyle: TextStyle(
+                                              fontSize: sp(10.0),
+                                              fontWeight: FontWeight.w400,
+                                            ),
                                           ),
                                         ),
-                                      ),
-                                    ],
-                                  ),
-                                  SizedBox(height: height * 0.01),
-                                  TextFormField(
-                                    controller: deliverylocationController,
-                                    decoration: InputDecoration(
-                                      border: OutlineInputBorder(
-                                        borderRadius: BorderRadius.circular(10.0),
-                                        borderSide: BorderSide.none,
-                                      ),
-                                      fillColor: Colors.white,
-                                      filled: true,
-                                      prefixIcon: Icon(Icons.location_on),
+                                      ],
                                     ),
-                                  ),
-                                  SizedBox(height: height * 0.02),
+                                    SizedBox(height: height * 0.01),
+                                    TextFormField(
+                                      controller: deliverylocationController,
+                                      decoration: InputDecoration(
+                                        border: OutlineInputBorder(
+                                          borderRadius: BorderRadius.circular(10.0),
+                                          borderSide: BorderSide.none,
+                                        ),
+                                        fillColor: Colors.white,
+                                        filled: true,
+                                        prefixIcon: Icon(Icons.location_on),
+                                      ),
+                                    ),
+                                    SizedBox(height: height * 0.02),
 
-                                  GestureDetector(
-                                    onTap: () async {
-                                      if (duedateController.text.isEmpty ||
-                                          selectedCustomer == null ||
-                                          deliverydateController.text.isEmpty ||
-                                          termsController.text.isEmpty ||
-                                          notesController.text.isEmpty ||
-                                          deliverylocationController.text.isEmpty) {
-                                        showDialog(
-                                          context: context,
-                                          builder: (context) => AlertDialog(
-                                            title: const Text('Validation Error'),
-                                            content: const Text('Please fill all required (*) fields.'),
-                                            actions: [
-                                              TextButton(
-                                                onPressed: () {
-                                                  Navigator.of(context).pop();
-                                                },
-                                                child: const Text('OK'),
-                                              ),
-                                            ],
-                                          ),
-                                        );
-                                      } else {
-                                        bool isConnected = await checkInternetConnectivity();
-                                        if (!isConnected) {
+                                    GestureDetector(
+                                      onTap: () async {
+                                        if (duedateController.text.isEmpty ||
+                                            selectedCustomer == null ||
+                                            deliverydateController.text.isEmpty ||
+                                            termsController.text.isEmpty ||
+                                            notesController.text.isEmpty ||
+                                            deliverylocationController.text.isEmpty) {
                                           showDialog(
                                             context: context,
                                             builder: (context) => AlertDialog(
-                                              title: const Text('No Internet Connection'),
-                                              content: const Text('Please check your internet connection.'),
+                                              title: const Text('Validation Error'),
+                                              content: const Text('Please fill all required (*) fields.'),
                                               actions: [
                                                 TextButton(
                                                   onPressed: () {
@@ -762,53 +757,71 @@ Widget build(BuildContext context) {
                                             ),
                                           );
                                         } else {
-                                          showDialog(
-                                            context: context,
-                                            builder: (context) => AlertDialog(
-                                              title: const Text('Confirm'),
-                                              content: const Text('Are you sure do you want to save this Order'),
-                                              actions: [
-                                                TextButton(
-                                                  onPressed: () {
-                                                    Navigator.of(context).pop();
-                                                  },
-                                                  child: const Text('Cancel'),
-                                                ),
-                                                TextButton(
-                                                  onPressed: () {
-                                                    submitNewOrder();
-                                                  },
-                                                  child: const Text('OK'),
-                                                ),
-                                              ],
-                                            ),
-                                          );
+                                          bool isConnected = await checkInternetConnectivity();
+                                          if (!isConnected) {
+                                            showDialog(
+                                              context: context,
+                                              builder: (context) => AlertDialog(
+                                                title: const Text('No Internet Connection'),
+                                                content: const Text('Please check your internet connection.'),
+                                                actions: [
+                                                  TextButton(
+                                                    onPressed: () {
+                                                      Navigator.of(context).pop();
+                                                    },
+                                                    child: const Text('OK'),
+                                                  ),
+                                                ],
+                                              ),
+                                            );
+                                          } else {
+                                            showDialog(
+                                              context: context,
+                                              builder: (context) => AlertDialog(
+                                                title: const Text('Confirm'),
+                                                content: const Text('Are you sure do you want to save this Order'),
+                                                actions: [
+                                                  TextButton(
+                                                    onPressed: () {
+                                                      Navigator.of(context).pop();
+                                                    },
+                                                    child: const Text('Cancel'),
+                                                  ),
+                                                  TextButton(
+                                                    onPressed: () {
+                                                      submitNewOrder();
+                                                    },
+                                                    child: const Text('OK'),
+                                                  ),
+                                                ],
+                                              ),
+                                            );
+                                          }
                                         }
-                                      }
-                                    },
-                                    child: Container(
-                                      padding: EdgeInsets.all(height * 0.01),
-                                      decoration: BoxDecoration(
-                                        color: Colors.greenAccent,
-                                        borderRadius: BorderRadius.circular(10),
-                                      ),
-                                      child: Text(
-                                        'Save Order',
-                                        style: GoogleFonts.poppins(
-                                          textStyle: TextStyle(
-                                            fontSize: sp(10.0),
-                                            fontWeight: FontWeight.bold,
+                                      },
+                                      child: Container(
+                                        padding: EdgeInsets.all(height * 0.01),
+                                        decoration: BoxDecoration(
+                                          color: Colors.greenAccent,
+                                          borderRadius: BorderRadius.circular(10),
+                                        ),
+                                        child: Text(
+                                          'Save Order',
+                                          style: GoogleFonts.poppins(
+                                            textStyle: TextStyle(
+                                              fontSize: sp(10.0),
+                                              fontWeight: FontWeight.bold,
+                                            ),
                                           ),
                                         ),
                                       ),
                                     ),
-                                  ),
-                                  SizedBox(height: height * 0.05),
-                                ],
-                              ),
-                            ],
+                                    SizedBox(height: height * 0.05),
+                                  ],
+                                ),
+                              ],
+                            ),
                           ),
-                          )
                         ],
                       ),
                     ),

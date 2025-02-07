@@ -163,7 +163,7 @@ class _NotificationsPageState extends State<NotificationsPage> {
         Navigator.pushReplacement(
           context,
           MaterialPageRoute(
-            builder: (context) => const HomePage(initialIndex: 3),
+            builder: (context) =>  HomePage(),
           ),
         );
         break;
@@ -171,7 +171,7 @@ class _NotificationsPageState extends State<NotificationsPage> {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => const HomePage(initialIndex: 2),
+            builder: (context) =>  HomePage(),
           ),
         );
         break;
@@ -179,7 +179,7 @@ class _NotificationsPageState extends State<NotificationsPage> {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => const HomePage(initialIndex: 0),
+            builder: (context) =>  HomePage(),
           ),
         );
         break;

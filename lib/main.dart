@@ -1,3 +1,5 @@
+
+
 import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:ClientFlow/cart_page.dart';
@@ -13,6 +15,7 @@ import 'package:provider/provider.dart';
 import 'package:ClientFlow/model/cart_model.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'dart:io' show Platform;
+import 'package:sizer/sizer.dart'; // Add this import for Sizer
 
 final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
 final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin = FlutterLocalNotificationsPlugin();
@@ -34,7 +37,11 @@ void main() async {
       providers: [
         ChangeNotifierProvider(create: (_) => CartModel()),
       ],
-      child: const MyApp(),
+      child: Sizer(
+        builder: (context, orientation, deviceType) {
+          return const MyApp();
+        },
+      ),
     ),
   );
 }
@@ -44,6 +51,8 @@ void initializeLocalNotifications() async {
   const InitializationSettings settings = InitializationSettings(android: androidSettings);
   await flutterLocalNotificationsPlugin.initialize(settings);
 }
+
+
 
 class MyApp extends StatefulWidget {
   const MyApp({super.key});
@@ -80,7 +89,7 @@ class _MyAppState extends State<MyApp> {
       debugShowCheckedModeBanner: false,
       home: isOffline ? const NoInternetScreen() : const StartingPage(),
       routes: {
-        '/home': (context) => const HomePage(),
+        '/home': (context) => HomePage(),
         '/sales': (context) => const SalesOrderPage(),
         '/product': (context) => const ProductsScreen(),
         '/cart': (context) => const CartPage(),

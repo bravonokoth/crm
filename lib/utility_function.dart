@@ -15,7 +15,7 @@ class UtilityFunction{
     tzdata.initializeTimeZones();
 
     // Specify the time zone for Kuala Lumpur
-    final kualaLumpur = tz.getLocation('Asia/Kuala_Lumpur');
+    final kualaLumpur = tz.getLocation('Africa/Nairobi');
 
     // Get today's date in the Kuala Lumpur time zone
     final now = tz.TZDateTime.now(kualaLumpur);
@@ -72,7 +72,7 @@ class UtilityFunction{
     tzdata.initializeTimeZones();
 
     // Specify the time zone for Kuala Lumpur
-    final kualaLumpur = tz.getLocation('Asia/Kuala_Lumpur');
+    final kualaLumpur = tz.getLocation('Africa/Nairobi');
 
     // Get the current time in the Kuala Lumpur time zone
     final now = tz.TZDateTime.now(kualaLumpur);

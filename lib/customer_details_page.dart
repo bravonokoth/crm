@@ -34,7 +34,7 @@ class _CustomerDetailsState extends State<CustomerDetails> {
   Future<List<Customer>> fetchCustomers(int limit, int offset) async {
     List<Customer> fetchedCustomers = [];
     final String apiUrl =
-        'https://haluansama.com/crm-sales/api/customer/get_customers.php?limit=$limit&offset=$offset';
+        'https://c28b-102-215-77-46.ngrok-free.app/api/customers';
 
     try {
       final response = await http.get(Uri.parse(apiUrl));
