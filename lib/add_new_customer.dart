@@ -125,9 +125,9 @@ void initState() {
       isLoadingCountries = true; 
     });
 
-    final url = Uri.parse('');
+    final url = Uri.parse('https://bf1c-102-215-77-46.ngrok-free.app/api/countries');
     try {
-      final response = await http.post(url, body: {});
+      final response = await http.get(url);
       if (response.statusCode == 200) {
         final Map<String, dynamic> data = json.decode(response.body);
         if (data['status'] == 'true') {
@@ -157,7 +157,7 @@ void initState() {
 Future<void> submitCompany() async {
   selectedCountry ??= "0";
 
-  final url = Uri.parse('');
+  final url = Uri.parse('https://bf1c-102-215-77-46.ngrok-free.app/api/customers');
   final response = await http.post(url, body: {
     
     'company': companyController.text,
@@ -654,32 +654,60 @@ Widget build(BuildContext context) {
                           ),
                           SizedBox(height: 15.sp),
 
-                          // Is Supplier Dropdown
-                          DropdownButtonFormField(
-                            hint: const Text('Is Supplier'),
-                            value: selectedIsSupplier,
-                            onChanged: (String? newValue) {
-                              setState(() {
-                                selectedIsSupplier = newValue;
-                              });
-                            },
-                            items: isSupplierOptions.map((option) {
-                              return DropdownMenuItem(
-                                value: option,
-                                child: Text(option),
-                              );
-                            }).toList(),
-                            decoration: InputDecoration(
-                              border: OutlineInputBorder(
-                                borderRadius: BorderRadius.circular(10.0),
-                                borderSide: BorderSide.none,
-                              ),
-                              fillColor: Colors.white,
-                              filled: true,
-                              prefixIcon: Icon(Icons.check_box),
-                            ),
-                          ),
-                          SizedBox(height: 15.sp),
+                                                        // Is Supplier Dropdown
+                                DropdownButtonFormField(
+                                  hint: const Text('Is Supplier'),
+                                  value: selectedIsSupplier,
+                                  onChanged: (String? newValue) {
+                                    setState(() {
+                                      selectedIsSupplier = newValue;
+                                    });
+                                  },
+                                  items: isSupplierOptions.map((option) {
+                                    return DropdownMenuItem(
+                                      value: option,
+                                      child: Text(option),
+                                    );
+                                  }).toList(),
+                                  decoration: InputDecoration(
+                                    border: OutlineInputBorder(
+                                      borderRadius: BorderRadius.circular(10.0),
+                                      borderSide: BorderSide.none,
+                                    ),
+                                    fillColor: Colors.white,
+                                    filled: true,
+                                    prefixIcon: Icon(Icons.check_box),
+                                  ),
+                                ),
+                                SizedBox(height: 15.sp),
+
+                       
+// Centrally Placed Oval Golden Button
+Center(
+  child: Container(
+    width: width * 0.3,
+    decoration: BoxDecoration(
+      color: Colors.amber[700], // Golden color
+      borderRadius: BorderRadius.circular(50.0), // Makes it oval
+    ),
+    child: TextButton(
+      onPressed: () {
+        if (_formKey.currentState!.validate()) {
+          submitCompany();
+        }
+      },
+      style: TextButton.styleFrom(
+        padding: EdgeInsets.symmetric(horizontal: 30, vertical: 10),
+      ),
+      child: Text(
+        'Submit ',
+        style: TextStyle(color: Colors.black), // Text color for visibility
+      ),
+    ),
+  ),
+),
+SizedBox(height: 15.sp),
+                                  
                         ],
                       ),
                     ),

@@ -106,12 +106,13 @@ class _SalesOrderPageState extends State<SalesOrderPage> {
 
       await fetchCustomersForNewOrder();
       await fetchItemsForNewOrder();
-    } catch (e) {
-      developer.log('Error loading user data: $e');
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Error loading user data. Please try again.')),
-      );
-    } finally {
+    } catch (e, stackTrace) {
+  developer.log('Error loading user data: $e');
+  developer.log('Stacktrace: $stackTrace');
+  ScaffoldMessenger.of(context).showSnackBar(
+    SnackBar(content: Text('Error loading user data: $e. Please try again.')),
+  );
+} finally {
       if (mounted) {
         setState(() {
           _isLoading = false;
@@ -147,25 +148,26 @@ class _SalesOrderPageState extends State<SalesOrderPage> {
   }
 
 Future<void> fetchItemsForNewOrder() async {
-  String apiUrl = 'https://60ea-102-215-77-46.ngrok-free.app/api/items';
+  String apiUrl = 'https://bf1c-102-215-77-46.ngrok-free.app/api/items';
   try {
     final Uri itemsUrl = Uri.parse(apiUrl);
     final response = await http.get(itemsUrl);
     if (response.statusCode == 200) {
-      final Map data = json.decode(response.body);
       setState(() {
         crmitems = List<Map<String, String>>.from(
-          // Assuming 'items' in the response is a list of item maps
-          data['items'].asMap().map((index, item) => MapEntry(index, {
-            'id': (index + 1).toString(), // Using index + 1 as a placeholder for id
-            'item': item['name'].toString(),
-            'rate': item['rate'].toString(),
-            'unit': item['unit'].toString(),
-            'sku_code': item['sku_code'].toString(),
-          })).values,
-        );
-      });
+          jsonDecode(response.body).map((item) {
+            return {
+              'id': item['id'].toString(),
+              'item': item['name'].toString(),
+              'rate': item['rate'].toString(),
+              'unit': item['unit']?.toString() ?? '',
+              'sku_code': item['sku_code']?.toString() ?? '',
+            };
+          }).toList(),
+  );
+});
       developer.log('Number of items fetched: ${crmitems.length}');
+      developer.log('API response: ${response.body}'); // Log the entire response to check structure
     } else {
       developer.log('Failed to load items. Status code: ${response.statusCode}');
       throw Exception('Failed to load items');
@@ -177,7 +179,7 @@ Future<void> fetchItemsForNewOrder() async {
 }
 
   Future<void> fetchCustomersForNewOrder() async {
-    String apiUrl = 'https://60ea-102-215-77-46.ngrok-free.app/api/customers';
+    String apiUrl = 'https://bf1c-102-215-77-46.ngrok-free.app/api/customers';
     try {
       final Uri customersUrl = Uri.parse(apiUrl);
       final response = await http.get(customersUrl);
@@ -362,7 +364,7 @@ Widget build(BuildContext context) {
           );
         },
       ),
-      title: Text('Sales Order Page'),
+      title: Text('Order Page'),
       backgroundColor: Colors.purple, // Violet color for the app bar
     ),
     backgroundColor: const Color(0xffF5F5F5),
@@ -377,10 +379,10 @@ Widget build(BuildContext context) {
                     physics: const AlwaysScrollableScrollPhysics(),
                     child: ConstrainedBox(
                       // Adding ConstrainedBox to limit the max height of the whole content
-                      constraints: BoxConstraints(maxHeight: 2700),
+                      constraints: BoxConstraints(maxHeight: 1690),
                       child: Column(
                         children: [
-                          SizedBox(height: height * 0.166),
+                          SizedBox(height: height * 0.03),
                           Container(
                             padding: EdgeInsets.symmetric(horizontal: width * 0.05),
                             decoration: const BoxDecoration(
@@ -503,7 +505,7 @@ Widget build(BuildContext context) {
                                         ),
                                       ],
                                     ),
-                                    SizedBox(height: height * 0.01),
+                                    SizedBox(height: height * 0.05),
                                     // Removed ConstrainedBox to allow natural expansion
                                     ListView.builder(
                                       shrinkWrap: true,

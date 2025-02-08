@@ -34,22 +34,22 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        automaticallyImplyLeading: false,
-        backgroundColor: const Color(0xff0175FF),
-        title: FutureBuilder(
-          future: _getUserName(),
-          builder: (context, snapshot) {
-            if (snapshot.connectionState == ConnectionState.done) {
-              return Text(
-                'Welcome, ${snapshot.data ?? "User"}',
-                style: const TextStyle(color: Colors.white),
-              );
-            } else {
-              return const Text('Welcome, User', style: TextStyle(color: Colors.white));
-            }
-          },
-        ),
-      ),
+  automaticallyImplyLeading: false,
+  backgroundColor: const Color(0xff0175FF),
+  title: FutureBuilder(
+    future: _getUserName(),
+    builder: (context, snapshot) {
+      if (snapshot.connectionState == ConnectionState.done) {
+        return Text(
+          'Welcome, ${snapshot.data ?? "User"}',
+          style: const TextStyle(color: Colors.white),
+        );
+      } else {
+        return const Text('Welcome, User', style: TextStyle(color: Colors.white));
+      }
+    },
+  ),
+),
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(16.0),
@@ -121,7 +121,7 @@ class _HomePageState extends State<HomePage> {
                   color: Colors.white,
                 ),
                 child: Center(
-                  child: Icon(Icons.local_shipping, color: Color(0xff0175FF), size: 30),
+                  child: Icon(Icons.local_shipping, color: Color.fromARGB(255, 184, 20, 224), size: 30),
                 ),
               ),
             ],
@@ -337,8 +337,9 @@ Widget _buildActionCard({
 
  
 
-  Future<String> _getUserName() async {
-    final prefs = await SharedPreferences.getInstance();
-    return prefs.getString('userName') ?? 'User';
-  }
+Future<String?> _getUserName() async {
+  SharedPreferences prefs = await SharedPreferences.getInstance();
+  return prefs.getString('userName');
+}
+
 }

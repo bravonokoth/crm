@@ -1,8 +1,8 @@
 
 
+import 'package:ClientFlow/list_order_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
-import 'package:ClientFlow/cart_page.dart';
 import 'package:ClientFlow/home_page.dart';
 import 'package:ClientFlow/notification_page.dart';
 import 'package:ClientFlow/login_page.dart';
@@ -92,7 +92,7 @@ class _MyAppState extends State<MyApp> {
         '/home': (context) => HomePage(),
         '/sales': (context) => const SalesOrderPage(),
         '/product': (context) => const ProductsScreen(),
-        '/cart': (context) => const CartPage(),
+        '/cart': (context) => const ListOrderPage(),
         '/login': (context) => LoginPage(),
         '/profile': (context) => const ProfilePage(),
         NotificationsPage.route: (context) => const NotificationsPage(),

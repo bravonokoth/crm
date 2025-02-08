@@ -4,15 +4,14 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'dart:developer' as developer;
 import 'dart:io';
-import 'package:ClientFlow/home_page.dart';  // Correct import for HomePage
+import 'package:ClientFlow/home_page.dart';
+import 'package:shared_preferences/shared_preferences.dart'; // Add this import for SharedPreferences
 
 class LoginPage extends StatelessWidget {
   final TextEditingController emailController = TextEditingController();
   final TextEditingController passwordController = TextEditingController();
 
   LoginPage({super.key});
-
-
 
   /// Handles user sign-in
   void signIn(BuildContext context) async {
@@ -31,7 +30,7 @@ class LoginPage extends StatelessWidget {
     }
 
     try {
-      String apiUrl = "https://60ea-102-215-77-46.ngrok-free.app/api/login";
+      String apiUrl = "https://bf1c-102-215-77-46.ngrok-free.app/api/login";
       final Uri url = Uri.parse(apiUrl);
 
       var response = await http.post(
@@ -44,9 +43,19 @@ class LoginPage extends StatelessWidget {
 
       developer.log("Response Status: ${response.statusCode}");
       developer.log("Response Body: ${response.body}");
+if (response.statusCode == 200) {
+  var jsonResponse = jsonDecode(response.body);
+  
+  // Store user data in SharedPreferences
+  final prefs = await SharedPreferences.getInstance();
+  await prefs.setString('id', jsonResponse['user']['id'].toString()); // staffId = user_id
+  await prefs.setString('userName', jsonResponse['user']['name']);
+  await prefs.setString('username', jsonResponse['user']['email']);
+  await prefs.setString('role', jsonResponse['user']['role']);
+  await prefs.setString('token', jsonResponse['token']);
 
-      if (response.statusCode == 200) {
-        var jsonResponse = jsonDecode(response.body);
+  // ... rest of your code for successful login
+
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text("Login successful! Welcome ${jsonResponse['user']['name']}")),
         );
